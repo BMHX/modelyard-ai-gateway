@@ -1,6 +1,8 @@
 <div align="center">
 
-# Modelyard
+<img src="./docs/assets/modelyard-logo.png" alt="ModelYard logo" width="96" />
+
+# ModelYard
 
 **AI Access & Governance Infrastructure for teams running AI coding tools and provider gateways.**
 
@@ -15,7 +17,7 @@
 
 </div>
 
-Modelyard gives engineering, platform, security, and finance teams one governed layer for AI access, routing, budgets, usage records, exports, and auditability.
+ModelYard gives engineering, platform, security, and finance teams one governed layer for AI access, routing, budgets, usage records, exports, and auditability.
 
 It is not a token resale platform, a chat app, or a lightweight proxy dashboard. It is a control plane and AI gateway for BYOK provider connections, virtual keys, model routing, usage governance, and operational evidence.
 
@@ -23,9 +25,9 @@ It is not a token resale platform, a chat app, or a lightweight proxy dashboard.
 
 ## Contents
 
-- [Why Modelyard](#why-modelyard)
+- [Product Preview](#product-preview)
+- [Why ModelYard](#why-modelyard)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Architecture](#architecture)
 - [Repository Layout](#repository-layout)
 - [Quick Start](#quick-start)
@@ -35,13 +37,29 @@ It is not a token resale platform, a chat app, or a lightweight proxy dashboard.
 - [Search Keywords](#search-keywords)
 - [License](#license)
 
-## Why Modelyard
+## Product Preview
+
+### Home
+
+![Modelyard home screen](./docs/screenshots/home.png)
+
+![Modelyard home details screen](./docs/screenshots/home-details.png)
+
+### Models
+
+![Modelyard models screen](./docs/screenshots/models.png)
+
+### Usage Guide
+
+![Modelyard usage screen](./docs/screenshots/usage.png)
+
+## Why ModelYard
 
 Teams do not just need another API key. They need a safe and observable way to let people, projects, coding agents, and internal tools use AI providers without spreading raw upstream credentials everywhere.
 
-Modelyard provides:
+ModelYard provides:
 
-| Need | Modelyard capability |
+| Need | ModelYard capability |
 | --- | --- |
 | Provider access | BYOK provider connections and OpenAI-compatible routing |
 | Credential isolation | Virtual keys scoped to workspaces, projects, and environments |
@@ -64,22 +82,6 @@ Common search terms for this category include AI gateway, LLM gateway, API key m
 | Admin console | Resource-oriented Next.js operations UI |
 | Background jobs | Export worker for CSV/XLSX/report generation |
 | Tooling | Smoke checks, demo seed/reset, env validation, Docker compose stacks |
-
-## Screenshots
-
-### Home
-
-![Modelyard home screen](./docs/screenshots/home.png)
-
-![Modelyard home details screen](./docs/screenshots/home-details.png)
-
-### Models
-
-![Modelyard models screen](./docs/screenshots/models.png)
-
-### Usage Guide
-
-![Modelyard usage screen](./docs/screenshots/usage.png)
 
 ## Architecture
 
