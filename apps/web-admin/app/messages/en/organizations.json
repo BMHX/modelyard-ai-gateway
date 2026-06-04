@@ -1,0 +1,63 @@
+{
+  "Organizations": "Organizations",
+  "Current scope": "Current scope",
+  "organization": "organization",
+  "Search": "Search",
+  "Name or slug": "Name or slug",
+  "View": "View",
+  "all": "all",
+  "multi-workspace": "multi-workspace",
+  "single-workspace": "single-workspace",
+  "empty": "empty",
+  "Apply filters": "Apply filters",
+  "Reset": "Reset",
+  "Open workspaces": "Open workspaces",
+  "Create workspace": "Create workspace",
+  "Edit settings": "Edit settings",
+  "Name and slug": "Name and slug",
+  "Saving changes": {
+    "": {
+      "": {
+        "": "Saving changes..."
+      }
+    }
+  },
+  "Save changes": "Save changes",
+  "This permanently removes the organization from the control plane": {
+    "": "This permanently removes the organization from the control plane."
+  },
+  "Delete organization": "Delete organization",
+  "Deleting": {
+    "": {
+      "": {
+        "": "Deleting..."
+      }
+    }
+  },
+  "No matching organization": "No matching organization",
+  "No organizations": "No organizations",
+  "No organization matches the current filters": {
+    "": "No organization matches the current filters."
+  },
+  "Add the first organization entry": {
+    "": "Add the first organization entry."
+  },
+  "New organization": "New organization",
+  "Add index entry": "Add index entry",
+  "Create the first entry": "Create the first entry",
+  "Create organization": "Create organization",
+  "Acme China": "Acme China",
+  "acme-china (optional)": "acme-china (optional)",
+  "setup": "setup",
+  "launch": "launch",
+  "scaled": "scaled",
+  "No workspace attached": "No workspace attached",
+  "1 workspace attached": "1 workspace attached",
+  "{count} workspaces attached": "{count} workspaces attached",
+  "Created": "Created",
+  "Updated": "Updated",
+  "Deleted": "Deleted",
+  "Error": "Error",
+  "Organization data unavailable": "Organization data unavailable",
+  "No organizations configured": "No organizations configured"
+}

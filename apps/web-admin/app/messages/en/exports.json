@@ -1,0 +1,388 @@
+{
+  "page": {
+    "title": "Exports"
+  },
+  "workspace": {
+    "current": "Current workspace",
+    "noSelection": "No workspace selected",
+    "contextUnavailable": "Exports workspace context is unavailable",
+    "partialData": "Exports data is partially unavailable"
+  },
+  "toolbar": {
+    "switchWorkspace": "Switch workspace",
+    "useHeaderSwitcher": "Use the workspace switcher in the header to change export scope."
+  },
+  "reportSpec": {
+    "title": "Current export spec",
+    "ledgerOnly": "Ledger schema only.",
+    "sharedScope": "Shared scope & format.",
+    "sourceScope": "Source scope",
+    "focus": "Focus",
+    "storedFilters": "Stored filters",
+    "recurringSupport": "Recurring support",
+    "nextCadence": "Next recurring cadence",
+    "noScopedSource": "No scoped source yet",
+    "adHocOnly": "Ad hoc only",
+    "activeFilters": "Active report filters",
+    "clearFilters": "Clear one filter at a time."
+  },
+  "actions": {
+    "openWorkspaces": "Open workspaces",
+    "openOrganizations": "Open organizations",
+    "openSource": "Open source",
+    "applyExport": "Apply export",
+    "reviewRecurring": "Review recurring",
+    "openFollowUp": "Open follow-up",
+    "prepareExport": "Prepare export",
+    "manageRecurring": "Manage recurring",
+    "createRecurring": "Create recurring",
+    "refineLedger": "Refine ledger",
+    "refineSpec": "Refine source",
+    "queueExport": "Queue export",
+    "returnToSource": "Return to source",
+    "checkHandoff": "Check handoff",
+    "clear": "Clear"
+  },
+  "status": {
+    "noWorkspace": "Select a workspace to view exports.",
+    "refresh": "Refresh once control data is available.",
+    "dataUnavailable": "Export data is unavailable",
+    "loadExportsError": "Unable to load export jobs.",
+    "loadProjectsError": "Unable to load projects.",
+    "loadEnvironmentsError": "Unable to load environments."
+  },
+  "notice": {
+    "created": "Created",
+    "error": "Error",
+    "unavailable": "Unavailable"
+  },
+  "shared": {
+    "pending": "Pending",
+    "none": "None",
+    "name": "Name",
+    "custom": "custom",
+    "items": "items"
+  },
+  "labels": {
+    "outcome": {
+      "attention": "Needs attention"
+    },
+    "jobStatus": {
+      "pending": "Pending",
+      "running": "Running",
+      "failed": "Failed",
+      "completed": "Completed"
+    },
+    "cadence": {
+      "adhoc": "Ad hoc",
+      "adhocFirst": "Ad hoc first",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "kind": {
+      "usage-events": "Usage events",
+      "usage-ledger": "Usage ledger",
+      "audit-logs": "Audit logs"
+    }
+  },
+  "followup": {
+    "slaBreached": "SLA breached · {value}",
+    "slaDue": "SLA due · {value}",
+    "approval": "Approval pending",
+    "title": "Follow-up",
+    "description": "Ownership, approvals, and next steps for current exports."
+  },
+  "scope": {
+    "workspaceWideLedger": "Workspace-wide ledger",
+    "workspaceWideUsage": "Workspace-wide usage",
+    "workspaceWideAudit": "Workspace-wide audit",
+    "budgetLinked": "Budget-linked"
+  },
+  "focus": {
+    "allLedgerRows": "All ledger rows",
+    "allUsageRows": "All usage rows",
+    "allAuditEvents": "All audit events"
+  },
+  "queue": {
+    "title": "Export queue",
+    "searchPlaceholder": "Search jobs",
+    "empty": "No export jobs yet",
+    "noMatch": "No matching export job",
+    "noMatchDescription": "No jobs match these filters.",
+    "summary": "Showing {visible} of {total} jobs",
+    "summaryDetailed": "Showing {visible} of {total} jobs",
+    "workspacePrefix": "Workspace",
+    "allJobTypes": "All job types",
+    "allStatuses": "All statuses",
+    "applyFilters": "Apply queue filters",
+    "clearFilters": "Clear queue filters",
+    "allExportKinds": "all export kinds",
+    "allJobStatuses": "all job statuses",
+    "noQueueSearch": "no queue search",
+    "reviewQueue": "Review queue",
+    "attempts": "{count} attempts",
+    "processing": "Processing",
+    "format": "Format",
+    "download": "Download",
+    "approvalPendingBeforeDownload": "Approval pending before download",
+    "workerProcessing": "Worker is processing this export now",
+    "waitingForWorker": "Waiting for export-worker to pick it up",
+    "trackedObject": "tracked object",
+    "ownerPrefix": "Owner",
+    "deliveryTargetsConfigured": "{count} delivery targets configured",
+    "recurringReportPrefix": "Recurring report",
+    "oneOffExport": "One-off export",
+    "retryExport": "Retry export",
+    "exportFailed": "Export failed",
+    "ledgerEmpty": "No ledger jobs yet",
+    "ledgerSummary": "Queue the first export.",
+    "health": {
+      "needsIntervention": "Needs intervention",
+      "activePipeline": "Active pipeline",
+      "stable": "Stable"
+    },
+    "stage": {
+      "backlog": "Backlog",
+      "backlogHint": "Queued and pending jobs.",
+      "backlogEmpty": "No queued jobs.",
+      "inProgress": "In progress",
+      "inProgressHint": "Running jobs.",
+      "inProgressEmpty": "No running jobs.",
+      "needsReview": "Needs review",
+      "needsReviewHint": "Failed jobs or follow-up items.",
+      "needsReviewEmpty": "No jobs need review.",
+      "ready": "Ready",
+      "readyHint": "Completed and downloadable jobs.",
+      "readyEmpty": "No completed jobs yet."
+    },
+    "quickViews": {
+      "allJobs": "All jobs",
+      "allJobsHint": "{count} total jobs",
+      "runningHint": "{count} running jobs",
+      "failedHint": "{count} failed jobs",
+      "completedHint": "{count} completed jobs"
+    },
+    "filters": {
+      "kind": "Job kind",
+      "status": "Job status",
+      "search": "Search"
+    },
+    "columns": {
+      "kind": "Job kind",
+      "status": "Status",
+      "file": "File",
+      "rows": "Rows",
+      "timeline": "Timeline",
+      "delivery": "Delivery"
+    },
+    "timeline": {
+      "queuedPrefix": "Queued",
+      "startedPrefix": "Started",
+      "completedPrefix": "Completed",
+      "durationPrefix": "Duration"
+    }
+  },
+  "workbench": {
+    "reportSpecSummary": "Shared scope, format, and source pivots for the current export spec.",
+    "storedFiltersSummary": "Stored filters are ready to reuse or refine.",
+    "outputSummary": "Choose one-off output or promote it into recurring delivery.",
+    "metrics": {
+      "followUp": "Follow-up",
+      "approvalPending": "Approval pending",
+      "recurring": "Recurring",
+      "nextRun": "Next run"
+    },
+    "steps": {
+      "step1": "Step 1",
+      "step2": "Step 2",
+      "step3": "Step 3"
+    },
+    "lanes": {
+      "refineLedgerTitle": "Refine ledger slice",
+      "returnToSourceTitle": "Return to source",
+      "defineSourceTitle": "Define source",
+      "refineLedgerDescription": "Tighten owner, canonical model, and time scope before exporting ledger rows.",
+      "returnToSourceDescription": "Go back to the originating usage or audit scope and refine it first.",
+      "defineSourceDescription": "Set project, environment, and output before queueing.",
+      "followUpQueueTitle": "Follow-up queue",
+      "queueOneOffTitle": "Queue one-off export",
+      "followUpQueueDescription": "Resolve owner, SLA, and approval needs before handoff.",
+      "queueOneOffDescription": "Queue the current export spec once.",
+      "recurringLaneTitle": "Recurring lane",
+      "createRecurringTitle": "Create recurring export",
+      "recurringLaneDescription": "Keep schedules healthy and deliveries monitored.",
+      "createRecurringDescription": "Turn the current spec into a recurring job."
+    },
+    "cta": {
+      "refineLedgerSlice": "Refine ledger slice",
+      "refineSource": "Refine source"
+    },
+    "shortcuts": {
+      "refineLedgerTitle": "Refine ledger slice",
+      "returnToSourceTitle": "Return to source",
+      "tightenSourceTitle": "Tighten source",
+      "refineLedgerDescription": "Focus ledger output before export.",
+      "returnToSourceDescription": "Reopen the originating usage or audit page.",
+      "tightenSourceDescription": "Narrow current source filters.",
+      "clearFollowUpTitle": "Clear follow-up",
+      "queueNextExportTitle": "Queue next export",
+      "clearFollowUpDescription": "Resolve current follow-up blockers.",
+      "queueNextExportDescription": "Queue the next one-off export.",
+      "keepRecurringHealthyTitle": "Keep recurring healthy",
+      "turnIntoRecurringTitle": "Turn into recurring",
+      "keepRecurringHealthyDescription": "Review recurring schedules and failures.",
+      "turnIntoRecurringDescription": "Promote current spec into a recurring report."
+    },
+    "badge": {
+      "ledgerScope": "Ledger scope",
+      "sourceLane": "Source lane",
+      "refineSource": "Refine source",
+      "approvalRisk": "Approval risk",
+      "followUp": "Follow-up",
+      "oneOff": "One-off",
+      "recurring": "Recurring",
+      "automationGap": "Automation gap",
+      "openSource": "Open source",
+      "refineScope": "Refine scope",
+      "ownerGap": "Owner gap",
+      "handoff": "Handoff"
+    },
+    "session": {
+      "startHere": "Start here",
+      "reopenSourceTitle": "Reopen source",
+      "tightenScopeTitle": "Tighten scope",
+      "reopenSourceDescription": "Open the source page behind this export spec.",
+      "tightenScopeDescription": "Narrow current filters before handoff.",
+      "watchNext": "Watch next",
+      "createFirstRecurringTitle": "Create first recurring",
+      "followUpNeedsAttentionDescription": "Current follow-up needs attention.",
+      "keepRecurringHealthyDescription": "Keep recurring health visible.",
+      "createFirstRecurringDescription": "Create the first recurring export for this scope.",
+      "beforeHandoff": "Before handoff",
+      "leaveLaneTrustableTitle": "Leave the lane trustworthy",
+      "ownerGapDescription": "Owner or approval gaps still need review.",
+      "handoffDescription": "Make sure exports and follow-up are ready for the next operator."
+    }
+  },
+  "oneOff": {
+    "title": "One-off export",
+    "description": "Queue a single export from the current spec.",
+    "usageLedger": "Usage ledger",
+    "usageExport": "Usage export",
+    "auditExport": "Audit export"
+  },
+  "secondary": {
+    "title": "Secondary actions",
+    "description": "Recurring and follow-up paths stay nearby."
+  },
+  "operationalFollowUp": {
+    "emptyTitle": "No follow-up yet",
+    "emptyDescription": "Nothing pending."
+  },
+  "templates": {
+    "sectionTitle": "Common templates",
+    "sectionDescription": "Reusable export starting points.",
+    "finance-weekly": {
+      "title": "Finance weekly pack",
+      "description": "Spend and usage pack for finance review.",
+      "focus": "Weekly finance review"
+    },
+    "ops-attention": {
+      "title": "Ops attention pack",
+      "description": "Operational alerts and audit evidence for follow-up.",
+      "focus": "Operational attention"
+    },
+    "leadership-overview": {
+      "title": "Leadership overview",
+      "description": "High-level ledger and trend snapshot.",
+      "focus": "Leadership summary"
+    }
+  },
+  "scheduled": {
+    "title": "Recurring reports",
+    "adhocLedgerOnly": "Ad hoc ledger only.",
+    "description": "Manage recurring exports and delivery targets.",
+    "unavailable": "Recurring reports are unavailable right now.",
+    "createDescription": "Create recurring delivery from the current spec.",
+    "noDeliveryTargets": "No delivery targets",
+    "deliveryTargetsSummary": "{count} delivery targets · {channels}",
+    "cadenceOnly": "Cadence only",
+    "eventTriggerSummary": "{events} · {scope} · {minutes}m cooldown",
+    "scopeWorkspace": "workspace",
+    "scopeReport": "report scope",
+    "noGovernanceGate": "No governance gate",
+    "governanceApprovalStatus": "Approval {status}",
+    "governanceApprovalNone": "No approval required",
+    "governanceWatermark": "Watermark {value}",
+    "governanceRetention": "Retention {days} days",
+    "governanceSignedSnapshot": "Signed snapshot",
+    "deliveryChannelsTitle": "Delivery channels",
+    "emailRecipients": "Email recipients",
+    "slackWebhooks": "Slack webhooks",
+    "feishuWebhooks": "Feishu webhooks",
+    "webhookTargets": "Webhook targets",
+    "governanceTitle": "Governance",
+    "deliveryPayload": "Delivery payload",
+    "signedSnapshotInDelivery": "Signed snapshot in delivery",
+    "eventTriggerScope": "Event trigger scope",
+    "triggerCooldown": "Trigger cooldown",
+    "eventDrivenRuns": "Event-driven runs",
+    "budgetAlertOpened": "Budget alert opened",
+    "exportJobFailed": "Export job failed",
+    "watermarkLabel": "Watermark label",
+    "retentionDays": "Retention days",
+    "signedSnapshot": "Signed snapshot",
+    "firstRunNotice": "First run notice",
+    "latestFailure": "Latest failure",
+    "editTitle": "Edit recurring report",
+    "editDescription": "Update cadence, delivery, and governance."
+  },
+  "forms": {
+    "usageLedger": {
+      "description": "Queue a usage-ledger export from the current scope.",
+      "schema": "Ledger schema",
+      "bestForLabel": "Best for finance-ready rows",
+      "grainLabel": "Daily grain",
+      "submit": "Queue usage ledger export"
+    },
+    "allProjects": "All projects",
+    "allEnvironments": "All environments",
+    "allProviders": "All providers",
+    "allOutcomes": "All outcomes",
+    "sortBy": "Sort by",
+    "sort": {
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "costDesc": "Highest cost first",
+      "tokensDesc": "Most tokens first",
+      "latencyDesc": "Slowest first"
+    },
+    "virtualKeyId": "Virtual key ID",
+    "budgetPolicyId": "Budget policy ID",
+    "fileName": "File name",
+    "gatewayRequestId": "Gateway request ID",
+    "usage": {
+      "description": "Queue a usage-events export from the current scope.",
+      "advancedDescription": "Keep deeper request filters optional.",
+      "submit": "Queue usage export"
+    },
+    "allCallTypes": "All call types",
+    "callType": {
+      "metadata": "Metadata lookups",
+      "streamed": "Streamed responses",
+      "interrupted": "Interrupted streams"
+    },
+    "advancedFilters": "Advanced filters",
+    "minLatency": "Min latency",
+    "audit": {
+      "description": "Queue an audit-log export from the current scope.",
+      "actorType": "Actor type",
+      "actorId": "Actor ID",
+      "advancedDescription": "Keep subject and actor filters optional.",
+      "subjectType": "Subject type",
+      "subjectId": "Subject ID",
+      "submit": "Queue audit export"
+    }
+  }
+}

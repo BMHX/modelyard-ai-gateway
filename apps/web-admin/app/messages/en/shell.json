@@ -1,0 +1,418 @@
+{
+  "languageLabel": "Language",
+  "languageSwitchPending": "Switching language…",
+  "currentLanguage": "Current language",
+  "useEnglish": "Use English interface",
+  "useChinese": "Use Simplified Chinese",
+  "switchingWorkspace": "Switching workspace to {workspace}.",
+  "workspaceSwitchFailed": "Unable to switch workspace right now.",
+  "workspaceContextSyncingLabel": "Switching access",
+  "workspaceContextSyncing": "Switching access identity for the selected workspace.",
+  "workspaceContextFailedLabel": "Identity switch required",
+  "workspaceContextFailed": "Couldn't switch to the required workspace identity automatically.",
+  "workspaceContextFailedTimeout": "Switching the workspace identity timed out. Retry or choose an identity manually.",
+  "workspaceContextRetry": "Retry switch",
+  "workspaceContextSelectIdentity": "Choose identity",
+  "selectedWorkspace": "selected workspace",
+  "savedViewAdded": "Saved view added.",
+  "savedViewRemoved": "Saved view removed.",
+  "savedViewUpdateFailed": "Saved view update failed.",
+  "savedViewRemovalFailed": "Saved view removal failed.",
+  "savedViewsCleared": "Saved views cleared.",
+  "savedViewsClearFailed": "Saved views could not be cleared.",
+  "workspaceSwitched": "Switched to {workspace}.",
+  "Account": "Account",
+  "Login": "Sign in",
+  "No permission": "No permission",
+  "Switch permission": "Switch permission",
+  "Switch identity": "Switch identity",
+  "session": {
+    "syncing": "Syncing session",
+    "unavailable": "Session status unavailable"
+  },
+  "savedViewLabel": "Saved view",
+  "savedViewsLabel": "Saved views",
+  "recentVisitMeta": "Recent visit · {time}",
+  "recentVisitDescription": "Open this page again from {time}.",
+  "recentVisitLabel": "Recent visit",
+  "mobileBanner": {
+    "message": "Use a desktop browser for the full console surface.",
+    "dismiss": "Dismiss notice"
+  },
+  "navigation": {
+    "sections": {
+      "configuration": {
+        "label": "Configuration",
+        "description": "Organizations, workspaces, and providers."
+      },
+      "permissions": {
+        "label": "Permissions",
+        "description": "Projects, members, and virtual key scope."
+      },
+      "operations": {
+        "label": "Operations",
+        "description": "Usage, budgets, and alerts."
+      },
+      "reporting": {
+        "label": "Reporting",
+        "description": "Audit logs and exports."
+      },
+      "integration": {
+        "label": "Integration Center",
+        "description": "Get connection keys, view guides, and review project scope."
+      }
+    },
+    "items": {
+      "home": {
+        "label": "Home",
+        "description": "Global overview and operating queue."
+      },
+      "setup": {
+        "label": "Setup",
+        "description": "Setup checklist and activation flow."
+      },
+      "workspaces": {
+        "label": "Workspaces",
+        "description": "Create, select, and switch workspaces."
+      },
+      "members": {
+        "label": "Members",
+        "description": "Invite operators and assign scoped access."
+      },
+      "providers": {
+        "label": "Providers",
+        "description": "Connect providers and review routing readiness."
+      },
+      "settings": {
+        "label": "Settings",
+        "description": "Configure the gateway endpoint and default request paths."
+      },
+      "keys": {
+        "label": "Keys",
+        "description": "Govern service, shared, and runtime credentials."
+      },
+      "budgets": {
+        "label": "Budgets",
+        "description": "Track spend policy and run-rate pressure."
+      },
+      "alerts": {
+        "label": "Alerts",
+        "description": "Review active incidents and exception pressure."
+      },
+      "usage": {
+        "label": "Usage",
+        "description": "Inspect request traffic and failures."
+      },
+      "audit": {
+        "label": "Audit",
+        "description": "Review recent control-plane changes."
+      },
+      "lineage": {
+        "label": "Release lineage",
+        "description": "Issue signed release lineage and review attestation bundles."
+      },
+      "inspections": {
+        "label": "Content review",
+        "description": "Review flagged prompt activity and governance evidence."
+      },
+      "exports": {
+        "label": "Exports",
+        "description": "Generate evidence and reporting output."
+      },
+      "orgs": {
+        "label": "Organizations",
+        "description": "Establish organization ownership and billing boundaries."
+      },
+      "projects": {
+        "label": "Projects",
+        "description": "Define project and environment scope."
+      },
+      "access": {
+        "label": "Access",
+        "description": "Self-serve a personal developer key and connect to the gateway."
+      },
+      "models": {
+        "label": "Models",
+        "description": "View the available model catalog."
+      }
+    }
+  },
+  "navigationTargets": {
+    "controlCenter": {
+      "label": "Control Center",
+      "cta": "Back to control center",
+      "description": "Continue from the control center page you opened earlier."
+    },
+    "alerts": {
+      "label": "Alerts",
+      "cta": "Back to alerts",
+      "description": "Continue from the alerts view you opened earlier."
+    },
+    "alertDetail": {
+      "label": "Alert Detail",
+      "cta": "Back to alert detail",
+      "description": "Continue from the alert you were investigating."
+    },
+    "usage": {
+      "base": {
+        "label": "Usage events",
+        "cta": "Back to usage events",
+        "description": "Continue from the usage events view you opened earlier."
+      },
+      "sameRequest": {
+        "label": "Filtered usage · same request",
+        "cta": "Back to same request",
+        "description": "Continue from the request-scoped usage view you opened earlier."
+      },
+      "sameUpstream": {
+        "label": "Filtered usage · same upstream",
+        "cta": "Back to same upstream",
+        "description": "Continue from the upstream request view you opened earlier."
+      },
+      "virtualKey": {
+        "label": "Filtered usage · virtual key",
+        "cta": "Back to key-scoped usage",
+        "description": "Continue from the virtual-key usage view you opened earlier."
+      },
+      "providerConnection": {
+        "label": "Filtered usage · provider connection",
+        "cta": "Back to provider usage",
+        "description": "Continue from the provider-scoped usage view you opened earlier."
+      },
+      "budgetPolicy": {
+        "label": "Filtered usage · budget policy",
+        "cta": "Back to budget-scoped usage",
+        "description": "Continue from the budget-focused usage view you opened earlier."
+      },
+      "filtered": {
+        "label": "Filtered usage",
+        "cta": "Back to filtered usage",
+        "description": "Continue from the filtered usage view you opened earlier."
+      }
+    },
+    "usageEventDetail": {
+      "label": "Usage Event Detail",
+      "cta": "Back to usage event detail",
+      "description": "Continue from the parent usage event you were inspecting."
+    },
+    "budgets": {
+      "label": "Budgets",
+      "cta": "Back to budgets",
+      "description": "Continue from the budgets view you opened earlier."
+    },
+    "auditLogs": {
+      "label": "Audit logs",
+      "cta": "Back to audit logs",
+      "description": "Continue from the audit trail you opened earlier."
+    },
+    "providers": {
+      "label": "Providers",
+      "cta": "Back to providers",
+      "description": "Continue from the providers page you opened earlier."
+    },
+    "virtualKeys": {
+      "label": "Virtual keys",
+      "cta": "Back to virtual keys",
+      "description": "Continue from the virtual keys view you opened earlier."
+    },
+    "projects": {
+      "label": "Projects",
+      "cta": "Back to projects",
+      "description": "Continue from the projects view you opened earlier."
+    },
+    "exports": {
+      "label": "Exports",
+      "cta": "Back to exports",
+      "description": "Continue from the exports view you opened earlier."
+    },
+    "previous": {
+      "label": "Previous page",
+      "cta": "Back to previous page",
+      "description": "Continue from the previous page you opened earlier."
+    }
+  },
+  "savedViews": {
+    "single": "Saved view",
+    "count": "{count, plural, one {# saved view} other {# saved views}}",
+    "countShort": "{count, plural, one {# view} other {# views}}",
+    "saveCurrent": "Save current view",
+    "current": "Current saved view",
+    "viewName": "View name",
+    "namePlaceholder": "Name this view",
+    "renamePlaceholder": "Rename this view",
+    "saving": "Saving...",
+    "updating": "Updating...",
+    "deleting": "Deleting...",
+    "saveFilters": "Save current filters",
+    "updateCurrent": "Update current view",
+    "noticeError": "Error",
+    "noticeSaved": "Saved",
+    "delete": "Delete",
+    "deleteLabel": "Delete view",
+    "deleteDescription": "This removes the saved view reference from the current surface.",
+    "deleteTitle": "Delete saved view “{name}”?",
+    "deleteAria": "Delete saved view {name}",
+    "empty": "No views yet."
+  },
+  "statusCard": {
+    "severity": {
+      "notice": "Notice",
+      "setup": "Setup",
+      "unavailable": "Unavailable"
+    },
+    "missingAuth": {
+      "title": "Page setup is incomplete",
+      "description": "Finish setup first.",
+      "action": "Finish setup."
+    },
+    "loading": {
+      "title": "Still loading",
+      "description": "Data is not ready.",
+      "action": "Refresh."
+    },
+    "missingData": {
+      "title": "Some data is missing",
+      "description": "Some data is unavailable.",
+      "action": "Try again."
+    },
+    "unavailable": {
+      "title": "Service unavailable",
+      "description": "Can't connect right now.",
+      "action": "Refresh."
+    },
+    "pageUnavailable": {
+      "title": "Page unavailable",
+      "description": "Can't load right now.",
+      "action": "Try again."
+    }
+  },
+  "support": {
+    "surface": "Surface",
+    "next": "Next",
+    "nextStep": "Next step",
+    "saved": "Saved",
+    "saveError": "Could not save the session note.",
+    "notesBlocked": "Notes blocked",
+    "unsavedNote": "Unsaved note",
+    "savedNote": "Session note saved",
+    "sessionNote": "Session note",
+    "notePlaceholder": "What changed? What matters next?",
+    "noteActionsHint": "Use Save now or Copy note.",
+    "autoSavingHint": "Saving in this browser session… Press Save now or Ctrl/⌘ + Enter.",
+    "savedInSession": "Saved in session",
+    "savedForSession": "Saved for this session",
+    "savedSummary": "{state} from {surface} at {time}.",
+    "retrySave": "Retry save",
+    "saveNow": "Save now",
+    "clear": "Clear",
+    "copyShiftNote": "Copy shift note",
+    "operatorSupport": "Operator support",
+    "shortcuts": "Shortcuts",
+    "recent": "Recent",
+    "recentAndNotes": "Recent & notes",
+    "notes": "Notes",
+    "open": "Open"
+  },
+  "titles": {
+    "controlCenter": "Control Center",
+    "workspaces": "Workspaces",
+    "providers": "Providers",
+    "virtualKeys": "Virtual Keys",
+    "members": "Members",
+    "exports": "Exports",
+    "budgets": "Budgets",
+    "projects": "Projects",
+    "organizations": "Organizations",
+    "auditLogs": "Audit Logs",
+    "usageEvents": "Usage Events",
+    "usageEventDetail": "Usage Event Detail",
+    "alerts": "Alerts",
+    "alertDetail": "Alert Detail"
+  },
+  "taskLane": {
+    "home": {
+      "label": "Home",
+      "description": "Global queue and operating overview."
+    },
+    "configuration": {
+      "label": "Configuration",
+      "description": "Organizations, workspaces, and providers."
+    },
+    "permissions": {
+      "label": "Permissions",
+      "description": "Projects, members, and key scope."
+    },
+    "operations": {
+      "label": "Operations",
+      "description": "Usage, budgets, and alerts."
+    },
+    "reporting": {
+      "label": "Reporting",
+      "description": "Audit logs and exports."
+    },
+    "workspace": {
+      "label": "Workspace",
+      "description": "Current workspace tools."
+    }
+  },
+  "themes": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "autoLabel": "Auto · {theme}",
+    "systemDescription": "Match device · {theme}",
+    "fixedDescription": "Always {theme}"
+  },
+  "commandPalette": {
+    "placeholder": "Jump to page, workspace, or tool…",
+    "noResults": "No results.",
+    "filter": "Filter",
+    "jump": "Jump",
+    "save": "Save",
+    "focus": "Focus",
+    "go": "Go",
+    "run": "Run",
+    "shortcut": "Shortcut",
+    "openPageInWorkspace": "Open this page in {workspace}",
+    "sections": {
+      "now": "Now",
+      "tools": "Tools",
+      "workspaces": "Workspaces",
+      "saved": "Saved",
+      "shortcuts": "Shortcuts",
+      "pinned": "Pinned",
+      "recent": "Recent"
+    }
+  },
+  "utility": {
+    "preferences": "Preferences",
+    "theme": "Theme",
+    "appName": "ModelYard",
+    "openSearch": "Open search",
+    "openHeaderActions": "Open header actions",
+    "closeNavigation": "Close navigation",
+    "navigation": "Navigation",
+    "primaryNavigation": "Primary navigation",
+    "tryBroaderTerm": "Try a broader term.",
+    "noPages": "No pages",
+    "operatorContext": "Operator context",
+    "skipToContent": "Skip to content",
+    "nextAction": "Next action",
+    "copyLink": "Copy link",
+    "laneLinkCopied": "Lane link copied.",
+    "laneLinkCopyFailed": "Lane link copy failed.",
+    "removeView": "Remove view",
+    "removeViewDescription": "Remove this page from your saved views.",
+    "saveView": "Save view",
+    "saveViewDescription": "Keep this page close for repeat reviews.",
+    "focusOff": "Focus off",
+    "focusOn": "Focus on",
+    "showSupportPanels": "Show support panels.",
+    "hideSupportPanels": "Hide support panels.",
+    "openWorkspaces": "Open workspaces",
+    "topbarAction": "Topbar action",
+    "switchingWorkspaceShort": "Switching workspace",
+    "openingPage": "Opening page",
+    "logOut": "Log out"
+  }
+}

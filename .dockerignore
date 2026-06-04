@@ -1,0 +1,12 @@
+node_modules
+.next
+**/.next
+apps/web-admin/.next
+dist
+**/dist
+.upstream-cache
+.site-inspection
+.site-mirror
+.demo
+.DS_Store
+npm-debug.log

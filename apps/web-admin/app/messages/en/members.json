@@ -1,0 +1,430 @@
+{
+  "Members": "Members",
+  "Status Distribution": "Status Distribution",
+  "Total Members": "Total Members",
+  "Active Operator Trend": "Active Operator Trend",
+  "Demonstration of control-plane activity over time": "Demonstration of control-plane activity over time",
+  "Governance State": "Governance State",
+  "Review Queue Pending": "Review Queue Pending",
+  "Governance Healthy": "Governance Healthy",
+  "reviewItemsNeedAttention": "{count} review items need attention.",
+  "Scoped": "Scoped",
+  "Setup": "Setup",
+  "Select a workspace": "Select a workspace",
+  "Apply filters": "Apply filters",
+  "Reset": "Reset",
+  "Current queue": "Current queue",
+  "Invites": "Invites",
+  "Access reviews": "Access reviews",
+  "Offboarding": "Offboarding",
+  "Invite queue": "Invite queue",
+  "Review queue": "Review queue",
+  "Offboarding queue": "Offboarding queue",
+  "No matching member": "No matching member",
+  "No members yet": "No members yet",
+  "No matching invite": "No matching invite",
+  "No invites yet": "No invites yet",
+  "No matching review item": "No matching review item",
+  "Projects": "Projects",
+  "Review projects": "Review projects",
+  "Bulk disable selected": "Bulk disable selected",
+  "Search people, email, role": "Search people, email, role",
+  "Invite the first member to start reviewing access, role scope, and handoff risk": {
+    "": "Invite the first member to start reviewing access, role scope, and handoff risk."
+  },
+  "Try another queue or clear filters": {
+    " Nothing in {focus} needs attention right now": {
+      "": "Try another queue or clear filters. Nothing in {focus} needs attention right now."
+    },
+    " Nothing in {focus} is visible now": {
+      "": "Try another queue or clear filters. Nothing in {focus} is visible now."
+    }
+  },
+  "Role scope": "Role scope",
+  "Project scope": "Project scope",
+  "Review priority": "Review priority",
+  "Initial project scope": "Initial project scope",
+  "Open workspaces": "Open workspaces",
+  "Open organizations": "Open organizations",
+  "Showing {members} members in view · {queues} queue items need review": {
+    "": "Showing {members} members in view · {queues} queue items need review."
+  },
+  "Showing {members} members · {queue} queue items need review": {
+    "": "Showing {members} members · {queue} queue items need review."
+  },
+  "View audit": "Open audit log",
+  "Roles": "Roles",
+  "Member": "Member",
+  "Access": "Access",
+  "Activity": "Recent activity",
+  "Review": "Review",
+  "Actions": "Actions",
+  "Pending invites": "Pending invites",
+  "View alerts": "View alerts",
+  "Review expired grants": "Review expired grants",
+  "Review broad roles": "Review broad roles",
+  "Fix project scope": "Fix project scope",
+  "Open invite queue": "Open invite queue",
+  "Review temporary grants": "Review temporary grants",
+  "Resolve expired temporary access": "Resolve expired temporary access",
+  "Review dormant broad access": "Review dormant broad access",
+  "Close scoped role gaps": "Close scoped role gaps",
+  "Clean up pending invites": "Clean up pending invites",
+  "Created": "Created",
+  "Updated": "Updated",
+  "Deleted": "Deleted",
+  "Error": "Error",
+  "Not observed": "Not observed",
+  "persistent": "persistent",
+  "expired": "expired",
+  "expiring soon": "expiring soon",
+  "temporary": "temporary",
+  "disabled": "disabled",
+  "pending invite": "pending invite",
+  "empty scope": "empty scope",
+  "scoped access": "scoped access",
+  "workspace-wide": "workspace-wide",
+  "no permission": "no permission",
+  "offboarding": "offboarding",
+  "stale invite": "stale invite",
+  "awaiting activation": "awaiting activation",
+  "expired access": "expired access",
+  "scope gap": "scope gap",
+  "Workspace-wide role": {
+    "": "Workspace-wide role."
+  },
+  "No role assigned": "No role assigned",
+  "No permission assigned.": "No permission assigned.",
+  "Project-scoped role with no assignments": {
+    "": "Project-scoped role with no assignments."
+  },
+  "{count} scoped projects": {
+    "": "{count} scoped projects."
+  },
+  "Workspace-wide permissions": "Workspace-wide permissions",
+  "message": {
+    "invited": "Invited member.",
+    "createdActive": "Added active member.",
+    "updated": "Updated member.",
+    "removed": "Removed member.",
+    "assignmentWarning": "Project assignments could not be fully synced.",
+    "bulkDisable": {
+      "noSelection": "Select at least one member to disable.",
+      "success": "Disabled selected members.",
+      "partial": "Disabled some members; a few failed.",
+      "allFailed": "Unable to disable the selected members."
+    }
+  },
+  "activity": {
+    "unknownAge": "unknown age",
+    "today": "today",
+    "oneDayAgo": "1 day ago",
+    "daysAgo": "{days} days ago",
+    "noActivity": {
+      "label": "no activity",
+      "summary": "No control-plane sessions observed yet."
+    },
+    "recent": {
+      "label": "recently active",
+      "summary": "Seen within 7 days."
+    },
+    "aging": {
+      "label": "aging activity",
+      "summary": "Last seen over a week ago."
+    },
+    "dormant": {
+      "label": "dormant",
+      "summary": "No activity in over 30 days."
+    }
+  },
+  "temporaryAccess": {
+    "scheduledExpiry": "scheduled expiry",
+    "persistent": {
+      "label": "persistent",
+      "summary": "No temporary expiry is set."
+    },
+    "expired": {
+      "label": "expired",
+      "summary": "Expired {age}."
+    },
+    "expiringSoon": {
+      "label": "expiring soon",
+      "summary": "Expires in {days} days."
+    },
+    "temporary": {
+      "label": "temporary",
+      "summary": "Active until {time}."
+    }
+  },
+  "effectiveAccess": {
+    "noPermission": {
+      "label": "No permission",
+      "summary": "No role is assigned, so this member cannot access the console."
+    },
+    "disabled": {
+      "label": "disabled",
+      "summary": "Disabled across the workspace."
+    },
+    "pendingInvite": {
+      "label": "pending invite",
+      "summary": "Awaiting invite acceptance."
+    },
+    "expiredTemporary": {
+      "label": "temporary access expired",
+      "summary": "Temporary access elapsed; disable or renew."
+    },
+    "workspaceWide": {
+      "label": "workspace-wide",
+      "summary": "Effective across the workspace."
+    },
+    "emptyScope": {
+      "label": "empty scope",
+      "summary": "No assigned projects yet."
+    },
+    "scoped": {
+      "label": "{count} scoped projects",
+      "summary": "Limited to {count} assigned projects."
+    }
+  },
+  "memberMeta": {
+    "created": "created {age}",
+    "updated": "updated {age}"
+  },
+  "Directory": "Directory",
+  "Roster": "Roster",
+  "Member directory": "Member directory",
+  "Search members": "Search members",
+  "Name, email, role, project": "Name, email, role, project",
+  "Status": "Status",
+  "Role": "Role",
+  "Apply": "Apply",
+  "Views": "Views",
+  "all": "all",
+  "active": "active",
+  "all roles": "all roles",
+  "review now": "review now",
+  "{pending} pending · {stale} stale": "{pending} pending · {stale} stale",
+  "{pending} pending": "{pending} pending",
+  "{count} need review": "{count} need review",
+  "{count} selectable memberships": "{count} selectable memberships",
+  "{count} visible": "{count} visible",
+  "This will disable every selected active membership in one step": {
+    "": "This will disable every selected active membership in one step."
+  },
+  "Disable selected members": "Disable selected members",
+  "Disable {count} selected members?": "Disable {count} selected members?",
+  "Disabling": {
+    "": {
+      "": {
+        "": "Disabling..."
+      }
+    }
+  },
+  "Open roster": "Open roster",
+  "Queue is clear": "Queue is clear",
+  "Try a broader filter set": {
+    " No member currently matches the offboarding view": {
+      "": "Try a broader filter set. No member currently matches the offboarding view."
+    },
+    " No member currently matches the roster filters": {
+      "": "Try a broader filter set. No member currently matches the roster filters."
+    }
+  },
+  "Edit member": "Edit member",
+  "Access and assignments": "Access and assignments",
+  "Name": "Name",
+  "Lifecycle": "Lifecycle",
+  "Login": "Last login",
+  "Last login": "Last login",
+  "Last active": "Recent activity",
+  "Access boundary": "Access boundary",
+  "Assigned projects": "Assigned projects",
+  "Ignored for workspace-wide roles": "Not used for workspace-wide roles",
+  "Project scope isn't used for this role": "Project scope isn't used for this role",
+  "This workspace-wide role doesn't use project assignments.": "This workspace-wide role doesn't use project assignments.",
+  "No projects available": {
+    "": "No projects available."
+  },
+  "Permissions": "Permissions",
+  "Save changes": "Save changes",
+  "Saving changes...": {
+    "": {
+      "": {
+        "": "Saving changes..."
+      }
+    }
+  },
+  "This will remove the member from the workspace and end access through this console": {
+    "": "This will remove the member from the workspace and end access through this console."
+  },
+  "Remove member": "Remove member",
+  "Remove {name}?": "Remove {name}?",
+  "Removing": {
+    "": {
+      "": {
+        "": "Removing..."
+      }
+    }
+  },
+  "Next review": "Next review",
+  "Open invite form": "Open invite form",
+  "Add member manually": "Create active member",
+  "Email": "Email",
+  "Temporary access ends": "Temporary access ends",
+  "Directly create an active workspace member": {
+    "": "Directly create an active workspace member."
+  },
+  "Create active member": "Create active member",
+  "Creating member": {
+    "": {
+      "": {
+        "": "Creating member..."
+      }
+    }
+  },
+  "Sending invite": {
+    "": {
+      "": {
+        "": "Sending invite..."
+      }
+    }
+  },
+  "Send invite": "Send invite",
+  "Try another filter set": {
+    " No invite currently matches this queue": {
+      "": "Try another filter set. No invite currently matches this queue."
+    }
+  },
+  "Try another review queue or clear filters": {
+    " Nothing currently matches this review view": {
+      "": "Try another review queue or clear filters. Nothing currently matches this review view."
+    }
+  },
+  "Send the first invite to start provisioning operator access": {
+    "": "Send the first invite to start provisioning operator access."
+  },
+  "Invite the first member to start reviewing access and role fit": {
+    "": "Invite the first member to start reviewing access and role fit."
+  },
+  "No workspace selected": "No workspace selected",
+  "stale invites": "stale invites",
+  "scope gaps": "scope gaps",
+  "expired temporary access": "expired temporary access",
+  "expiring temporary access": "expiring temporary access",
+  "dormant broad access": "dormant broad access",
+  "broad access": "broad access",
+  "disabled cleanup": "disabled cleanup",
+  "{count} active memberships already passed the temporary access window and should be renewed or disabled before the next shift change": {
+    "": "{count} active memberships already passed the temporary access window and should be renewed or disabled before the next shift change."
+  },
+  "{count} workspace-wide memberships still grant broad control-plane access without recent activity": {
+    "": "{count} workspace-wide memberships still grant broad control-plane access without recent activity."
+  },
+  "Open offboarding review": "Open offboarding review",
+  "{count} active scoped memberships have no assigned projects, so the access model is configured but not actually usable": {
+    "": "{count} active scoped memberships have no assigned projects, so the access model is configured but not actually usable."
+  },
+  "{count} invites have been sitting for at least a week and should be confirmed, re-sent, or disabled": {
+    "": "{count} invites have been sitting for at least a week and should be confirmed, re-sent, or disabled."
+  },
+  "Renew temporary access before it lapses": "Renew temporary access before it lapses",
+  "{count} temporary grants will expire soon enough to queue action now instead of waiting for an interruption": {
+    "": "{count} temporary grants will expire soon enough to queue action now instead of waiting for an interruption."
+  },
+  "Run a broad access review": "Run a broad access review",
+  "{count} active memberships still operate with workspace-wide permissions": {
+    "": "{count} active memberships still operate with workspace-wide permissions."
+  },
+  "renew soon": "renew soon",
+  "healthy": "healthy",
+  "Temporary access already elapsed, but the membership is still marked active": {
+    "": "Temporary access already elapsed, but the membership is still marked active."
+  },
+  "nextStepDisableExpiredAccess": {
+    "": "Disable the member now or renew the temporary window before the next operator handoff."
+  },
+  "Workspace-wide access is still active even though no recent control-plane activity has been seen": {
+    "": "Workspace-wide access is still active even though no recent control-plane activity has been seen."
+  },
+  "nextStepReduceBroadAccess": {
+    "": "Confirm ownership, reduce the role scope, or disable the member if the access lane is no longer needed."
+  },
+  "The invite has been waiting for at least a week and should not stay unattended": {
+    "": "The invite has been waiting for at least a week and should not stay unattended."
+  },
+  "nextStepResendInvite": {
+    "": "Re-send the invite, confirm the requested role is still needed, or disable the membership before it drifts."
+  },
+  "Temporary access is still valid, but the expiry window is now close enough to queue follow-up work": {
+    "": "Temporary access is still valid, but the expiry window is now close enough to queue follow-up work."
+  },
+  "nextStepRenewAccessWindow": {
+    "": "Renew the access window or plan the disable date before the grant silently drops during active work."
+  },
+  "summaryWorkspaceWideRole": "This role keeps workspace-wide access and should be reviewed periodically.",
+  "nextStepReviewWorkspaceWideRole": "Confirm whether this member still needs workspace-wide access or should move into a scoped role.",
+  "The access path is already disabled and only needs cleanup or retention review": {
+    "": "The access path is already disabled and only needs cleanup or retention review."
+  },
+  "nextStepKeepMembershipForAudit": {
+    "": "Keep the membership for audit continuity or remove it when the offboarding checklist is complete."
+  },
+  "summaryInvitePending": {
+    "": "The invite is pending, but it has not aged into a follow-up queue yet."
+  },
+  "nextStepLeaveInviteInFlight": {
+    "": "Leave the invite in flight or pre-stage the final project scope before the user accepts it."
+  },
+  "This membership looks operationally healthy for the current role, scope, and activity profile": {
+    "": "This membership looks operationally healthy for the current role, scope, and activity profile."
+  },
+  "nextStepNoImmediateAction": {
+    "": "No immediate action is required beyond routine role and activity review."
+  },
+  "Members needing project assignment": "Members needing project assignment",
+  "{count} scoped memberships still need at least one assigned project before the workspace setup is complete": {
+    "": "{count} scoped memberships still need at least one assigned project before the workspace setup is complete."
+  },
+  "Open assignment queue": "Open assignment queue",
+  "Back to setup": "Back to setup",
+  "Assign {project} access to {member}": "Assign {project} access to {member}",
+  "Assign projects to {member}": "Assign projects to {member}",
+  "Assign members to {project}": "Assign members to {project}",
+  "Assign projects": "Assign projects",
+  "Select project access for this member before continuing.": "Select project access for this member before continuing.",
+  "Choose the projects this scoped member can access, then continue setup": {
+    "": "Choose the projects this scoped member can access, then continue setup."
+  },
+  "No role is assigned to this member, so control-plane access is fully blocked.": "No role is assigned to this member, so control-plane access is fully blocked.",
+  "Assign at least one role before expecting this member to sign in or receive access.": "Assign at least one role before expecting this member to sign in or receive access.",
+  "Choose a scoped member to grant access to this project": {
+    "": "Choose a scoped member to grant access to this project."
+  },
+  "Choose a scoped member and finish the remaining project assignments": {
+    "": "Choose a scoped member and finish the remaining project assignments."
+  },
+  "{count} assigned": "{count} assigned",
+  "recommended": "recommended",
+  "Create a project first so scoped members can be assigned": {
+    "": "Create a project first so scoped members can be assigned."
+  },
+  "Saving project access": {
+    "": {
+      "": {
+        "": "Saving project access..."
+      }
+    }
+  },
+  "Save project access": "Save project access",
+  "Cancel": "Cancel",
+  "Invite or activate a scoped member before assigning this project": {
+    "": "Invite or activate a scoped member before assigning this project."
+  },
+  "All scoped members already have project assignments": {
+    "": "All scoped members already have project assignments."
+  },
+  "No eligible members": "No eligible members",
+  "Assignment queue is clear": "Assignment queue is clear",
+  "Assign now": "Assign now",
+  "Edit access": "Edit access"
+}

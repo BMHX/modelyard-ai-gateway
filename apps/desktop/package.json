@@ -1,0 +1,15 @@
+{
+  "name": "@teamops/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "main.mjs",
+  "scripts": {
+    "dev": "electron ./main.mjs",
+    "start": "electron ./main.mjs",
+    "start:prod": "NODE_ENV=production electron ./main.mjs"
+  },
+  "devDependencies": {
+    "electron": "^37.3.1"
+  }
+}

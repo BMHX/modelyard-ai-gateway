@@ -1,0 +1,26 @@
+{
+  "name": "@teamops/database",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "production": "./dist/index.js",
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "db:migrate": "node --import tsx ./src/migrate.ts",
+    "demo:reset": "node --import tsx ./src/demo-reset.ts",
+    "demo:seed": "node --import tsx ./src/demo-seed.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.4.4",
+    "@teamops/config": "0.1.0",
+    "@teamops/contracts": "0.1.0",
+    "pg": "^8.16.3"
+  }
+}

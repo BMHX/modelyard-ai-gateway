@@ -1,0 +1,24 @@
+{
+  "name": "@teamops/control-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "TEAMOPS_ENV=development node --watch --import tsx ./src/server.ts",
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "start": "TEAMOPS_ENV=development node --import tsx ./src/server.ts",
+    "start:prod": "TEAMOPS_ENV=production NODE_ENV=production NODE_OPTIONS=\"${NODE_OPTIONS:-} --conditions=production\" node ./dist/apps/control-api/src/server.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --import tsx --test src/*.test.ts src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@teamops/config": "0.1.0",
+    "@teamops/contracts": "0.1.0",
+    "@teamops/database": "0.1.0",
+    "@teamops/export-jobs": "0.1.0",
+    "fastify": "^5.6.0",
+    "jose": "^6.2.2",
+    "redis": "^5.12.1"
+  }
+}

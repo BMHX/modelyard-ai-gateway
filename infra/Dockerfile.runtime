@@ -1,0 +1,59 @@
+FROM node:22-alpine AS builder
+
+WORKDIR /app
+
+ENV NEXT_TELEMETRY_DISABLED=1
+
+ARG TEAMOPS_LINEAGE_PROFILE=""
+ARG TEAMOPS_LINEAGE_CUSTOMER=""
+ARG TEAMOPS_LINEAGE_DEPLOYMENT=""
+ARG TEAMOPS_LINEAGE_RELEASE=""
+ARG TEAMOPS_LINEAGE_SECRET=""
+ARG TEAMOPS_LINEAGE_CHANNEL="self-host"
+ARG TEAMOPS_LINEAGE_REQUIRED="0"
+
+ENV TEAMOPS_LINEAGE_PROFILE=${TEAMOPS_LINEAGE_PROFILE}
+ENV TEAMOPS_LINEAGE_CUSTOMER=${TEAMOPS_LINEAGE_CUSTOMER}
+ENV TEAMOPS_LINEAGE_DEPLOYMENT=${TEAMOPS_LINEAGE_DEPLOYMENT}
+ENV TEAMOPS_LINEAGE_RELEASE=${TEAMOPS_LINEAGE_RELEASE}
+ENV TEAMOPS_LINEAGE_SECRET=${TEAMOPS_LINEAGE_SECRET}
+ENV TEAMOPS_LINEAGE_CHANNEL=${TEAMOPS_LINEAGE_CHANNEL}
+ENV TEAMOPS_LINEAGE_REQUIRED=${TEAMOPS_LINEAGE_REQUIRED}
+
+COPY package.json package-lock.json tsconfig.base.json ./
+COPY apps/control-api/package.json apps/control-api/package.json
+COPY apps/export-worker/package.json apps/export-worker/package.json
+COPY apps/gateway/package.json apps/gateway/package.json
+COPY apps/web-admin/package.json apps/web-admin/package.json
+COPY packages/config/package.json packages/config/package.json
+COPY packages/contracts/package.json packages/contracts/package.json
+COPY packages/database/package.json packages/database/package.json
+COPY packages/export-jobs/package.json packages/export-jobs/package.json
+
+RUN npm ci
+
+COPY . .
+
+RUN npm run build:web-admin \
+  && npm run build:control-api \
+  && npm run build:export-worker \
+  && npm run build:gateway
+
+FROM node:22-alpine AS runtime
+
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
+RUN mkdir -p /var/lib/teamops/exports \
+  && chown -R node:node /var/lib/teamops
+
+COPY --from=builder /app /app
+
+RUN npm prune --omit=dev \
+  && npm cache clean --force
+
+USER node
+
+CMD ["npm", "run", "start:prod:control-api"]

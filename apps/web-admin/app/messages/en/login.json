@@ -1,0 +1,50 @@
+{
+  "title": "Sign in",
+  "description": {
+    "development": "Use a local test account for development. Continue with OIDC only when your organization already has a configured identity provider.",
+    "oidc": "Use your organization slug to start the control-plane OIDC login flow."
+  },
+  "presets": {
+    "title": "Test presets",
+    "description": {
+      "development": "Click a preset to fill the seeded org slug, or use the action button to sign in instantly.",
+      "oidc": "Fill a seeded demo organization slug with one click, then continue with OIDC."
+    },
+    "directSignIn": "Test sign in",
+    "accountLabel": "Test account",
+    "directSignInNotice": "Direct test sign-in is only enabled in local or non-production environments."
+  },
+  "fields": {
+    "organizationSlug": "Organization slug"
+  },
+  "actions": {
+    "continueConfiguredOidc": "Continue with configured OIDC",
+    "continueOidc": "Continue with OIDC",
+    "continueOidcPending": "Redirecting to identity provider…"
+  },
+  "errors": {
+    "startHint": "The organization slug was submitted, but the OIDC flow could not be started for this organization.",
+    "callbackHint": "The organization slug was accepted. The failure happened after the identity provider redirected back.",
+    "codeLabel": "Code",
+    "requestIdLabel": "Request ID",
+    "correlationIdLabel": "Correlation ID"
+  },
+  "presetItems": {
+    "aliceAdmin": {
+      "label": "Alice Admin",
+      "helper": "Workspace admin demo"
+    },
+    "bobDeveloper": {
+      "label": "Bob Developer",
+      "helper": "Developer scope demo"
+    },
+    "opsInternal": {
+      "label": "Ops Lead",
+      "helper": "Internal operations demo"
+    },
+    "financeViewer": {
+      "label": "Finance Analyst",
+      "helper": "Developer access demo"
+    }
+  }
+}

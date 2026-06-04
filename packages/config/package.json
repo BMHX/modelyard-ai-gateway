@@ -1,0 +1,24 @@
+{
+  "name": "@teamops/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "production": "./dist/index.js",
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "env:check": "node --import tsx ./src/check-env.ts",
+    "env:check:dev": "TEAMOPS_ENV=development node --import tsx ./src/check-env.ts",
+    "env:check:prod": "TEAMOPS_ENV=production node --import tsx ./src/check-env.ts",
+    "test": "node --import tsx --test src/*.test.ts src/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  }
+}

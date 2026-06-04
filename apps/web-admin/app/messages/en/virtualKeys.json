@@ -1,0 +1,317 @@
+{
+  "Virtual Keys": "Virtual Keys",
+  "Risk Distribution": "Risk Distribution",
+  "Total Keys": "Total Keys",
+  "Key Issuance Trend": "Key Issuance Trend",
+  "Demonstration of activity over time": "Demonstration of activity over time",
+  "Inventory Posture": "Inventory Posture",
+  "Active": "Active",
+  "Expiring soon": "Expiring soon",
+  "Workspace-wide": "Workspace-wide",
+  "Choose a workspace to inspect key inventory": {
+    "": "Choose a workspace to inspect key inventory."
+  },
+  "Workspace scope": "Workspace scope",
+  "Select a workspace": "Select a workspace",
+  "Workspace": "Workspace",
+  "Apply scope": "Apply scope",
+  "Workspace required": "Workspace required",
+  "Open workspaces": "Open workspaces",
+  "Provider route required": "Provider route required",
+  "Expiry pressure": "Expiry pressure",
+  "Dormant broad access": "Dormant broad access",
+  "Broad access present": "Broad access present",
+  "No active inventory": "No active inventory",
+  "Stable posture": "Stable posture",
+  "Connect one active provider route before issuing or rotating keys": {
+    "": "Connect one active provider route before issuing or rotating keys."
+  },
+  "Issue the first scoped key once provider routing is ready": {
+    "": "Issue the first scoped key once provider routing is ready."
+  },
+  "Key inventory is scoped and healthy in the current window": {
+    "": "Key inventory is scoped and healthy in the current window."
+  },
+  "Selection and bulk actions": "Selection and bulk actions",
+  "Select visible": "Select visible",
+  "Clear selection": "Clear selection",
+  "Clear": "Clear",
+  "Bulk rotate": "Bulk rotate",
+  "Bulk revoke": "Bulk revoke",
+  "Reset filters": "Reset filters",
+  "Show all keys": "Show all keys",
+  "No virtual keys in this scope": "No virtual keys in this scope",
+  "No virtual keys match the current filters": {
+    "": "No virtual keys match the current filters."
+  },
+  "Issue the first virtual key": "Issue the first virtual key",
+  "Issue virtual key": "Issue virtual key",
+  "Secondary action": "Secondary action",
+  "Page window: {start}-{end} of {total}": "Page window: {start}-{end} of {total}",
+  "Previous page": "Previous page",
+  "Next page": "Next page",
+  "Audit trail": "Audit trail",
+  "Export logs": "Export logs",
+  "Visible {visible} · {active} active · {expiring} expiring soon": "Visible {visible} · {active} active · {expiring} expiring soon",
+  "Selected {selected} · {rotatable} rotatable · {revocable} revocable": "Selected {selected} · {rotatable} rotatable · {revocable} revocable",
+  "{loaded} loaded on this page": {
+    "": "{loaded} loaded on this page."
+  },
+  "{selected} selected": "{selected} selected",
+  "{rotatable} rotatable · {revocable} revocable": "{rotatable} rotatable · {revocable} revocable",
+  "Select rows to keep bulk actions close to the table": {
+    "": "Select rows to keep bulk actions close to the table."
+  },
+  "Workspace default": "Workspace default",
+  "All keys": "All keys",
+  "Status": "Status",
+  "All statuses": "All statuses",
+  "Active and usable": "Active and usable",
+  "Expired": "Expired",
+  "Revoked": "Revoked",
+  "Never used": "Never used",
+  "Binding": "Binding",
+  "Any binding": "Any binding",
+  "Project scoped": "Project scoped",
+  "Environment bound": "Environment bound",
+  "Risk": "Risk",
+  "Create virtual key": "Create virtual key",
+  "Issue another": "Issue another",
+  "Creating": {
+    "": {
+      "": {
+        "": "Creating..."
+      }
+    }
+  },
+  "Label, owner, team, service, prefix": "Label, owner, team, service, prefix",
+  "Provider connection": "Provider connection",
+  "Select active provider": "Select active provider",
+  "Owner": "Owner",
+  "Team": "Team",
+  "Service": "Service",
+  "Project": "Project",
+  "Environment": "Environment",
+  "Runtime": "Runtime",
+  "Recommended presets": "Recommended presets",
+  "Selected preset": "Selected preset",
+  "Apply preset": "Apply preset",
+  "Core fields": "Core fields",
+  "Binding and runtime": "Binding and runtime",
+  "Access policy": "Access policy",
+  "Advanced configuration": "Advanced configuration",
+  "Advanced scopes": "Advanced scopes",
+  "Scopes": "Scopes",
+  "Expires at": "Expires at",
+  "Cancel": "Cancel",
+  "Actions": "Actions",
+  "Attribution": "Attribution",
+  "Expires": "Expires",
+  "Last used": "Last used",
+  "Select": "Select",
+  "Token": "Token",
+  "Prefix": "Prefix",
+  "Providers": "Providers",
+  "Audit": "Audit",
+  "Usage": "Usage",
+  "Rotate": "Rotate",
+  "Revoke": "Revoke",
+  "Dismiss": "Dismiss",
+  "Copy token": "Copy token",
+  "Copy prefix": "Copy prefix",
+  "Open provider connections": "Open provider connections",
+  "Filter virtual keys": "Filter virtual keys",
+  "Search": "Search",
+  "No expiry": "No expiry",
+  "No environment binding": "No environment binding",
+  "Workspace-wide access": "Workspace-wide access",
+  "Choose the closest issuance path, then adjust only the fields that differ.": "Choose the closest issuance path, then adjust only the fields that differ.",
+  "Fill the minimum needed to issue a key. Attribution and binding stay available below.": "Fill the minimum needed to issue a key. Attribution and binding stay available below.",
+  "Keep owner and workload tags stable so search, audit, and chargeback stay usable.": "Keep owner and workload tags stable so search, audit, and chargeback stay usable.",
+  "Bind as narrowly as possible. Environment binding takes priority and locks runtime automatically.": "Bind as narrowly as possible. Environment binding takes priority and locks runtime automatically.",
+  "Preset defaults are editable. Most issuance flows only need expiry; scopes are for exceptions.": "Preset defaults are editable. Most issuance flows only need expiry; scopes are for exceptions.",
+  "Runtime follows the selected environment.": "Runtime follows the selected environment.",
+  "Choose an environment to lock runtime automatically.": "Choose an environment to lock runtime automatically.",
+  "Only active projects and environments are available for new keys": {
+    " Existing archived bindings stay visible in the inventory below": {
+      "": "Only active projects and environments are available for new keys. Existing archived bindings stay visible in the inventory below."
+    }
+  },
+  "Other scopes are stored as descriptive tags": {
+    "": "Other scopes are stored as descriptive tags."
+  },
+  "Unassigned owner": "Unassigned owner",
+  "No team or service": "No team or service",
+  "Rotating": {
+    "": {
+      "": {
+        "": "Rotating..."
+      }
+    }
+  },
+  "Revoking": {
+    "": {
+      "": {
+        "": "Revoking..."
+      }
+    }
+  },
+  "Filter": "Filter",
+  "maskedKeyFragment": "Masked key fragment",
+  "scopeInputPlaceholder": "Optional, e.g. gateway:models, qa",
+  "scopeRemove": "Remove {scope}",
+  "table": {
+    "scopeCount": "{count} scopes"
+  },
+  "runtime": {
+    "unset": "unset",
+    "development": "development",
+    "staging": "staging",
+    "production": "production"
+  },
+  "expiry": {
+    "daysLeft": {
+      "one": "{days} day left",
+      "other": "{days} days left"
+    }
+  },
+  "status": {
+    "active": "Active",
+    "revoked": "Revoked"
+  },
+  "binding": {
+    "boundProviderUnavailable": "Bound provider unavailable",
+    "legacyWorkspaceRouting": "Provider binding required",
+    "providerBindingRequired": "Requires provider binding",
+    "unbound": "unbound",
+    "unknownProject": "Unknown project",
+    "unknownEnvironment": "Unknown environment ({runtime})"
+  },
+  "risk": {
+    "retired": {
+      "label": "retired",
+      "summary": "Revoked."
+    },
+    "expired": {
+      "label": "expired",
+      "summary": "Expired. Rotate or reissue."
+    },
+    "expiringSoon": {
+      "label": "expiring soon",
+      "summary": "Expiring soon."
+    },
+    "providerBindingRequired": {
+      "label": "provider binding required",
+      "summary": "Reissue or update this key with an explicit access target."
+    },
+    "dormantWideAccess": {
+      "label": "dormant wide-access",
+      "summary": "Wide + idle."
+    },
+    "neverUsed": {
+      "label": "never used",
+      "summary": "Unused."
+    },
+    "workspaceWideActive": {
+      "label": "workspace-wide active",
+      "summary": "Wide access."
+    },
+    "healthy": {
+      "label": "healthy",
+      "summary": "Scoped."
+    }
+  },
+  "posture": {
+    "lanes": {
+      "missingProvider": {
+        "title": "Provider route required",
+        "detail": "Connect one active provider route before issuing or rotating keys."
+      },
+      "expiry": {
+        "title": "Expiry pressure",
+        "detail": "{count} active keys expire within 14 days."
+      },
+      "cleanup": {
+        "title": "Dormant broad access",
+        "detail": "{count} workspace-wide keys are idle and still broad."
+      },
+      "scope": {
+        "title": "Broad access present",
+        "detail": "{count} active keys still span the whole workspace."
+      },
+      "issue": {
+        "title": "No active inventory",
+        "detail": "Issue the first scoped key once provider routing is ready."
+      },
+      "healthy": {
+        "title": "Stable posture",
+        "detail": "Key inventory is scoped and healthy in the current window."
+      }
+    }
+  },
+  "presets": {
+    "humanSession": {
+      "title": "Shared tool",
+      "summary": "7d expiry."
+    },
+    "serviceBot": {
+      "title": "Service bot",
+      "summary": "30d expiry."
+    },
+    "productionRuntime": {
+      "title": "Production runtime",
+      "summary": "gateway:* scope."
+    }
+  },
+  "issuance": {
+    "hiddenArchived": "Hidden from new issuance: {projects} archived projects and {environments} archived environments.",
+    "noProviders": "Create an active provider connection first so this virtual key can bind to a concrete upstream credential.",
+    "newTokenFor": "New token for {label}"
+  },
+  "confirm": {
+    "bulkRevoke": {
+      "description": "This will revoke every currently eligible selected key in one step.",
+      "title": "Revoke {count} selected keys?"
+    },
+    "revoke": {
+      "description": "This key will stop working immediately in the gateway.",
+      "label": "Revoke key",
+      "title": "Revoke {label}?"
+    }
+  },
+  "emptyState": {
+    "issueFirstScoped": "Issue one scoped key to start the inventory.",
+    "connectProviderFirst": "Connect one provider route before issuing keys.",
+    "issueKey": "Issue key",
+    "openIssuance": "Open issuance"
+  },
+  "actions": {
+    "create": {
+      "success": "Virtual key created. Copy the token now because it will not be shown again."
+    },
+    "revoke": {
+      "success": "Virtual key revoked."
+    },
+    "rotate": {
+      "success": "Virtual key rotated. Copy the new token now because it will not be shown again."
+    },
+    "bulkRevoke": {
+      "noneSelected": "Select at least one virtual key to revoke.",
+      "selectEligible": "Select at least one non-revoked key to revoke.",
+      "noneSucceeded": "None of the selected virtual keys could be revoked.",
+      "success": "Revoked {count} virtual keys.",
+      "partial": "Revoked {count} virtual keys; {failed} failed."
+    },
+    "bulkRotate": {
+      "noneSelected": "Select at least one virtual key to rotate.",
+      "selectEligible": "Select at least one active, unexpired key to rotate.",
+      "noneSucceeded": "None of the selected virtual keys could be rotated.",
+      "success": "Rotated {count} virtual keys. Copy the new tokens now because they will not be shown again.",
+      "partial": "Rotated {count} virtual keys; {failed} failed."
+    }
+  },
+  "Label": "Label",
+  "Enforced gateway scopes:": "Enforced gateway scopes:",
+  "Dormant wide access": "Dormant wide access",
+  "Workspace-wide active": "Workspace-wide active"
+}

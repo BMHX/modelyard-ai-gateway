@@ -1,0 +1,283 @@
+{
+  "title": "首页",
+  "serviceStatus": {
+    "label": "服务状态",
+    "degradedBadge": "降级",
+    "degradedDescription": "主页暂时降级",
+    "syncingBadge": "同步中",
+    "syncingDescription": "正在刷新工作区访问上下文后加载首页。",
+    "syncingMessage": "正在同步工作区访问上下文。",
+    "refresh": "刷新"
+  },
+  "changeWorkspace": "更换工作区",
+  "contextSummary": {
+    "noOrganization": "请先创建组织根节点。",
+    "noWorkspace": "先添加一个工作区以开始治理访问。",
+    "pickWorkspace": "为本次会话选择一个工作区。"
+  },
+  "setup": {
+    "workspaceLabel": "工作区",
+    "card": {
+      "title": {
+        "organizationRequired": "需要组织",
+        "workspaceRequired": "需要工作区",
+        "chooseWorkspace": "选择工作区"
+      },
+      "description": {
+        "organizationRequired": "创建第一个组织根节点。",
+        "workspaceRequired": "在开启治理访问前创建一个工作区。",
+        "chooseWorkspace": "为本次会话选择一个工作区。"
+      }
+    },
+    "button": {
+      "createOrganization": "创建组织",
+      "createWorkspace": "创建工作区",
+      "useWorkspace": "使用工作区"
+    }
+  },
+  "primaryAction": {
+    "connectProvider": {
+      "title": "连接第一个供应商",
+      "description": "在颁发密钥前先添加一条供应商路由。",
+      "cta": "打开供应商"
+    },
+    "retestRoutes": {
+      "title": "{count, plural, one {重新测试 # 条供应商路由} other {重新测试 # 条供应商路由}}",
+      "description": "检查失败或未测试的路由。",
+      "cta": "检查路由"
+    },
+    "issueFirstKey": {
+      "title": "签发第一个范围密钥",
+      "description": "在供应商路由准备就绪后为工作区创建密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewExpiringKeys": {
+      "title": "{count, plural, one {审查 # 个即将过期的密钥} other {审查 # 个即将过期的密钥}}",
+      "description": "轮换或替换即将过期的激活密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewDormantKeys": {
+      "title": "{count, plural, one {审查 # 个广域访问密钥} other {审查 # 个广域访问密钥}}",
+      "description": "收紧未使用但仍有广泛权限的密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewBlockedRequests": {
+      "title": "{count, plural, one {审查 # 个被阻止的请求} other {审查 # 个被阻止的请求}}",
+      "description": "在扩大访问前检查使用失败。",
+      "cta": "查看使用情况"
+    },
+    "reviewErroredRequests": {
+      "title": "{count, plural, one {审查 # 个出错的请求} other {审查 # 个出错的请求}}",
+      "description": "在扩大访问前检查使用失败。",
+      "cta": "查看使用情况"
+    },
+    "reviewAuditTrail": {
+      "title": "审查审计记录",
+      "description": "控制平面最近的更改已准备好审查。",
+      "cta": "打开审计日志"
+    },
+    "footerActionLabel": "打开导出"
+  },
+  "inbox": {
+    "title": "待处理事项",
+    "description": "正在处理的任务与最新变更。",
+    "primaryItemsTitle": "下一步操作",
+    "secondaryItemsTitle": "最近更改",
+    "badge": {
+      "critical": "阻断",
+      "warning": "需关注",
+      "neutral": "待处理",
+      "audit": "审计"
+    },
+    "open": "打开"
+  },
+  "recent": {
+    "blockedRequest": "被阻止的请求",
+    "erroredRequest": "出错的请求",
+    "usageLabel": "使用情况",
+    "unknownModel": "未知模型",
+    "unknownProvider": "未知供应商",
+    "tokens": "令牌"
+  },
+  "overview": {
+    "usage": "使用情况",
+    "budgets": "预算",
+    "success": "成功",
+    "overview": "概览",
+    "unavailable": "暂不可用",
+    "summaryUnavailable": "工作区摘要暂时不可用。",
+    "eventsLabel": "事件",
+    "blocked": "阻止",
+    "openAlerts": "待处理告警",
+    "stable": "稳定",
+    "waitingForTraffic": "等待流量"
+  },
+  "dashboard": {
+    "trendTitle": "用量趋势",
+    "noTrendData": "当前窗口暂无流量。",
+    "totalSpend": "总支出",
+    "totalRequests": "总请求数",
+    "blocked": "被阻止",
+    "error": "出错",
+    "mtd": "本月至今",
+    "accrued": "累计",
+    "platformStatus": "平台状态",
+    "healthy": "健康",
+    "successRate": "成功率",
+    "activeKeys": "活跃密钥",
+    "security": "安全",
+    "encryption": "加密",
+    "auditPipeline": "审计链路",
+    "realTime": "实时",
+    "sso": "单点登录",
+    "viewRecent": "查看最近记录"
+  },
+  "management": {
+    "kpi": {
+      "monthlySpend": {
+        "label": "本月消耗",
+        "unavailable": "暂无",
+        "noTrafficHint": "等待流量"
+      },
+      "forecast": {
+        "label": "预测支出",
+        "unavailable": "暂无",
+        "perDay": "每天",
+        "noTrafficHint": "等待流量"
+      },
+      "success": {
+        "label": "成功率",
+        "na": "暂无",
+        "noTrafficHint": "等待流量"
+      },
+      "providerHealth": {
+        "label": "供应商健康",
+        "ready": "就绪",
+        "attention": "需关注",
+        "revoked": "已撤销",
+        "allClear": "一切正常"
+      },
+      "keyGovernance": {
+        "label": "密钥治理",
+        "active": "激活",
+        "expiring": "即将过期",
+        "dormant": "静默",
+        "clear": "无风险"
+      },
+      "resourceFootprint": {
+        "label": "资源规模",
+        "projects": "项目",
+        "environments": "环境",
+        "activeBudgets": "激活预算"
+      }
+    },
+    "summary": {
+      "labels": {
+        "budget": "预算与运行率",
+        "requests": "请求构成",
+        "providers": "供应商构成"
+      },
+      "requestMeta": "{count} 总计",
+      "providerMeta": "{count} 个来源",
+      "budgetValue": {
+        "unavailable": "暂无流量"
+      },
+      "budgetHint": {
+        "activeBudgets": "激活预算",
+        "noBudgets": "暂无预算"
+      },
+      "pills": {
+        "burnRate": "{value} / 天",
+        "forecastBreaches": "{count} 个预测超限",
+        "openAlerts": "{count} 个待处理告警",
+        "blockingAlerts": "{count} 个阻断告警"
+      },
+      "status": {
+        "blocked": "被阻止",
+        "error": "出错",
+        "success": "成功",
+        "other": "其他",
+        "none": "暂无流量"
+      },
+      "provider": {
+        "unknown": "未知供应商",
+        "none": "暂无供应商构成",
+        "others": "其他"
+      }
+    },
+    "trend": {
+      "title": "近 30 天消耗与请求走势",
+      "description": "查看月内负载、消耗速度与异常压力。",
+      "empty": "当前窗口暂无流量。",
+      "legend": {
+        "spend": "消耗",
+        "requests": "请求量",
+        "blocked": "被阻止",
+        "error": "出错"
+      },
+      "chips": {
+        "window": "最近 30 天",
+        "spend": "月内累计 {value}",
+        "requests": "{count} 次请求"
+      }
+    }
+  },
+  "risk": {
+    "budgetRisk": {
+      "title": "预算风险",
+      "budgetsLabel": "预算",
+      "blockingAlerts": "阻断告警",
+      "openAlerts": "待处理告警",
+      "forecastBreaches": "{count} 个预测超限",
+      "stable": "稳定",
+      "unavailable": "不可用",
+      "empty": "暂无预算",
+      "cta": "打开预算"
+    },
+    "usageExceptions": {
+      "title": "使用异常",
+      "requestsLabel": "请求",
+      "hint": "{blocked} 个被阻止 · {errored} 个出错",
+      "cta": "查看使用情况"
+    },
+    "providerReadiness": {
+      "title": "供应商准备度",
+      "ready": "可用",
+      "hint": "{attention} 个需关注 · {revoked} 个已撤销",
+      "cta": "查看供应商"
+    },
+    "keyGovernance": {
+      "title": "密钥治理",
+      "active": "激活",
+      "expiring": "即将过期",
+      "dormant": "静默",
+      "neverUsed": "未使用",
+      "stable": "稳定",
+      "cta": "打开密钥"
+    }
+  },
+  "checklist": {
+    "previewRemaining": "此列表中还剩 {count} 个条目。",
+    "status": {
+      "done": "已完成",
+      "next": "下一项",
+      "pending": "待处理"
+    }
+  },
+  "actionItems": {
+    "stats": {
+      "riskQueue": {
+        "label": "风险队列",
+        "hint": "预算、供应商与密钥待跟进"
+      },
+      "usageAttention": {
+        "label": "使用关注",
+        "hint": "{blocked} 个被阻止 · {errored} 个出错"
+      },
+      "recentChanges": {
+        "label": "最新变更",
+        "hint": "最近的审计与使用事件"
+      }
+    }
+  }
+}

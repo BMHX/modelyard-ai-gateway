@@ -1,0 +1,20 @@
+{
+  "languageLabel": "语言",
+  "languageSwitchPending": "正在切换语言…",
+  "currentLanguage": "当前语言",
+  "useEnglish": "使用英文界面",
+  "useChinese": "使用中文界面",
+  "switchingWorkspace": "正在切换到工作区 {workspace}。",
+  "selectedWorkspace": "已选择工作区",
+  "savedViewAdded": "已添加保存视图。",
+  "savedViewRemoved": "已从保存视图移除。",
+  "savedViewUpdateFailed": "保存视图更新失败。",
+  "savedViewRemovalFailed": "删除保存视图失败。",
+  "savedViewsCleared": "已清除保存视图。",
+  "savedViewsClearFailed": "无法清除保存视图。",
+  "savedViewLabel": "已保存视图",
+  "savedViewsLabel": "已保存视图",
+  "recentVisitMeta": "最近访问 · {time}",
+  "recentVisitDescription": "从 {time} 重新打开此页面。",
+  "recentVisitLabel": "最近访问"
+}

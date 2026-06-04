@@ -1,0 +1,586 @@
+{
+  "Alerts": "告警",
+  "Alert workspace is invalid": "告警工作区无效",
+  "Alert workspace context is unavailable": "告警工作区上下文不可用",
+  "Open workspaces": "打开工作区",
+  "Workspace link is invalid": {
+    "": "工作区链接无效。"
+  },
+  "Alerts are unavailable": {
+    "": "告警暂不可用。"
+  },
+  "No workspace selected": "未选择工作区",
+  "Alert data unavailable": "告警数据不可用",
+  "Current scope": "当前范围",
+  "Select a workspace": "选择工作区",
+  "Project": "项目",
+  "Environment": "环境",
+  "Status": "状态",
+  "Severity": "严重级别",
+  "Code": "代码",
+  "Budget policy": "预算策略",
+  "Owner": "负责人",
+  "Ack": "确认",
+  "Queue lane": "队列通道",
+  "Search": "搜索",
+  "Open queue": "打开队列",
+  "alerts in scope": "范围内告警",
+  "open": "打开",
+  "Needs ack": "待确认",
+  "Awaiting ack": "等待确认",
+  "Escalation risk": "升级风险",
+  "escalation": {
+    "closed": {
+      "label": "已关闭",
+      "summary": "该事件已解决，因此升级风险已解除。"
+    },
+    "reason": {
+      "slaBreached": "SLA 已违约",
+      "slaDueSoon": "SLA 即将到期",
+      "firstResponseWaiting": "仍在等待首次响应",
+      "ownerMissing": "缺少负责人",
+      "handoffIncomplete": "交接轨迹不完整"
+    },
+    "stable": {
+      "label": "稳定",
+      "summary": "当前没有超时、SLA 或交接信号需要升级处理。"
+    },
+    "active": {
+      "critical": "立即升级",
+      "warning": "持续关注"
+    }
+  },
+  "Aging": "超时中",
+  "aging": "超时",
+  "Unassigned": "未分配",
+  "Handoff gaps": "交接缺口",
+  "Missing handoff info": "缺少交接信息",
+  "resolved": "已解决",
+  "Visible": "可见",
+  "Review these alerts first": {
+    "": "优先复查这些告警。"
+  },
+  "Ownership gaps": "归属缺口",
+  "Assign owners first": {
+    "": "请先分配负责人。"
+  },
+  "Every open alert has an owner": {
+    "": "所有打开告警都已有负责人。"
+  },
+  "Aging / escalation": "超时 / 升级",
+  "Waiting for ack": {
+    "": "等待确认。"
+  },
+  "No owner yet": {
+    "": "尚无负责人。"
+  },
+  "Missing notes": "缺少备注",
+  "Add notes": {
+    "": "请补充备注。"
+  },
+  "Missing runbooks": "缺少运行手册",
+  "Add runbooks": {
+    "": "请补充运行手册。"
+  },
+  "Outside response window": {
+    "": "已超出响应窗口。"
+  },
+  "Review critical queue": "复查关键队列",
+  "Critical lane": "关键通道",
+  "Escalation lane": "升级通道",
+  "Add tickets": "补充工单",
+  "Missing tickets": "缺少工单",
+  "Check usage": "查看使用情况",
+  "Surface model/response history quickly": {
+    "": "快速查看模型与响应历史。"
+  },
+  "Open linked budget policy": "打开关联预算策略",
+  "Open budgets": "打开预算",
+  "View spend guardrails next": {
+    "": "继续查看花费护栏。"
+  },
+  "Open audit or exports": "打开审计或导出",
+  "Export Evidence": "导出证据",
+  "Capture evidence while scope is fresh": {
+    "": "趁当前范围仍清晰时收集证据。"
+  },
+  "audit trail": "审计轨迹",
+  "export pack": "导出包",
+  "Overview": "概览",
+  "Summary deck": "摘要看板",
+  "Queue": "队列",
+  "links": "链接",
+  "Checklist": "检查清单",
+  "steps": "步骤",
+  "Table": "表格",
+  "visible": "可见",
+  "signals": "信号",
+  "All projects": "所有项目",
+  "All environments": "所有环境",
+  "All budget policies": "所有预算策略",
+  "All owners": "所有负责人",
+  "All statuses": "所有状态",
+  "Open only": "仅打开",
+  "Resolved only": "仅已解决",
+  "All severities": "所有严重级别",
+  "Critical": "关键",
+  "Warning": "警告",
+  "Info": "信息",
+  "Title, body, code, scope": "标题、正文、代码、范围",
+  "platform owner": "平台负责人",
+  "Ack state": "确认状态",
+  "All ack states": "所有确认状态",
+  "needs-ack": "待确认",
+  "acknowledged": "已确认",
+  "needs ack": "待确认",
+  "unassigned": "未分配",
+  "handoff gaps": "交接缺口",
+  "escalation risk": "升级风险",
+  "missing note": "缺少备注",
+  "missing runbook": "缺少运行手册",
+  "missing ticket": "缺少工单",
+  "All queue lanes": "所有队列通道",
+  "All codes": "所有代码",
+  "Budget policy ID": "预算策略 ID",
+  "Optional": "可选",
+  "Apply filters": "应用筛选",
+  "Reset": "重置",
+  "Secondary": "次要",
+  "Triage tools and queue guidance": "分诊工具与队列指引",
+  "Collapse by default": "默认折叠",
+  "Do next": "接下来",
+  "Queue under control": "队列已受控",
+  "The current queue is stable": {
+    "": "当前队列稳定。"
+  },
+  "Blocked": "阻塞",
+  "Watch": "关注",
+  "OK": "正常",
+  "Start here": "从这里开始",
+  "Next": "下一步",
+  "Details": "详情",
+  "Queues": "队列",
+  "Queue presets": "队列预设",
+  "Open": "打开",
+  "Pending": "待处理",
+  "Related pages": "相关页面",
+  "Next pages": "下一页建议",
+  "Page": "页面",
+  "Sections": "区块",
+  "Page sections": "页面区块",
+  "Section": "区块",
+  "Open section": "打开区块",
+  "Rules": "规则",
+  "Working rules": "工作规则",
+  "Principle": "原则",
+  "Acknowledge early": "尽早确认",
+  "Review needs-ack": "查看待确认",
+  "Assign explicitly": "明确分配",
+  "Review unassigned": "查看未分配",
+  "Leave the trail visible": "让交接轨迹可见",
+  "Review gaps": "查看缺口",
+  "Queue signals": "队列信号",
+  "Readiness": "就绪度",
+  "Visible alerts": "可见告警",
+  "Open in current view": "当前视图中的打开告警",
+  "Open without owner": "打开但未分配负责人",
+  "Visible owners": "可见负责人",
+  "Open without note": "打开但无备注",
+  "Open without runbook": "打开但无运行手册",
+  "Open without ticket": "打开但无工单",
+  "Aging in queue": "队列中超时",
+  "Critical in current view": "当前视图中的关键告警",
+  "Resolved in current view": "当前视图中的已解决告警",
+  "Oldest open age": "最老打开时长",
+  "Projects impacted": "受影响项目",
+  "Environments impacted": "受影响环境",
+  "Budget-linked alerts": "关联预算告警",
+  "Open in workspace": "工作区内打开告警",
+  "Leave alerts with owner, ack, notes, runbook, and ticket visible": {
+    "": "请确保告警的负责人、确认状态、备注、运行手册和工单保持可见。"
+  },
+  "Collaboration handoff": "协作交接",
+  "Owner, notes, runbook, and ticket are now stored on the alert record so the queue stays consistent across list and detail views": {
+    "": "负责人、备注、运行手册和工单现在会存入告警记录，从而在列表和详情视图中保持一致。"
+  },
+  "No alerts in scope": "当前范围内没有告警",
+  "Add or broaden filters to load incidents for collaboration handoff": {
+    "": "请增加或放宽筛选条件以加载用于协作交接的事件。"
+  },
+  "Select alert {title}": "选择告警 {title}",
+  "No owner": "无负责人",
+  "Acknowledge": "确认",
+  "Resolve": "解决",
+  "Reopen": "重新打开",
+  "Open triage": "打开分诊",
+  "All alerts": "全部告警",
+  "Showing {count} of {total} alerts": "显示 {count} 条，共 {total} 条告警",
+  "{count} alerts in scope": "范围内 {count} 条告警",
+  "Alerts queue": "告警队列",
+  "Quick tools": "快捷工具",
+  "Queue tools": "队列工具",
+  "Checks": "检查",
+  "Jump": "跳转",
+  "Signals": "信号",
+  "Table-first view": {
+    " Batch actions stay secondary": {
+      "": "以表格为主视图，批量操作保持次要。"
+    }
+  },
+  "{count} selected": "已选择 {count} 条",
+  "No selection": "未选择",
+  "{count} open": "打开 {count} 条",
+  "Select visible": "选择可见项",
+  "Select urgent": "选择紧急项",
+  "Select critical": "选择关键项",
+  "Clear": "清除",
+  "Alert": "告警",
+  "Created": "创建时间",
+  "Collaboration": "协作",
+  "Batch actions": "批量操作",
+  "Batch updates": "批量更新",
+  "Assign an owner label or apply one action to selected alerts": {
+    "": "为选中的告警指定负责人标签或执行统一动作。"
+  },
+  "Owner label": "负责人标签",
+  "Owner label placeholder": "cost-ops / oncall / teammate name",
+  "Selected summary: {open} open · {critical} critical · {needsAck} need ack": "已选摘要：{open} 条打开 · {critical} 条关键 · {needsAck} 条待确认",
+  "Selected impact: {open} open · {critical} critical · {needsAck} need ack · {risk} escalation-risk · {unassigned} without owner": "已选影响：{open} 条打开 · {critical} 条关键 · {needsAck} 条待确认 · {risk} 条升级风险 · {unassigned} 条无负责人",
+  "Assign selected": "分配选中项",
+  "Acknowledge selected": "确认选中项",
+  "Resolve selected": "解决选中项",
+  "Clear selection": "清除选择",
+  "No alerts match": {
+    "": "没有匹配的告警。"
+  },
+  "Nothing matches this queue view": "当前队列视图没有匹配项",
+  "Alert Detail": "告警详情",
+  "Back to alerts": "返回告警",
+  "Spend": "花费",
+  "Blocked usage": "被阻止的使用",
+  "Acknowledge alert": "确认告警",
+  "Resolve alert": "解决告警",
+  "Reopen alert": "重新打开告警",
+  "Budget": "预算",
+  "Audit": "审计",
+  "Keep collaboration details compact and edit them only when handoff changes": {
+    "": "保持协作详情简洁，仅在交接变更时编辑。"
+  },
+  "Related pivots": "相关跳转",
+  "Open filtered usage": "打开筛选后的使用情况",
+  "Open budget context": "打开预算上下文",
+  "Open filtered audit logs": "打开筛选后的审计日志",
+  "Related usage": "相关使用情况",
+  "Blocked / errored": "阻止 / 错误",
+  "Latest model": "最近模型",
+  "Burn rate": "消耗速率",
+  "Soft ETA": "软阈值预计时间",
+  "Supporting context": "辅助上下文",
+  "Workspace": "工作区",
+  "Period": "周期",
+  "Resolved at": "解决时间",
+  "Dedupe key": "去重键",
+  "Request ID": "请求 ID",
+  "Provider request": "供应商请求",
+  "Estimated cost": "预估成本",
+  "Soft / hard limit": "软 / 硬阈值",
+  "Suggested actions": "建议动作",
+  "Edit handoff": "编辑交接",
+  "Keep collaboration edits here so the record stays quiet by default": {
+    "": "在这里维护协作交接内容，让记录默认保持简洁。"
+  },
+  "Acknowledge state": "确认状态",
+  "SLA due": "SLA 到期",
+  "Operator note": "操作员备注",
+  "Runbook URL": "运行手册链接",
+  "Runbook label": "运行手册标签",
+  "Ticket URL": "工单 URL",
+  "Ticket label": "工单标签",
+  "Save handoff": "保存交接",
+  "Open runbook": "打开运行手册",
+  "Open ticket": "打开工单",
+  "Workflow history": "工作流历史",
+  "Recent usage": "最近使用",
+  "Tokens": "令牌",
+  "unknown": "未知",
+  "No recent usage events matched this alert context": {
+    "": "没有匹配当前告警上下文的最近使用事件。"
+  },
+  "Audit trail": "审计轨迹",
+  "Actor": "执行方",
+  "Payload": "负载",
+  "No audit entries were recorded for this alert yet": {
+    "": "当前告警尚无审计记录。"
+  },
+  "Raw metadata": "原始元数据",
+  "Open filtered usage to confirm the affected requests, models, and blocked traffic before closing the alert": {
+    "": "先打开筛选后的使用情况，确认受影响的请求、模型和被阻止流量，再关闭此告警。"
+  },
+  "Not resolved": "未解决",
+  "soft reached": "已触达软阈值",
+  "soft clear": "未触达软阈值",
+  "hard reached": "已触达硬阈值",
+  "hard clear": "未触达硬阈值",
+  "collaboration": {
+    "owner": {
+      "environment": "{name} 操作员",
+      "environmentFallback": "环境操作员",
+      "project": "{name} 开发者",
+      "projectFallback": "开发者",
+      "workspaceFallback": "工作区管理员轮值"
+    },
+    "runbook": {
+      "default": "运行手册（用量）"
+    },
+    "ticket": {
+      "default": "工单轨迹（审计）"
+    },
+    "updated": "协作已更新 {date}",
+    "resolved": "已解决 {date}",
+    "opened": "已打开 {date}",
+    "notes": "{count} 条备注"
+  },
+  "queueNotice": {
+    "assigned": {
+      "title": "已分配 {count} 条告警",
+      "body": "队列归属已写入每条选中告警，下一位处理者会看到同样的交接状态。"
+    },
+    "ack": {
+      "title": "已确认 {count} 条告警",
+      "body": "所选事件现在会在队列中显示为已进入分诊，而不是继续等待首次响应。"
+    },
+    "resolved": {
+      "title": "已解决 {count} 条告警",
+      "body": "这些告警会保留在历史记录中，但不再阻塞当前队列。"
+    },
+    "partial": {
+      "assigned": {
+        "title": "已分配 {count} 条告警 · 仍有 {failed} 条待复查",
+        "body": "部分选中告警已完成分配，但这批更新中仍有项目需要复查。"
+      },
+      "ack": {
+        "title": "已确认 {count} 条告警 · 仍有 {failed} 条待复查",
+        "body": "部分选中告警已完成确认，但这批更新中仍有项目需要复查。"
+      },
+      "resolved": {
+        "title": "已解决 {count} 条告警 · 仍有 {failed} 条待复查",
+        "body": "部分选中告警已解决，但这批更新中仍有项目需要复查。"
+      }
+    },
+    "ownerRequired": {
+      "title": "批量分配需要负责人",
+      "body": "为选中的告警执行分配前，请先填写负责人标签。"
+    },
+    "selectionRequired": {
+      "title": "请至少选择一条告警",
+      "body": "执行批量队列操作前，请先从表格中选择一条或多条事件。"
+    },
+    "batchError": {
+      "title": "批量更新失败",
+      "body": "所选告警都未能更新。"
+    }
+  },
+  "actionCard": {
+    "openAuditLog": "打开审计日志",
+    "openExports": "打开导出"
+  },
+  "checklist": {
+    "ownership": {
+      "title": "归属",
+      "pending": "仍有 {needsAck} 条告警待确认，{unassigned} 条未分配负责人。",
+      "done": "打开的事件都已有负责人和确认状态。"
+    },
+    "context": {
+      "title": "上下文",
+      "pending": "仍有 {ticket} 条缺少工单、{note} 条缺少备注、{runbook} 条缺少运行手册链接。",
+      "done": "备注、工单与运行手册已齐备。"
+    },
+    "pending": "待处理",
+    "done": "完成",
+    "escalation": {
+      "title": "升级",
+      "pending": "仍有 {risk} 条升级风险与 {aging} 条超时告警需要决策。",
+      "done": "当前未发现升级或超时风险。"
+    }
+  },
+  "scopeMeta": {
+    "project": "项目 {project}",
+    "runtime": "运行时 {runtime}",
+    "budget": "预算 {budget}",
+    "workspace": "工作区级事件"
+  },
+  "currentViewSummary": {
+    "project": "项目 {project}",
+    "environment": "环境 {environment}（{runtime}）",
+    "budget": "预算 {budget}",
+    "owner": "负责人 {owner}",
+    "ack": "确认 {ack}",
+    "queueLane": "队列通道 {lane}",
+    "status": "{status} 告警",
+    "severity": "{severity} 严重级别"
+  },
+  "riskLabel": {
+    "blocked": "阻塞",
+    "watch": "关注",
+    "open": "打开",
+    "clear": "清晰"
+  },
+  "currentViewSummaryCard": {
+    "visible": {
+      "hint": "{open} 条打开 · {resolved} 条已解决"
+    },
+    "needsAck": {
+      "pending": "请优先复查这些告警。",
+      "clear": "当前没有等待首次响应的事件。"
+    },
+    "ownership": {
+      "pending": "请先分配负责人。",
+      "clear": "所有打开事件已有负责人。"
+    },
+    "escalation": {
+      "pending": "这些告警需要审查。",
+      "clear": "可见告警中未发现超时或升级风险。"
+    }
+  },
+  "primaryQueueAction": {
+    "escalate": {
+      "title": "升级告警",
+      "description": "升级通道队列。",
+      "cta": "查看升级"
+    },
+    "needsAck": {
+      "title": "确认等待中的告警",
+      "description": "待确认队列。",
+      "cta": "打开待确认"
+    },
+    "assignOwners": {
+      "title": "分配负责人",
+      "description": "未分配队列。",
+      "cta": "打开未分配"
+    },
+    "fillGaps": {
+      "title": "补全上下文",
+      "description": "缺少交接信息。",
+      "cta": "查看缺口"
+    },
+    "workOpen": {
+      "title": "处理打开告警",
+      "description": "当前视图队列。",
+      "cta": "打开告警"
+    }
+  },
+  "secondaryQueueAction": {
+    "critical": {
+      "title": "复查关键通道",
+      "cta": "打开关键"
+    },
+    "escalation": {
+      "title": "升级通道",
+      "cta": "打开升级"
+    },
+    "tickets": {
+      "title": "补充工单",
+      "cta": "打开工单"
+    }
+  },
+  "queueCommandDeck": {
+    "title": "先稳定当前队列。"
+  },
+  "alerts": {
+    "status": {
+      "degraded": "告警数据降级"
+    },
+    "action": {
+      "error": "告警操作失败"
+    }
+  },
+  "Scoped": "已限制",
+  "Setup": "未设置",
+  "n/a": "n/a",
+  "days": {
+    "today": "今天",
+    "oneDay": "1 天",
+    "multiple": "{count} 天"
+  },
+  "batchSelection": {
+    "selected": "已选 {count} 条 · {open} 条打开 · {critical} 条关键"
+  },
+  "detail": {
+    "impact": {
+      "blockedUsage": "最近 {total} 条相关使用事件中有 {blocked} 条被阻止。",
+      "recentUsage": "已载入 {count} 条最近使用事件用于比对。",
+      "noRecentUsage": "当前范围内还没有可用的最近使用样本。",
+      "spendSummary": "当前花费为 {spend}，月度上限为 {limit}，剩余 {remaining}。",
+      "budgetIncomplete": "此告警上的预算汇总不完整，请打开关联预算视图查看最新阈值状态。",
+      "blockedTitle": "当前预算边界已在阻断流量。",
+      "pricingUnavailableTitle": "由于缺少定价覆盖，保护性阻断已启用。",
+      "pricingUnavailableBody": "请先恢复定价置信度，再决定是否放宽护栏。",
+      "warningTitle": "花费已越过警戒阈值，需要明确负责人。"
+    },
+    "actions": {
+      "acknowledgeNow": "请先确认该告警，让队列显示已进入分诊，而不是继续等待首次响应。",
+      "assignOwner": "在进一步查看使用或预算前，请先给该告警指定明确负责人。",
+      "restorePricing": "请先查看关联预算并恢复定价覆盖，再解除保护性阻断。",
+      "projectedSpendBreach": "预测花费将突破关联上限。请在 {eta} 前决定节流、调整上限或批准一个限时例外。",
+      "attachRunbook": "请补上运行手册链接，让下一位响应者直接进入正确流程，而不是重新搜索。",
+      "attachTicket": "请补上事件工单或决策轨迹，让交接内容能留存在告警工作流中。",
+      "openUsage": "打开筛选后的使用情况以确认受影响的请求、模型和被阻止流量，再关闭此告警。"
+    },
+    "audit": {
+      "action": {
+        "resolved": "告警已解决",
+        "reopened": "告警已重新打开",
+        "handoffUpdated": "交接已更新",
+        "updated": "告警已更新",
+        "other": "{action}"
+      },
+      "summary": {
+        "generic": "告警上记录了一次状态变更。",
+        "fieldsUpdated": "已更新告警记录中的 {fields}。",
+        "statusChanged": "状态已从 {previous} 变更为 {next}。"
+      }
+    },
+    "timeline": {
+      "detected": {
+        "title": "已检测到告警",
+        "body": "一个 {severity} 级别的事件已进入队列。"
+      },
+      "actor": {
+        "system": "系统"
+      }
+    }
+  },
+  "Runbook": "运行手册",
+  "Ticket": "工单",
+  "Scope": "范围",
+  "Usage": "用量",
+  "Model": "模型",
+  "Provider": "供应商",
+  "Prompt tokens": "提示词令牌",
+  "Completion tokens": "补全令牌",
+  "Time": "时间",
+  "Cost": "成本",
+  "Action": "操作",
+  "age": {
+    "resolved": {
+      "label": "已解决",
+      "summary": "该事件已关闭，不再计入当前响应时长。"
+    },
+    "critical": {
+      "label": "超时 {time}",
+      "summary": "已打开 {time}，超过 {threshold} 小时响应阈值。"
+    },
+    "warning": {
+      "label": "已开 {time}",
+      "summary": "已打开 {time}，接近响应阈值。"
+    },
+    "fresh": {
+      "label": "刚打开 {time}",
+      "summary": "已打开 {time}，仍在正常响应窗口内。"
+    }
+  },
+  "alertCode.budget.soft-limit": "软阈值",
+  "alertCode.budget.hard-limit": "硬上限",
+  "alertCode.budget.preflight-block": "预检拦截",
+  "alertCode.budget.pricing-unavailable": "定价缺失"
+}

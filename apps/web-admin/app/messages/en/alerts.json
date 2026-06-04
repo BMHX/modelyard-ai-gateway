@@ -1,0 +1,586 @@
+{
+  "Alerts": "Alerts",
+  "Alert workspace is invalid": "Alert workspace is invalid",
+  "Alert workspace context is unavailable": "Alert workspace context is unavailable",
+  "Open workspaces": "Open workspaces",
+  "Workspace link is invalid": {
+    "": "Workspace link is invalid."
+  },
+  "Alerts are unavailable": {
+    "": "Alerts are unavailable."
+  },
+  "No workspace selected": "No workspace selected",
+  "Alert data unavailable": "Alert data unavailable",
+  "Current scope": "Current scope",
+  "Select a workspace": "Select a workspace",
+  "Project": "Project",
+  "Environment": "Environment",
+  "Status": "Status",
+  "Severity": "Severity",
+  "Code": "Code",
+  "Budget policy": "Budget policy",
+  "Owner": "Owner",
+  "Ack": "Ack",
+  "Queue lane": "Queue lane",
+  "Search": "Search",
+  "Open queue": "Open queue",
+  "alerts in scope": "alerts in scope",
+  "open": "open",
+  "Needs ack": "Needs ack",
+  "Awaiting ack": "Awaiting ack",
+  "Escalation risk": "Escalation risk",
+  "escalation": {
+    "closed": {
+      "label": "closed",
+      "summary": "Escalation is cleared because this incident is already resolved."
+    },
+    "reason": {
+      "slaBreached": "SLA breached",
+      "slaDueSoon": "SLA due soon",
+      "firstResponseWaiting": "first response still waiting",
+      "ownerMissing": "owner missing",
+      "handoffIncomplete": "handoff trail incomplete"
+    },
+    "stable": {
+      "label": "stable",
+      "summary": "No aging, SLA, or handoff signal currently requires escalation."
+    },
+    "active": {
+      "critical": "escalate now",
+      "warning": "watch closely"
+    }
+  },
+  "Aging": "Aging",
+  "aging": "aging",
+  "Unassigned": "Unassigned",
+  "Handoff gaps": "Handoff gaps",
+  "Missing handoff info": "Missing handoff info",
+  "resolved": "resolved",
+  "Visible": "Visible",
+  "Review these alerts first": {
+    "": "Review these alerts first."
+  },
+  "Ownership gaps": "Ownership gaps",
+  "Assign owners first": {
+    "": "Assign owners first."
+  },
+  "Every open alert has an owner": {
+    "": "Every open alert has an owner."
+  },
+  "Aging / escalation": "Aging / escalation",
+  "Waiting for ack": {
+    "": "Waiting for ack."
+  },
+  "No owner yet": {
+    "": "No owner yet."
+  },
+  "Missing notes": "Missing notes",
+  "Add notes": {
+    "": "Add notes."
+  },
+  "Missing runbooks": "Missing runbooks",
+  "Add runbooks": {
+    "": "Add runbooks."
+  },
+  "Outside response window": {
+    "": "Outside response window."
+  },
+  "Review critical queue": "Review critical queue",
+  "Critical lane": "Critical lane",
+  "Escalation lane": "Escalation lane",
+  "Add tickets": "Add tickets",
+  "Missing tickets": "Missing tickets",
+  "Check usage": "Check usage",
+  "Surface model/response history quickly": {
+    "": "Surface model/response history quickly."
+  },
+  "Open linked budget policy": "Open linked budget policy",
+  "Open budgets": "Open budgets",
+  "View spend guardrails next": {
+    "": "View spend guardrails next."
+  },
+  "Open audit or exports": "Open audit or exports",
+  "Export Evidence": "Export Evidence",
+  "Capture evidence while scope is fresh": {
+    "": "Capture evidence while scope is fresh."
+  },
+  "audit trail": "audit trail",
+  "export pack": "export pack",
+  "Overview": "Overview",
+  "Summary deck": "Summary deck",
+  "Queue": "Queue",
+  "links": "links",
+  "Checklist": "Checklist",
+  "steps": "steps",
+  "Table": "Table",
+  "visible": "visible",
+  "signals": "signals",
+  "All projects": "All projects",
+  "All environments": "All environments",
+  "All budget policies": "All budget policies",
+  "All owners": "All owners",
+  "All statuses": "All statuses",
+  "Open only": "Open only",
+  "Resolved only": "Resolved only",
+  "All severities": "All severities",
+  "Critical": "Critical",
+  "Warning": "Warning",
+  "Info": "Info",
+  "Title, body, code, scope": "Title, body, code, scope",
+  "platform owner": "platform owner",
+  "Ack state": "Ack state",
+  "All ack states": "All ack states",
+  "needs-ack": "needs-ack",
+  "acknowledged": "acknowledged",
+  "needs ack": "needs ack",
+  "unassigned": "unassigned",
+  "handoff gaps": "handoff gaps",
+  "escalation risk": "escalation risk",
+  "missing note": "missing note",
+  "missing runbook": "missing runbook",
+  "missing ticket": "missing ticket",
+  "All queue lanes": "All queue lanes",
+  "All codes": "All codes",
+  "Budget policy ID": "Budget policy ID",
+  "Optional": "Optional",
+  "Apply filters": "Apply filters",
+  "Reset": "Reset",
+  "Secondary": "Secondary",
+  "Triage tools and queue guidance": "Triage tools and queue guidance",
+  "Collapse by default": "Collapse by default",
+  "Do next": "Do next",
+  "Queue under control": "Queue under control",
+  "The current queue is stable": {
+    "": "The current queue is stable."
+  },
+  "Blocked": "Blocked",
+  "Watch": "Watch",
+  "OK": "OK",
+  "Start here": "Start here",
+  "Next": "Next",
+  "Details": "Details",
+  "Queues": "Queues",
+  "Queue presets": "Queue presets",
+  "Open": "Open",
+  "Pending": "Pending",
+  "Related pages": "Related pages",
+  "Next pages": "Next pages",
+  "Page": "Page",
+  "Sections": "Sections",
+  "Page sections": "Page sections",
+  "Section": "Section",
+  "Open section": "Open section",
+  "Rules": "Rules",
+  "Working rules": "Working rules",
+  "Principle": "Principle",
+  "Acknowledge early": "Acknowledge early",
+  "Review needs-ack": "Review needs-ack",
+  "Assign explicitly": "Assign explicitly",
+  "Review unassigned": "Review unassigned",
+  "Leave the trail visible": "Leave the trail visible",
+  "Review gaps": "Review gaps",
+  "Queue signals": "Queue signals",
+  "Readiness": "Readiness",
+  "Visible alerts": "Visible alerts",
+  "Open in current view": "Open in current view",
+  "Open without owner": "Open without owner",
+  "Visible owners": "Visible owners",
+  "Open without note": "Open without note",
+  "Open without runbook": "Open without runbook",
+  "Open without ticket": "Open without ticket",
+  "Aging in queue": "Aging in queue",
+  "Critical in current view": "Critical in current view",
+  "Resolved in current view": "Resolved in current view",
+  "Oldest open age": "Oldest open age",
+  "Projects impacted": "Projects impacted",
+  "Environments impacted": "Environments impacted",
+  "Budget-linked alerts": "Budget-linked alerts",
+  "Open in workspace": "Open in workspace",
+  "Leave alerts with owner, ack, notes, runbook, and ticket visible": {
+    "": "Leave alerts with owner, ack, notes, runbook, and ticket visible."
+  },
+  "Collaboration handoff": "Collaboration handoff",
+  "Owner, notes, runbook, and ticket are now stored on the alert record so the queue stays consistent across list and detail views": {
+    "": "Owner, notes, runbook, and ticket are now stored on the alert record so the queue stays consistent across list and detail views."
+  },
+  "No alerts in scope": "No alerts in scope",
+  "Add or broaden filters to load incidents for collaboration handoff": {
+    "": "Add or broaden filters to load incidents for collaboration handoff."
+  },
+  "Select alert {title}": "Select alert {title}",
+  "No owner": "No owner",
+  "Acknowledge": "Acknowledge",
+  "Resolve": "Resolve",
+  "Reopen": "Reopen",
+  "Open triage": "Open triage",
+  "All alerts": "All alerts",
+  "Showing {count} of {total} alerts": "Showing {count} of {total} alerts",
+  "{count} alerts in scope": "{count} alerts in scope",
+  "Alerts queue": "Alerts queue",
+  "Quick tools": "Quick tools",
+  "Queue tools": "Queue tools",
+  "Checks": "Checks",
+  "Jump": "Jump",
+  "Signals": "Signals",
+  "Table-first view": {
+    " Batch actions stay secondary": {
+      "": "Table-first view. Batch actions stay secondary."
+    }
+  },
+  "{count} selected": "{count} selected",
+  "No selection": "No selection",
+  "{count} open": "{count} open",
+  "Select visible": "Select visible",
+  "Select urgent": "Select urgent",
+  "Select critical": "Select critical",
+  "Clear": "Clear",
+  "Alert": "Alert",
+  "Created": "Created",
+  "Collaboration": "Collaboration",
+  "Batch actions": "Batch actions",
+  "Batch updates": "Batch updates",
+  "Assign an owner label or apply one action to selected alerts": {
+    "": "Assign an owner label or apply one action to selected alerts."
+  },
+  "Owner label": "Owner label",
+  "Owner label placeholder": "cost-ops / oncall / teammate name",
+  "Selected summary: {open} open · {critical} critical · {needsAck} need ack": "Selected: {open} open · {critical} critical · {needsAck} need ack",
+  "Selected impact: {open} open · {critical} critical · {needsAck} need ack · {risk} escalation-risk · {unassigned} without owner": "Selected impact: {open} open · {critical} critical · {needsAck} need ack · {risk} escalation-risk · {unassigned} without owner",
+  "Assign selected": "Assign selected",
+  "Acknowledge selected": "Acknowledge selected",
+  "Resolve selected": "Resolve selected",
+  "Clear selection": "Clear selection",
+  "No alerts match": {
+    "": "No alerts match."
+  },
+  "Nothing matches this queue view": "Nothing matches this queue view",
+  "Alert Detail": "Alert Detail",
+  "Back to alerts": "Back to alerts",
+  "Spend": "Spend",
+  "Blocked usage": "Blocked usage",
+  "Acknowledge alert": "Acknowledge alert",
+  "Resolve alert": "Resolve alert",
+  "Reopen alert": "Reopen alert",
+  "Budget": "Budget",
+  "Audit": "Audit",
+  "Keep collaboration details compact and edit them only when handoff changes": {
+    "": "Keep collaboration details compact and edit them only when handoff changes."
+  },
+  "Related pivots": "Related pivots",
+  "Open filtered usage": "Open filtered usage",
+  "Open budget context": "Open budget context",
+  "Open filtered audit logs": "Open filtered audit logs",
+  "Related usage": "Related usage",
+  "Blocked / errored": "Blocked / errored",
+  "Latest model": "Latest model",
+  "Burn rate": "Burn rate",
+  "Soft ETA": "Soft ETA",
+  "Supporting context": "Supporting context",
+  "Workspace": "Workspace",
+  "Period": "Period",
+  "Resolved at": "Resolved at",
+  "Dedupe key": "Dedupe key",
+  "Request ID": "Request ID",
+  "Provider request": "Provider request",
+  "Estimated cost": "Estimated cost",
+  "Soft / hard limit": "Soft / hard limit",
+  "Suggested actions": "Suggested actions",
+  "Edit handoff": "Edit handoff",
+  "Keep collaboration edits here so the record stays quiet by default": {
+    "": "Keep collaboration edits here so the record stays quiet by default."
+  },
+  "Acknowledge state": "Acknowledge state",
+  "SLA due": "SLA due",
+  "Operator note": "Operator note",
+  "Runbook URL": "Runbook URL",
+  "Runbook label": "Runbook label",
+  "Ticket URL": "Ticket URL",
+  "Ticket label": "Ticket label",
+  "Save handoff": "Save handoff",
+  "Open runbook": "Open runbook",
+  "Open ticket": "Open ticket",
+  "Workflow history": "Workflow history",
+  "Recent usage": "Recent usage",
+  "Tokens": "Tokens",
+  "unknown": "unknown",
+  "No recent usage events matched this alert context": {
+    "": "No recent usage events matched this alert context."
+  },
+  "Audit trail": "Audit trail",
+  "Actor": "Actor",
+  "Payload": "Payload",
+  "No audit entries were recorded for this alert yet": {
+    "": "No audit entries were recorded for this alert yet."
+  },
+  "Raw metadata": "Raw metadata",
+  "Open filtered usage to confirm the affected requests, models, and blocked traffic before closing the alert": {
+    "": "Open filtered usage to confirm the affected requests, models, and blocked traffic before closing the alert."
+  },
+  "Not resolved": "Not resolved",
+  "soft reached": "soft reached",
+  "soft clear": "soft clear",
+  "hard reached": "hard reached",
+  "hard clear": "hard clear",
+  "collaboration": {
+    "owner": {
+      "environment": "{name} operator",
+      "environmentFallback": "Environment operator",
+      "project": "{name} developer",
+      "projectFallback": "Developer",
+      "workspaceFallback": "Workspace admin rotation"
+    },
+    "runbook": {
+      "default": "Runbook (usage)"
+    },
+    "ticket": {
+      "default": "Ticket trail (audit)"
+    },
+    "updated": "Collaboration updated {date}",
+    "resolved": "Resolved {date}",
+    "opened": "Opened {date}",
+    "notes": "{count, plural, one {# note} other {# notes}}"
+  },
+  "queueNotice": {
+    "assigned": {
+      "title": "Assigned {count} alerts",
+      "body": "Queue ownership is now recorded on each selected alert, so the next operator sees the same handoff state."
+    },
+    "ack": {
+      "title": "Acknowledged {count} alerts",
+      "body": "The selected incidents now show active triage in the queue instead of waiting for first response."
+    },
+    "resolved": {
+      "title": "Resolved {count} alerts",
+      "body": "The alerts stay in history, but they are no longer blocking the live queue."
+    },
+    "partial": {
+      "assigned": {
+        "title": "Assigned {count} alerts · {failed} still need review",
+        "body": "Some selected alerts were assigned, but part of the batch still needs review."
+      },
+      "ack": {
+        "title": "Acknowledged {count} alerts · {failed} still need review",
+        "body": "Some selected alerts were acknowledged, but part of the batch still needs review."
+      },
+      "resolved": {
+        "title": "Resolved {count} alerts · {failed} still need review",
+        "body": "Some selected alerts were resolved, but part of the batch still needs review."
+      }
+    },
+    "ownerRequired": {
+      "title": "Owner required for batch assign",
+      "body": "Enter an owner label before assigning the selected alerts."
+    },
+    "selectionRequired": {
+      "title": "Select at least one alert",
+      "body": "Choose one or more incidents from the table before running a batch queue action."
+    },
+    "batchError": {
+      "title": "Batch update failed",
+      "body": "None of the selected alerts could be updated."
+    }
+  },
+  "actionCard": {
+    "openAuditLog": "Open audit log",
+    "openExports": "Open exports"
+  },
+  "checklist": {
+    "ownership": {
+      "title": "Ownership",
+      "pending": "{needsAck} alerts still need ack and {unassigned} remain unassigned.",
+      "done": "Open incidents have owner and ack state."
+    },
+    "context": {
+      "title": "Context",
+      "pending": "{ticket} missing ticket, {note} missing note, and {runbook} missing runbook link remain.",
+      "done": "Notes, tickets, and runbooks are in place."
+    },
+    "pending": "Pending",
+    "done": "Done",
+    "escalation": {
+      "title": "Escalation",
+      "pending": "{risk} escalation-risk alert(s) and {aging} aging alert(s) still need a decision.",
+      "done": "No escalation or aging risk is visible."
+    }
+  },
+  "scopeMeta": {
+    "project": "project {project}",
+    "runtime": "runtime {runtime}",
+    "budget": "budget {budget}",
+    "workspace": "Workspace-level incident"
+  },
+  "currentViewSummary": {
+    "project": "project {project}",
+    "environment": "environment {environment} ({runtime})",
+    "budget": "budget {budget}",
+    "owner": "owner {owner}",
+    "ack": "ack {ack}",
+    "queueLane": "lane {lane}",
+    "status": "{status} alerts",
+    "severity": "{severity} severity"
+  },
+  "riskLabel": {
+    "blocked": "Blocked",
+    "watch": "Watch",
+    "open": "Open",
+    "clear": "Clear"
+  },
+  "currentViewSummaryCard": {
+    "visible": {
+      "hint": "{open} open and {resolved} resolved in the current view."
+    },
+    "needsAck": {
+      "pending": "Review these alerts first.",
+      "clear": "No alert is waiting for first response."
+    },
+    "ownership": {
+      "pending": "Assign owners first.",
+      "clear": "Every open alert has an owner."
+    },
+    "escalation": {
+      "pending": "These alerts need review.",
+      "clear": "No visible alert is aging or escalating."
+    }
+  },
+  "primaryQueueAction": {
+    "escalate": {
+      "title": "Escalate alerts",
+      "description": "Escalation-lane queue.",
+      "cta": "Open escalation"
+    },
+    "needsAck": {
+      "title": "Acknowledge waiting alerts",
+      "description": "Needs-ack queue.",
+      "cta": "Open needs-ack"
+    },
+    "assignOwners": {
+      "title": "Assign owners",
+      "description": "Unassigned queue.",
+      "cta": "Open unassigned"
+    },
+    "fillGaps": {
+      "title": "Fill missing context",
+      "description": "Missing handoff info.",
+      "cta": "Open gaps"
+    },
+    "workOpen": {
+      "title": "Work open alerts",
+      "description": "Current view queue.",
+      "cta": "Open alerts"
+    }
+  },
+  "secondaryQueueAction": {
+    "critical": {
+      "title": "Review critical queue",
+      "cta": "Open critical"
+    },
+    "escalation": {
+      "title": "Escalation lane",
+      "cta": "Open escalation"
+    },
+    "tickets": {
+      "title": "Add tickets",
+      "cta": "Open tickets"
+    }
+  },
+  "queueCommandDeck": {
+    "title": "Stabilize the queue first."
+  },
+  "alerts": {
+    "status": {
+      "degraded": "Alerts data is degraded"
+    },
+    "action": {
+      "error": "alerts.action.error"
+    }
+  },
+  "Scoped": "Scoped",
+  "Setup": "Setup",
+  "n/a": "n/a",
+  "days": {
+    "today": "today",
+    "oneDay": "1 day",
+    "multiple": "{count} days"
+  },
+  "batchSelection": {
+    "selected": "{count} selected · {open} open · {critical} critical"
+  },
+  "detail": {
+    "impact": {
+      "blockedUsage": "{blocked} of the last {total} related usage events are blocked.",
+      "recentUsage": "{count} recent usage events are loaded for comparison.",
+      "noRecentUsage": "No recent usage sample is available yet for this scope.",
+      "spendSummary": "Current spend is {spend} against a {limit} monthly limit with {remaining} left.",
+      "budgetIncomplete": "Budget totals are incomplete on this alert, so use the linked budget view for the latest threshold state.",
+      "blockedTitle": "Traffic is currently blocked on this budget boundary.",
+      "pricingUnavailableTitle": "Protective blocking is active because pricing coverage is missing.",
+      "pricingUnavailableBody": "Restore pricing confidence before relaxing the guardrail.",
+      "warningTitle": "Spend crossed a warning threshold and needs an explicit owner."
+    },
+    "actions": {
+      "acknowledgeNow": "Acknowledge the alert now so the queue shows active triage instead of waiting for first response.",
+      "assignOwner": "Assign a named owner on this alert before you branch into usage or budget investigation.",
+      "restorePricing": "Review the linked budget and restore pricing coverage before lifting any protective block.",
+      "projectedSpendBreach": "Projected spend is on pace to breach the linked limit. Decide on throttling, a limit change, or a time-boxed exception before {eta}.",
+      "attachRunbook": "Attach the runbook link here so the next responder lands on the right procedure instead of searching elsewhere.",
+      "attachTicket": "Attach the incident ticket or decision trail so handoff stays on-record inside the alert workflow.",
+      "openUsage": "Open filtered usage to confirm the affected requests, models, and blocked traffic before closing the alert."
+    },
+    "audit": {
+      "action": {
+        "resolved": "Alert resolved",
+        "reopened": "Alert reopened",
+        "handoffUpdated": "Handoff updated",
+        "updated": "Alert updated",
+        "other": "{action}"
+      },
+      "summary": {
+        "generic": "State change recorded on the alert.",
+        "fieldsUpdated": "Updated {fields} on the alert record.",
+        "statusChanged": "Status changed from {previous} to {next}."
+      }
+    },
+    "timeline": {
+      "detected": {
+        "title": "Alert detected",
+        "body": "{severity} severity incident opened in the queue."
+      },
+      "actor": {
+        "system": "system"
+      }
+    }
+  },
+  "Runbook": "Runbook",
+  "Ticket": "Ticket",
+  "Scope": "Scope",
+  "Usage": "Usage",
+  "Model": "Model",
+  "Provider": "Provider",
+  "Prompt tokens": "Prompt tokens",
+  "Completion tokens": "Completion tokens",
+  "Time": "Time",
+  "Cost": "Cost",
+  "Action": "Action",
+  "age": {
+    "resolved": {
+      "label": "resolved",
+      "summary": "This incident is already closed and no longer aging inside the live queue."
+    },
+    "critical": {
+      "label": "aging {time}",
+      "summary": "Open for {time}. This is past the {threshold}h age threshold."
+    },
+    "warning": {
+      "label": "open {time}",
+      "summary": "Open for {time}. This incident is approaching the response threshold."
+    },
+    "fresh": {
+      "label": "fresh {time}",
+      "summary": "Open for {time} and still inside the normal response window."
+    }
+  },
+  "alertCode.budget.soft-limit": "Soft limit",
+  "alertCode.budget.hard-limit": "Hard limit",
+  "alertCode.budget.preflight-block": "Preflight block",
+  "alertCode.budget.pricing-unavailable": "Pricing gap"
+}

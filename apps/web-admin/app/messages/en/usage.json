@@ -1,0 +1,150 @@
+{
+  "Usage": "Usage",
+  "Usage events": "Usage events",
+  "Total gateway requests over time": "Total gateway requests over time",
+  "Total Events": "Total Events",
+  "Economic Summary": "Economic Summary",
+  "Total Estimated Cost": "Total Estimated Cost",
+  "Export Usage": "Export Usage",
+  "Model placeholder": "Search models",
+  "Latency": "Latency",
+  "Events": "Events",
+  "Tokens": "Tokens",
+  "Cost": "Cost",
+  "Avg Latency": "Avg Latency",
+  "Success Rate": "Success Rate",
+  "Token Mix": "Token Mix",
+  "Prompt Tokens": "Prompt Tokens",
+  "Completion Tokens": "Completion Tokens",
+  "Prompt tokens": "Prompt tokens",
+  "Completion tokens": "Completion tokens",
+  "Total tokens": "Total tokens",
+  "Status Distribution": "Status Distribution",
+  "Distribution by event outcome": "Distribution by event outcome",
+  "Model Distribution": "Model Distribution",
+  "Most active models in current scope": "Most active models in current scope",
+  "Token Trend": "Token Trend",
+  "Total tokens over time": "Total tokens over time",
+  "Cost Trend": "Cost Trend",
+  "Estimated cost over time": "Estimated cost over time",
+  "investigation": {
+    "gatewayRequest": {
+      "label": "Gateway request",
+      "summary": "Scoped to one gateway request."
+    },
+    "providerRequest": {
+      "label": "Provider request",
+      "summary": "Scoped to one upstream provider request."
+    },
+    "budgetPolicy": {
+      "label": "Budget policy",
+      "summary": "Scoped to one budget policy."
+    },
+    "virtualKey": {
+      "label": "Virtual key",
+      "summary": "Scoped to one virtual key."
+    },
+    "providerConnection": {
+      "label": "Provider connection",
+      "summary": "Scoped to one provider connection."
+    },
+    "model": {
+      "label": "Model",
+      "summary": "Scoped to one model."
+    },
+    "trend": {
+      "label": "Request Trend"
+    },
+    "provider": {
+      "label": "Provider Distribution",
+      "summary": "Scoped to one provider."
+    }
+  },
+  "summary": {
+    "attention": "Needs attention ({count})",
+    "healthy": "Healthy",
+    "empty": "No events"
+  },
+  "savedViewNames": {
+    "budgetIncident": "Budget incident",
+    "gatewayRequest": "Gateway request",
+    "upstreamRequest": "Provider request",
+    "default": "Usage investigation"
+  },
+  "budgetPolicyBadge": "Budget policy {id}",
+  "presentation": {
+    "completed": "Completed",
+    "completedTitle": "Completed",
+    "noContext": "No context",
+    "blockedWithoutReason": "Blocked",
+    "errorWithoutReason": "Request error",
+    "modelCatalog": "Model catalog",
+    "modelDetail": "Model detail"
+  },
+  "Showing {start}-{end} of {total} events": "Showing {start}-{end} of {total} events",
+  "filters": {
+    "allOutcomes": "All outcomes",
+    "needsAttention": "Needs attention",
+    "allCallTypes": "All call types",
+    "metadataLookups": "Metadata lookups",
+    "streamedResponses": "Streamed responses",
+    "interruptedStreams": "Interrupted streams",
+    "oldestFirst": "Oldest first",
+    "slowestFirst": "Slowest first",
+    "mostTokensFirst": "Most tokens first",
+    "mostExpensiveFirst": "Most expensive first",
+    "newestFirst": "Newest first"
+  },
+  "Time": "Time",
+  "Event": "Event",
+  "Scope": "Scope",
+  "Request IDs": "Request IDs",
+  "Usage": "Usage",
+  "Status": "Status",
+  "Protocol": "Protocol",
+  "Drilled in from": "Drilled in from",
+  "Recorded Context": "Recorded Context",
+  "Gateway path": "Gateway path",
+  "HTTP result": "HTTP result",
+  "Delivery": "Delivery",
+  "stream interrupted": "Stream interrupted",
+  "streamed response": "Streamed response",
+  "metadata lookup": "Metadata lookup",
+  "non-stream response": "Non-stream response",
+  "Primary cause": "Primary cause",
+  "Detail": "Detail",
+  "No additional detail": "No additional detail",
+  "budget hard limit exceeded": "Budget hard limit exceeded",
+  "budget preflight estimate exceeds remaining headroom": "Budget preflight estimate exceeds remaining headroom",
+  "pricing not configured for budget enforcement": "Pricing not configured for budget enforcement",
+  "Page size": "Page size",
+  "Previous page": "Previous page",
+  "Next page": "Next page",
+  "n/a": "n/a",
+  "{count} ms": "{count} ms",
+  "{count} tokens": "{count} tokens",
+  "Input {count}": "Input {count}",
+  "Output {count}": "Output {count}",
+  "Open event": "Open event",
+  "View event": "View event",
+  "Usage event ID": "Usage event ID",
+  "View same request": "View same request",
+  "View same upstream": "View same upstream",
+  "Request family events": "Request family events",
+  "Family total tokens": "Family total tokens",
+  "Family total cost": "Family total cost",
+  "Family avg latency": "Family avg latency",
+  "Distinct causes": "Distinct causes",
+  "Family Cause Breakdown": "Family Cause Breakdown",
+  "No cause breakdown is available for this request family.": "No cause breakdown is available for this request family.",
+  "No matching event": "No matching event",
+  "No usage events matched the current filters yet": "No usage events matched the current filters yet",
+  "Saved views": "Saved views",
+  "Saved filters for this view": "Saved filters for this view",
+  "Saved views are unavailable": "Saved views are unavailable",
+  "Opened {time}": "Opened {time}",
+  "Updated {time}": "Updated {time}",
+  "{activity} · {count} stored filters": "{activity} · {count} stored filters",
+  "workspace-scope": "workspace-wide",
+  "No environment": "No environment"
+}

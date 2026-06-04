@@ -1,0 +1,150 @@
+{
+  "Usage": "用量情况",
+  "Usage events": "用量事件",
+  "Total gateway requests over time": "网关请求总量随时间变化的趋势",
+  "Total Events": "事件总数",
+  "Economic Summary": "成本概览",
+  "Total Estimated Cost": "预估总成本",
+  "Export Usage": "导出用量",
+  "Model placeholder": "搜索模型",
+  "Latency": "延迟",
+  "Events": "事件数",
+  "Tokens": "令牌数",
+  "Cost": "成本",
+  "Avg Latency": "平均延迟",
+  "Success Rate": "成功率",
+  "Token Mix": "Token 构成",
+  "Prompt Tokens": "输入 Token",
+  "Completion Tokens": "输出 Token",
+  "Prompt tokens": "输入 Token",
+  "Completion tokens": "输出 Token",
+  "Total tokens": "Token 总数",
+  "Status Distribution": "状态分布",
+  "Distribution by event outcome": "按事件结果分布",
+  "Model Distribution": "模型分布",
+  "Most active models in current scope": "当前范围内最活跃的模型",
+  "Token Trend": "Token 趋势",
+  "Total tokens over time": "总 Token 随时间变化",
+  "Cost Trend": "成本趋势",
+  "Estimated cost over time": "预估成本随时间变化",
+  "investigation": {
+    "gatewayRequest": {
+      "label": "网关请求",
+      "summary": "已聚焦到单个网关请求。"
+    },
+    "providerRequest": {
+      "label": "供应商请求",
+      "summary": "已聚焦到单个上游供应商请求。"
+    },
+    "budgetPolicy": {
+      "label": "预算策略",
+      "summary": "已聚焦到单个预算策略。"
+    },
+    "virtualKey": {
+      "label": "虚拟密钥",
+      "summary": "已聚焦到单个虚拟密钥。"
+    },
+    "providerConnection": {
+      "label": "供应商连接",
+      "summary": "已聚焦到单个供应商连接。"
+    },
+    "model": {
+      "label": "模型",
+      "summary": "已聚焦到单个模型。"
+    },
+    "trend": {
+      "label": "请求趋势"
+    },
+    "provider": {
+      "label": "供应商分布",
+      "summary": "已聚焦到单个供应商。"
+    }
+  },
+  "summary": {
+    "attention": "需要关注（{count}）",
+    "healthy": "状态健康",
+    "empty": "暂无事件"
+  },
+  "savedViewNames": {
+    "budgetIncident": "预算事件",
+    "gatewayRequest": "网关请求",
+    "upstreamRequest": "供应商请求",
+    "default": "用量排查"
+  },
+  "budgetPolicyBadge": "预算策略 {id}",
+  "presentation": {
+    "completed": "成功",
+    "completedTitle": "已完成",
+    "noContext": "无上下文",
+    "blockedWithoutReason": "已阻止",
+    "errorWithoutReason": "请求错误",
+    "modelCatalog": "模型目录",
+    "modelDetail": "模型详情"
+  },
+  "Showing {start}-{end} of {total} events": "显示第 {start}-{end} 条，共 {total} 条事件",
+  "filters": {
+    "allOutcomes": "所有结果",
+    "needsAttention": "需要关注",
+    "allCallTypes": "所有调用类型",
+    "metadataLookups": "元数据查询",
+    "streamedResponses": "流式响应",
+    "interruptedStreams": "中断流响应",
+    "oldestFirst": "最早优先",
+    "slowestFirst": "最慢优先",
+    "mostTokensFirst": "令牌最多优先",
+    "mostExpensiveFirst": "成本最高优先",
+    "newestFirst": "最新优先"
+  },
+  "Time": "时间",
+  "Event": "事件",
+  "Scope": "范围",
+  "Request IDs": "请求 ID",
+  "Usage": "用量",
+  "Status": "状态",
+  "Protocol": "协议",
+  "Drilled in from": "来自",
+  "Recorded Context": "请求上下文",
+  "Gateway path": "网关路径",
+  "HTTP result": "HTTP 结果",
+  "Delivery": "响应模式",
+  "stream interrupted": "流式中断",
+  "streamed response": "流式响应",
+  "metadata lookup": "元数据查询",
+  "non-stream response": "非流式响应",
+  "Primary cause": "主要原因",
+  "Detail": "详情",
+  "No additional detail": "无更多详情",
+  "budget hard limit exceeded": "预算硬上限已触发",
+  "budget preflight estimate exceeds remaining headroom": "预算预估已超过剩余额度",
+  "pricing not configured for budget enforcement": "预算管控所需计费配置缺失",
+  "Page size": "分页大小",
+  "Previous page": "上一页",
+  "Next page": "下一页",
+  "n/a": "无",
+  "{count} ms": "{count} ms",
+  "{count} tokens": "{count} 个 token",
+  "Input {count}": "输入 {count}",
+  "Output {count}": "输出 {count}",
+  "Open event": "打开事件",
+  "View event": "查看事件",
+  "Usage event ID": "用量事件 ID",
+  "View same request": "查看同一请求",
+  "View same upstream": "查看同一上游",
+  "Request family events": "关联事件数",
+  "Family total tokens": "关联 Token 总数",
+  "Family total cost": "关联总成本",
+  "Family avg latency": "关联平均延迟",
+  "Distinct causes": "原因类型数",
+  "Family Cause Breakdown": "关联原因分布",
+  "No cause breakdown is available for this request family.": "当前请求链路暂无原因分布。",
+  "No matching event": "没有匹配的事件",
+  "No usage events matched the current filters yet": "当前筛选下还没有匹配的用量事件",
+  "Saved views": "已保存视图",
+  "Saved filters for this view": "当前视图的已保存筛选",
+  "Saved views are unavailable": "已保存视图不可用",
+  "Opened {time}": "最近打开于 {time}",
+  "Updated {time}": "最近更新于 {time}",
+  "{activity} · {count} stored filters": "{activity} · 已保存 {count} 个筛选条件",
+  "workspace-scope": "工作区级",
+  "No environment": "无环境"
+}

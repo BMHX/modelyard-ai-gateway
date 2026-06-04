@@ -1,0 +1,105 @@
+{
+  "title": "首页",
+  "serviceStatus": {
+    "label": "服务状态",
+    "degradedBadge": "降级",
+    "degradedDescription": "主页暂时降级"
+  },
+  "changeWorkspace": "更换工作区",
+  "contextSummary": {
+    "noOrganization": "请先创建组织根节点。",
+    "noWorkspace": "先添加一个工作区以开始治理访问。",
+    "pickWorkspace": "为本次会话选择一个工作区。"
+  },
+  "setup": {
+    "workspaceLabel": "工作区",
+    "card": {
+      "title": {
+        "organizationRequired": "需要组织",
+        "workspaceRequired": "需要工作区",
+        "chooseWorkspace": "选择工作区"
+      },
+      "description": {
+        "organizationRequired": "创建第一个组织根节点。",
+        "workspaceRequired": "在开启治理访问前创建一个工作区。",
+        "chooseWorkspace": "为本次会话选择一个工作区。"
+      }
+    },
+    "button": {
+      "createOrganization": "创建组织",
+      "createWorkspace": "创建工作区",
+      "useWorkspace": "使用工作区"
+    }
+  },
+  "primaryAction": {
+    "connectProvider": {
+      "title": "连接第一个 Provider",
+      "description": "在颁发密钥前先添加一个 Provider 路由。",
+      "cta": "打开 Provider"
+    },
+    "retestRoutes": {
+      "title": "{count, plural, one {重新测试 # 个 Provider 路由} other {重新测试 # 个 Provider 路由}}",
+      "description": "检查失败或未测试的路由。",
+      "cta": "检查路由"
+    },
+    "issueFirstKey": {
+      "title": "签发第一个 scoped 密钥",
+      "description": "在 Provider 路由准备就绪后为工作区创建密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewExpiringKeys": {
+      "title": "{count, plural, one {审查 # 个即将过期的密钥} other {审查 # 个即将过期的密钥}}",
+      "description": "轮换或替换即将过期的激活密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewDormantKeys": {
+      "title": "{count, plural, one {审查 # 个广域访问密钥} other {审查 # 个广域访问密钥}}",
+      "description": "收紧未使用但仍有广泛权限的密钥。",
+      "cta": "打开密钥"
+    },
+    "reviewBlockedRequests": {
+      "title": "{count, plural, one {审查 # 个被阻止的请求} other {审查 # 个被阻止的请求}}",
+      "description": "在扩大访问前检查使用失败。",
+      "cta": "查看使用情况"
+    },
+    "reviewErroredRequests": {
+      "title": "{count, plural, one {审查 # 个出错的请求} other {审查 # 个出错的请求}}",
+      "description": "在扩大访问前检查使用失败。",
+      "cta": "查看使用情况"
+    },
+    "reviewAuditTrail": {
+      "title": "审查审计记录",
+      "description": "控制平面最近的更改已准备好审查。",
+      "cta": "打开审计日志"
+    },
+    "footerActionLabel": "打开导出"
+  },
+  "inbox": {
+    "title": "收件箱",
+    "description": "一项待办操作以及最新更改。",
+    "primaryItemsTitle": "下一步操作",
+    "secondaryItemsTitle": "最近更改",
+    "open": "打开"
+  },
+  "recent": {
+    "blockedRequest": "被阻止的请求",
+    "erroredRequest": "出错的请求",
+    "usageLabel": "使用情况",
+    "unknownModel": "未知模型",
+    "unknownProvider": "未知 Provider",
+    "tokens": "令牌"
+  },
+  "overview": {
+    "usage": "使用情况",
+    "budgets": "预算",
+    "success": "成功",
+    "overview": "概览",
+    "unavailable": "暂不可用",
+    "summaryUnavailable": "工作区摘要暂时不可用。",
+    "eventsLabel": "事件",
+    "blocked": "阻止",
+    "openAlerts": "待处理告警",
+    "stable": "稳定",
+    "waitingForTraffic": "等待流量"
+  }
+}

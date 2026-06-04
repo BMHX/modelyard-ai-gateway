@@ -1,0 +1,30 @@
+{
+  "name": "@teamops/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "production": "./dist/index.js",
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./response-watermark": {
+      "production": "./dist/response-watermark.js",
+      "types": "./src/response-watermark.ts",
+      "default": "./src/response-watermark.ts"
+    },
+    "./response-attestation": {
+      "production": "./dist/response-attestation.js",
+      "types": "./src/response-attestation.ts",
+      "default": "./src/response-attestation.ts"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  }
+}

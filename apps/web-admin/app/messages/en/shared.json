@@ -1,0 +1,15 @@
+{
+  "preferences": "Preferences",
+  "language": "Language",
+  "theme": "Theme",
+  "loadingLanguage": "Switching language…",
+  "english": "English",
+  "simplifiedChinese": "Simplified Chinese",
+  "useEnglish": "Use English interface",
+  "useChinese": "Use Simplified Chinese",
+  "toolbar": {
+    "filters": "Filters",
+    "refineResults": "Refine Results",
+    "resetAllFilters": "Reset All Filters"
+  }
+}

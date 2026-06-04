@@ -1,0 +1,189 @@
+{
+  "title": "工作区",
+  "notice": {
+    "created": "已创建",
+    "updated": "已更新",
+    "deleted": "已删除",
+    "error": "错误"
+  },
+  "summary": {
+    "title": "工作区概览",
+    "total": "总数",
+    "visible": "可见",
+    "fresh": "新启动",
+    "active": "活跃",
+    "dormant": "休眠",
+    "meta": {
+      "inScope": "{count, plural, one {# 个工作区在筛选范围内} other {# 个工作区在筛选范围内}}",
+      "updated72h": "72 小时内更新",
+      "updated30d": "30 天内更新",
+      "reviewNow": "立即复查"
+    }
+  },
+  "queue": {
+    "label": {
+      "over7d": "7 天+",
+      "over30d": "30 天+",
+      "over90d": "90 天+"
+    }
+  },
+  "toolbar": {
+    "name": "名称",
+    "namePlaceholder": "平台团队",
+    "slug": "标识",
+    "slugPlaceholder": "platform-team",
+    "organization": "组织",
+    "search": "搜索",
+    "searchPlaceholder": "搜索工作区",
+    "browse": "范围",
+    "browseOptions": {
+      "all": "所有工作区",
+      "recent": "最近",
+      "established": "稳定"
+    },
+    "sort": "排序",
+    "sortOptions": {
+      "updatedDesc": "最近更新",
+      "updatedAsc": "最早更新",
+      "nameAsc": "名称升序",
+      "nameDesc": "名称降序",
+      "reviewPriority": "复查优先"
+    },
+    "newWorkspace": "新建工作区",
+    "review": "复查",
+    "reviewOptions": {
+      "all": "所有复查",
+      "fresh": "新启动",
+      "active": "活跃",
+      "dormant": "休眠"
+    },
+    "queue": "队列",
+    "queueOptions": {
+      "all": "所有队列",
+      "over7d": "7 天以上",
+      "over30d": "30 天以上",
+      "over90d": "90 天以上"
+    },
+    "viewOptions": "查看选项",
+    "density": "密度",
+    "densityOptions": {
+      "comfortable": "舒适",
+      "compact": "紧凑"
+    },
+    "columns": "列",
+    "columnsOptions": {
+      "standard": "标准",
+      "audit": "审计",
+      "minimal": "最简"
+    },
+    "reset": "重置",
+    "dialog": {
+      "title": "新建工作区",
+      "description": "创建工作区",
+      "cancel": "取消",
+      "create": "创建"
+    }
+  },
+  "reviewQueue": {
+    "title": "复查队列",
+    "open": "打开队列"
+  },
+  "table": {
+    "meta": "{count} 条",
+    "relatedPages": "相关页面",
+    "view": {
+      "title": "查看",
+      "density": "密度",
+      "columns": "列"
+    },
+    "summary": {
+      "snapshot": "概览",
+      "slug": "标识",
+      "jump": "跳转"
+    },
+    "selection": {
+      "label": "选择",
+      "selectAllVisible": "选择当前可见工作区",
+      "selectWorkspace": "选择工作区 {name}",
+      "selectedCount": "已选 {count} 个"
+    },
+    "compare": {
+      "title": "对比已选",
+      "description": "显示前 {count} 个已选工作区。",
+      "hide": "收起对比"
+    },
+    "columns": {
+      "workspace": "工作区",
+      "state": "状态",
+      "created": "创建时间",
+      "updated": "更新时间",
+      "resources": "资源",
+      "actions": "操作"
+    },
+    "actions": {
+      "inspect": "查看",
+      "hide": "收起",
+      "open": "打开",
+      "openSelected": "打开所选",
+      "compare": "对比",
+      "clear": "清除",
+      "deleteSelected": "删除所选",
+      "openActionsFor": "打开 {name} 的操作菜单"
+    }
+  },
+  "emptyState": {
+    "noOrganization": {
+      "title": "尚无组织",
+      "description": "请先创建一个组织。",
+      "action": "打开组织"
+    },
+    "noMatching": {
+      "title": "没有匹配的工作区",
+      "description": "当前视图下没有匹配的工作区。"
+    },
+    "noWorkspace": {
+      "title": "尚无工作区",
+      "description": "为 {organization} 创建第一个工作区。",
+      "descriptionFallback": "为当前组织创建第一个工作区。"
+    }
+  },
+  "actions": {
+    "controlCenter": "控制中心",
+    "providers": "供应商",
+    "members": "成员",
+    "alerts": "告警",
+    "keys": "密钥",
+    "budgets": "预算",
+    "projects": "项目",
+    "usage": "使用情况"
+  },
+  "lifecycle": {
+    "onboarding": "启动",
+    "stabilizing": "稳定中",
+    "operating": "运营中",
+    "onboardingMeta": "14天内",
+    "stabilizingMeta": "15–90 天",
+    "operatingMeta": "90+ 天"
+  },
+  "review": {
+    "fresh": "近期",
+    "active": "活跃",
+    "dormant": "休眠",
+    "freshMeta": "72h内",
+    "activeMeta": "30天内",
+    "dormantMeta": "待复查"
+  },
+  "Activity Trend": "活跃趋势",
+  "Demonstration of workspace activity over time": "展示工作区活动随时间变化的趋势。",
+  "Auditor Perspective": "审计视角",
+  "Attention Required": "需要关注",
+  "Healthy Posture": "状态健康",
+  "reviewOver30d": "{count} 个工作区超过 30 天未复查。",
+  "Continue setup": "继续设置",
+  "Open workspace": "打开工作区",
+  "Open members": "打开成员",
+  "Open providers": "打开供应商",
+  "Setup incomplete": "待完成",
+  "Ready for handoff": "已就绪",
+  "Ready for daily operations": "已可进入日常运营"
+}

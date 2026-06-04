@@ -1,0 +1,418 @@
+{
+  "languageLabel": "语言",
+  "languageSwitchPending": "正在切换语言…",
+  "currentLanguage": "当前语言",
+  "useEnglish": "使用英文界面",
+  "useChinese": "使用中文界面",
+  "switchingWorkspace": "正在切换到工作区 {workspace}。",
+  "workspaceSwitchFailed": "当前无法切换工作区。",
+  "workspaceContextSyncingLabel": "切换访问身份",
+  "workspaceContextSyncing": "正在切换所选工作区的访问身份。",
+  "workspaceContextFailedLabel": "需要切换身份",
+  "workspaceContextFailed": "当前无法自动切换到该工作区的访问身份。",
+  "workspaceContextFailedTimeout": "自动切换访问身份超时，请重试或手动选择身份。",
+  "workspaceContextRetry": "重试切换",
+  "workspaceContextSelectIdentity": "手动选择身份",
+  "selectedWorkspace": "已选择工作区",
+  "savedViewAdded": "已添加保存视图。",
+  "savedViewRemoved": "已从保存视图移除。",
+  "savedViewUpdateFailed": "保存视图更新失败。",
+  "savedViewRemovalFailed": "删除保存视图失败。",
+  "savedViewsCleared": "已清除保存视图。",
+  "savedViewsClearFailed": "无法清除保存视图。",
+  "workspaceSwitched": "已切换到 {workspace}。",
+  "Account": "账号",
+  "Login": "登录",
+  "No permission": "无权限",
+  "Switch permission": "切换权限",
+  "Switch identity": "切换身份",
+  "session": {
+    "syncing": "正在同步会话",
+    "unavailable": "会话状态暂不可用"
+  },
+  "savedViewLabel": "已保存视图",
+  "savedViewsLabel": "已保存视图",
+  "recentVisitMeta": "最近访问 · {time}",
+  "recentVisitDescription": "从 {time} 重新打开此页面。",
+  "recentVisitLabel": "最近访问",
+  "mobileBanner": {
+    "message": "建议在桌面浏览器使用完整功能",
+    "dismiss": "关闭提示"
+  },
+  "navigation": {
+    "sections": {
+      "configuration": {
+        "label": "接入配置",
+        "description": "组织、工作区与供应商。"
+      },
+      "permissions": {
+        "label": "权限范围",
+        "description": "项目、成员与虚拟密钥范围。"
+      },
+      "operations": {
+        "label": "运营风险",
+        "description": "用量、预算与告警。"
+      },
+      "reporting": {
+        "label": "审计导出",
+        "description": "审计日志与导出。"
+      },
+      "integration": {
+        "label": "集成中心",
+        "description": "获取连接密钥、查看接入引导与项目范围。"
+      }
+    },
+    "items": {
+      "home": {
+        "label": "首页",
+        "description": "全局总览与运营队列。"
+      },
+      "setup": {
+        "label": "设置",
+        "description": "设置清单与激活流程。"
+      },
+      "workspaces": {
+        "label": "工作区",
+        "description": "创建、选择与切换工作区。"
+      },
+      "members": {
+        "label": "成员",
+        "description": "邀请操作成员并分配受限访问。"
+      },
+      "providers": {
+        "label": "供应商",
+        "description": "连接供应商并复查路由准备度。"
+      },
+      "settings": {
+        "label": "设置",
+        "description": "配置网关端点与默认请求路径。"
+      },
+      "keys": {
+        "label": "密钥",
+        "description": "治理服务、共享与运行时凭据。"
+      },
+      "budgets": {
+        "label": "预算",
+        "description": "跟踪预算策略与运行率压力。"
+      },
+      "alerts": {
+        "label": "告警",
+        "description": "处理活跃风险与异常压力。"
+      },
+      "usage": {
+        "label": "用量",
+        "description": "检查请求流量与失败情况。"
+      },
+      "audit": {
+        "label": "审计",
+        "description": "复查最近控制面变更。"
+      },
+      "lineage": {
+        "label": "发布谱系",
+        "description": "签发带签名的发布谱系并复核证明包。"
+      },
+      "inspections": {
+        "label": "审查",
+        "description": "复查命中的提示词活动与治理证据。"
+      },
+      "exports": {
+        "label": "导出",
+        "description": "生成证据包与报告产物。"
+      },
+      "orgs": {
+        "label": "组织",
+        "description": "建立组织归属与计费边界。"
+      },
+      "projects": {
+        "label": "项目",
+        "description": "定义项目与环境范围。"
+      },
+      "access": {
+        "label": "接入",
+        "description": "自助申请个人开发密钥并接入网关。"
+      },
+      "models": {
+        "label": "模型",
+        "description": "查看可用的模型大厅。"
+      }
+    }
+  },
+  "navigationTargets": {
+    "controlCenter": {
+      "label": "控制中心",
+      "cta": "返回控制中心",
+      "description": "继续处理你之前打开的控制中心页面。"
+    },
+    "alerts": {
+      "label": "告警",
+      "cta": "返回告警",
+      "description": "继续处理你之前打开的告警视图。"
+    },
+    "alertDetail": {
+      "label": "告警详情",
+      "cta": "返回告警详情",
+      "description": "继续查看你正在调查的告警。"
+    },
+    "usage": {
+      "base": {
+        "label": "用量事件",
+        "cta": "返回用量事件",
+        "description": "继续处理你之前打开的用量事件视图。"
+      },
+      "sameRequest": {
+        "label": "筛选用量 · 同一请求",
+        "cta": "返回同一请求",
+        "description": "继续处理你之前打开的请求范围用量视图。"
+      },
+      "sameUpstream": {
+        "label": "筛选用量 · 同一上游请求",
+        "cta": "返回同一上游请求",
+        "description": "继续处理你之前打开的上游请求视图。"
+      },
+      "virtualKey": {
+        "label": "筛选用量 · 虚拟密钥",
+        "cta": "返回密钥范围用量",
+        "description": "继续处理你之前打开的虚拟密钥用量视图。"
+      },
+      "providerConnection": {
+        "label": "筛选用量 · 供应商连接",
+        "cta": "返回供应商用量",
+        "description": "继续处理你之前打开的供应商范围用量视图。"
+      },
+      "budgetPolicy": {
+        "label": "筛选用量 · 预算策略",
+        "cta": "返回预算范围用量",
+        "description": "继续处理你之前打开的预算聚焦用量视图。"
+      },
+      "filtered": {
+        "label": "筛选用量",
+        "cta": "返回筛选用量",
+        "description": "继续处理你之前打开的筛选用量视图。"
+      }
+    },
+    "usageEventDetail": {
+      "label": "用量事件详情",
+      "cta": "返回用量事件详情",
+      "description": "继续查看你之前检查的父级用量事件。"
+    },
+    "budgets": {
+      "label": "预算",
+      "cta": "返回预算",
+      "description": "继续处理你之前打开的预算视图。"
+    },
+    "auditLogs": {
+      "label": "审计日志",
+      "cta": "返回审计日志",
+      "description": "继续处理你之前打开的审计轨迹。"
+    },
+    "providers": {
+      "label": "供应商",
+      "cta": "返回供应商",
+      "description": "继续处理你之前打开的供应商页面。"
+    },
+    "virtualKeys": {
+      "label": "虚拟密钥",
+      "cta": "返回虚拟密钥",
+      "description": "继续处理你之前打开的虚拟密钥视图。"
+    },
+    "projects": {
+      "label": "项目",
+      "cta": "返回项目",
+      "description": "继续处理你之前打开的项目视图。"
+    },
+    "exports": {
+      "label": "导出",
+      "cta": "返回导出",
+      "description": "继续处理你之前打开的导出视图。"
+    },
+    "previous": {
+      "label": "上一页",
+      "cta": "返回上一页",
+      "description": "继续处理你之前打开的页面。"
+    }
+  },
+  "savedViews": {
+    "single": "已保存视图",
+    "count": "{count, plural, other {# 个已保存视图}}",
+    "countShort": "{count, plural, other {# 个视图}}",
+    "saveCurrent": "保存当前视图",
+    "current": "当前保存视图",
+    "viewName": "视图名称",
+    "namePlaceholder": "为此视图命名",
+    "renamePlaceholder": "重命名此视图",
+    "saving": "正在保存…",
+    "updating": "正在更新…",
+    "deleting": "正在删除…",
+    "saveFilters": "保存当前筛选条件",
+    "updateCurrent": "更新当前视图",
+    "noticeError": "错误",
+    "noticeSaved": "已保存",
+    "delete": "删除",
+    "deleteLabel": "删除视图",
+    "deleteDescription": "这会从当前页面移除该保存视图引用。",
+    "deleteTitle": "删除保存视图“{name}”？",
+    "deleteAria": "删除保存视图 {name}",
+    "empty": "还没有保存视图。"
+  },
+  "statusCard": {
+    "severity": {
+      "notice": "提示",
+      "setup": "设置",
+      "unavailable": "不可用"
+    },
+    "missingAuth": {
+      "title": "页面设置未完成",
+      "description": "请先完成设置。",
+      "action": "完成设置。"
+    },
+    "loading": {
+      "title": "仍在加载",
+      "description": "数据尚未准备好。",
+      "action": "刷新。"
+    },
+    "missingData": {
+      "title": "部分数据缺失",
+      "description": "部分数据暂不可用。",
+      "action": "稍后重试。"
+    },
+    "unavailable": {
+      "title": "服务暂不可用",
+      "description": "当前无法连接。",
+      "action": "刷新。"
+    },
+    "pageUnavailable": {
+      "title": "页面暂不可用",
+      "description": "当前无法加载。",
+      "action": "稍后重试。"
+    }
+  },
+  "support": {
+    "surface": "页面",
+    "next": "下一步",
+    "nextStep": "下一步动作",
+    "saved": "已保存",
+    "saveError": "无法保存本次会话备注。",
+    "notesBlocked": "备注受阻",
+    "unsavedNote": "备注未保存",
+    "savedNote": "会话备注已保存",
+    "sessionNote": "会话备注",
+    "notePlaceholder": "发生了什么变化？下一步重点是什么？",
+    "noteActionsHint": "请使用“立即保存”或“复制备注”。",
+    "autoSavingHint": "正在当前浏览器会话中保存… 按“立即保存”或 Ctrl/⌘ + Enter。",
+    "savedInSession": "已在会话中保存",
+    "savedForSession": "已为本次会话保存",
+    "savedSummary": "{state}，来源：{surface}，时间：{time}。",
+    "retrySave": "重新保存",
+    "saveNow": "立即保存",
+    "clear": "清除",
+    "copyShiftNote": "复制交接备注",
+    "operatorSupport": "操作支持",
+    "shortcuts": "快捷方式",
+    "recent": "最近",
+    "recentAndNotes": "最近与备注",
+    "notes": "备注",
+    "open": "打开"
+  },
+  "titles": {
+    "controlCenter": "控制中心",
+    "workspaces": "工作区",
+    "providers": "供应商",
+    "virtualKeys": "虚拟密钥",
+    "members": "成员",
+    "exports": "导出",
+    "budgets": "预算",
+    "projects": "项目",
+    "organizations": "组织",
+    "auditLogs": "审计日志",
+    "usageEvents": "用量事件",
+    "usageEventDetail": "用量事件详情",
+    "alerts": "告警",
+    "alertDetail": "告警详情"
+  },
+  "taskLane": {
+    "home": {
+      "label": "首页",
+      "description": "全局队列与运营总览。"
+    },
+    "configuration": {
+      "label": "接入配置",
+      "description": "组织、工作区与供应商。"
+    },
+    "permissions": {
+      "label": "权限范围",
+      "description": "项目、成员与密钥范围。"
+    },
+    "operations": {
+      "label": "运营风险",
+      "description": "用量、预算与告警。"
+    },
+    "reporting": {
+      "label": "审计导出",
+      "description": "审计日志与导出。"
+    },
+    "workspace": {
+      "label": "工作区",
+      "description": "当前工作区工具。"
+    }
+  },
+  "themes": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "autoLabel": "自动 · {theme}",
+    "systemDescription": "跟随设备 · {theme}",
+    "fixedDescription": "始终使用{theme}模式"
+  },
+  "commandPalette": {
+    "placeholder": "跳转到页面、工作区或工具…",
+    "noResults": "没有结果。",
+    "filter": "筛选",
+    "jump": "跳转",
+    "save": "保存",
+    "focus": "专注",
+    "go": "前往",
+    "run": "运行",
+    "shortcut": "快捷方式",
+    "openPageInWorkspace": "在 {workspace} 中打开此页面",
+    "sections": {
+      "now": "当前",
+      "tools": "工具",
+      "workspaces": "工作区",
+      "saved": "已保存",
+      "shortcuts": "快捷方式",
+      "pinned": "已固定",
+      "recent": "最近"
+    }
+  },
+  "utility": {
+    "preferences": "偏好设置",
+    "theme": "主题",
+    "appName": "ModelYard",
+    "openSearch": "打开搜索",
+    "openHeaderActions": "打开顶部操作",
+    "closeNavigation": "关闭导航",
+    "navigation": "导航",
+    "primaryNavigation": "主导航",
+    "tryBroaderTerm": "试试更宽泛的关键词。",
+    "noPages": "没有页面",
+    "operatorContext": "操作上下文",
+    "skipToContent": "跳到正文",
+    "nextAction": "下一步动作",
+    "copyLink": "复制链接",
+    "laneLinkCopied": "路径链接已复制。",
+    "laneLinkCopyFailed": "路径链接复制失败。",
+    "removeView": "移除视图",
+    "removeViewDescription": "将此页面从你的保存视图中移除。",
+    "saveView": "保存视图",
+    "saveViewDescription": "将此页面保留为可重复查看的入口。",
+    "focusOff": "关闭专注",
+    "focusOn": "开启专注",
+    "showSupportPanels": "显示支持面板。",
+    "hideSupportPanels": "隐藏支持面板。",
+    "openWorkspaces": "打开工作区",
+    "topbarAction": "顶部操作",
+    "switchingWorkspaceShort": "正在切换工作区",
+    "openingPage": "正在打开页面",
+    "logOut": "退出登录"
+  }
+}

@@ -1,0 +1,145 @@
+name: teamops-demo
+
+x-app-image: &app-image
+  image: teamops-demo-app:latest
+
+services:
+  app-image:
+    <<: *app-image
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.app
+    command: ["sh", "-lc", "echo demo app image ready"]
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: teamops
+      POSTGRES_USER: teamops
+      POSTGRES_PASSWORD: teamops
+    volumes:
+      - demo-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teamops -d teamops"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  valkey:
+    image: valkey/valkey:8-alpine
+    volumes:
+      - demo-valkey-data:/data
+    healthcheck:
+      test: ["CMD", "valkey-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  migrate:
+    <<: *app-image
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      TEAMOPS_ENV: development
+      DATABASE_URL: postgres://teamops:teamops@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}
+    depends_on:
+      app-image:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+
+  seed:
+    <<: *app-image
+    command: ["npm", "run", "demo:seed"]
+    volumes:
+      - ../.demo:/app/.demo
+    environment:
+      TEAMOPS_ENV: development
+      DATABASE_URL: postgres://teamops:teamops@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+  control-api:
+    <<: *app-image
+    command: ["npm", "run", "start:control-api"]
+    ports:
+      - "${DEMO_CONTROL_API_PORT:-4001}:4001"
+    volumes:
+      - demo-export-data:/var/lib/teamops/exports
+    environment:
+      TEAMOPS_ENV: development
+      CONTROL_API_HOST: 0.0.0.0
+      CONTROL_API_PORT: 4001
+      CONTROL_API_ADMIN_TOKEN: ${CONTROL_API_ADMIN_TOKEN:-demo-admin-token}
+      WEB_ADMIN_BASE_URL: ${WEB_ADMIN_BASE_URL:-http://localhost:${DEMO_WEB_ADMIN_PORT:-3001}}
+      DATABASE_URL: postgres://teamops:teamops@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}
+      EXPORT_JOBS_DIR: /var/lib/teamops/exports
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+
+  export-worker:
+    <<: *app-image
+    command: ["npm", "run", "start:export-worker"]
+    volumes:
+      - demo-export-data:/var/lib/teamops/exports
+    environment:
+      TEAMOPS_ENV: development
+      DATABASE_URL: postgres://teamops:teamops@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}
+      EXPORT_JOBS_DIR: /var/lib/teamops/exports
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+
+  gateway:
+    <<: *app-image
+    command: ["npm", "run", "start:gateway"]
+    ports:
+      - "${DEMO_GATEWAY_PORT:-4002}:4002"
+    environment:
+      TEAMOPS_ENV: development
+      GATEWAY_HOST: 0.0.0.0
+      GATEWAY_PORT: 4002
+      GATEWAY_PUBLIC_BASE_URL: http://localhost:${DEMO_GATEWAY_PORT:-4002}
+      DEMO_MODE: ${DEMO_MODE:-1}
+      DATABASE_URL: postgres://teamops:teamops@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64:-MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=}
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+
+  web-admin:
+    <<: *app-image
+    command: ["npm", "run", "start:web-admin"]
+    ports:
+      - "${DEMO_WEB_ADMIN_PORT:-3001}:3001"
+    environment:
+      TEAMOPS_ENV: development
+      NODE_ENV: development
+      CONTROL_API_BASE_URL: http://control-api:4001
+      NEXT_PUBLIC_CONTROL_API_BASE_URL: http://localhost:${DEMO_CONTROL_API_PORT:-4001}
+      WEB_ADMIN_BASE_URL: ${WEB_ADMIN_BASE_URL:-http://localhost:${DEMO_WEB_ADMIN_PORT:-3001}}
+      CONTROL_API_ADMIN_TOKEN: ${CONTROL_API_ADMIN_TOKEN:-demo-admin-token}
+    depends_on:
+      control-api:
+        condition: service_started
+
+volumes:
+  demo-postgres-data:
+  demo-valkey-data:
+  demo-export-data:

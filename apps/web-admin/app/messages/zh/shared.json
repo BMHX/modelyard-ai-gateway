@@ -1,0 +1,15 @@
+{
+  "preferences": "偏好设置",
+  "language": "语言",
+  "theme": "主题",
+  "loadingLanguage": "正在切换语言…",
+  "english": "英文",
+  "simplifiedChinese": "中文",
+  "useEnglish": "使用英文界面",
+  "useChinese": "使用中文界面",
+  "toolbar": {
+    "filters": "筛选",
+    "refineResults": "细化结果",
+    "resetAllFilters": "重置全部筛选"
+  }
+}

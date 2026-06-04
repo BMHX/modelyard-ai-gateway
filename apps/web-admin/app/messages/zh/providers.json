@@ -1,0 +1,453 @@
+{
+  "title": "供应商",
+  "Providers": "供应商",
+  "Health Distribution": "健康分布",
+  "Total": "总数",
+  "Request Trend": "请求趋势",
+  "Demonstration of activity over time": "展示活动随时间变化的趋势。",
+  "Quick Stats": "快速统计",
+  "Label": "连接名称",
+  "API key": "API 密钥",
+  "Base URL": "API 地址",
+  "providerKinds": {
+    "anthropic": "Anthropic",
+    "openai": "OpenAI",
+    "openaiCompatible": "OpenAI 兼容",
+    "bedrock": "Bedrock",
+    "vertex": "Vertex"
+  },
+  "providerStatus": {
+    "active": "启用中",
+    "revoked": "已撤销"
+  },
+  "viewFilters": {
+    "all": "全部",
+    "ready": "就绪",
+    "attention": "关注",
+    "revoked": "已撤销"
+  },
+  "templateTitles": {
+    "privateCluster": "私有集群",
+    "internalEndpoint": "内部端点",
+    "customerGateway": "客户网关",
+    "newApiGateway": "New API / 中转平台"
+  },
+  "templates": {
+    "anthropicPublic": {
+      "summary": "用于 Claude 流量的公共 Anthropic 路由。",
+      "helper": "使用公共 Anthropic API，可选填写自定义 Base URL。",
+      "labelSuggestion": "Anthropic 公共路由"
+    },
+    "openaiPublic": {
+      "summary": "用于 GPT 流量的公共 OpenAI 路由。",
+      "helper": "可直连默认 OpenAI API，也可覆盖 Base URL 接入托管边缘。",
+      "labelSuggestion": "OpenAI 公共路由"
+    },
+    "privateCluster": {
+      "summary": "自托管或私有的 OpenAI-compatible 集群。",
+      "helper": "需要 Base URL，适合接入内部模型。",
+      "labelSuggestion": "私有模型集群"
+    },
+    "qwenCluster": {
+      "summary": "面向 Qwen 的 OpenAI-compatible 路由。",
+      "helper": "默认带 Qwen 前缀，适合承接 Qwen 相关流量。",
+      "labelSuggestion": "Qwen 集群"
+    },
+    "deepseekCluster": {
+      "summary": "面向 DeepSeek 的 OpenAI-compatible 路由。",
+      "helper": "默认带 DeepSeek 前缀，适合承接 DeepSeek 相关流量。",
+      "labelSuggestion": "DeepSeek 集群"
+    },
+    "internalEndpoint": {
+      "summary": "内部网关或代理端点。",
+      "helper": "当该路由只服务特定流量时，建议使用定向通道。",
+      "labelSuggestion": "内部端点"
+    },
+    "customerGateway": {
+      "summary": "带客户标识的 OpenAI 边缘连接。",
+      "helper": "需要 Base URL，并保持在共享中可识别。",
+      "labelSuggestion": "客户网关"
+    },
+    "newApiGateway": {
+      "summary": "适用于 New API 等 OpenAI-compatible 中转平台。",
+      "helper": "填写中转地址和 API Key 后，可自动扫描模型目录并直接勾选。",
+      "labelSuggestion": "New API 中转平台"
+    }
+  },
+  "templateMeta": {
+    "baseUrlRequired": "需要 Base URL",
+    "baseUrlOptional": "Base URL 可选",
+    "defaultLane": "默认通道",
+    "targetedLane": "定向通道"
+  },
+  "endpoint": {
+    "baseUrlRequired": "需要 Base URL"
+  },
+  "date": {
+    "notYet": "尚未"
+  },
+  "common": {
+    "na": "暂无"
+  },
+  "actions": {
+    "endpointCopied": "端点已复制",
+    "copyEndpoint": "复制端点",
+    "copied": "已复制",
+    "retry": "重试",
+    "copy": "复制"
+  },
+  "summary": {
+    "shownLabel": "显示中",
+    "totalMeta": "共 {count} 条",
+    "readyLabel": "就绪",
+    "passedChecks": "检查通过",
+    "attentionLabel": "关注",
+    "needsReview": "需要复核",
+    "revokedLabel": "已撤销"
+  },
+  "primaryState": {
+    "openWorkspaces": "打开工作区",
+    "retryInventory": "重试供应商加载",
+    "workspaceUnavailableTitle": "工作区不可用",
+    "workspaceUnavailableMessage": "请选择其他工作区以查看供应商。",
+    "inventoryUnavailableTitle": "供应商暂时不可用",
+    "inventoryUnavailableMessage": "请重试当前工作区供应商，或切换到其他工作区。",
+    "workspaceRequiredTitle": "需要先选择工作区",
+    "workspaceRequiredMessage": "先选择一个工作区，再查看供应商。"
+  },
+  "filters": {
+    "title": "供应商",
+    "addProvider": "添加供应商",
+    "closeAddFlow": "收起添加流程",
+    "moreTools": "更多工具",
+    "hideTools": "收起工具",
+    "searchLabel": "搜索",
+    "searchPlaceholder": "搜索标签、供应商、端点或模型…",
+    "searchDescription": "按连接标签、供应商类型、端点、模型前缀或精确模型搜索。",
+    "providerLabel": "供应商",
+    "allProviders": "所有供应商",
+    "viewLabel": "视图",
+    "reset": "重置",
+    "activeCount": "已启用 {count} 个筛选",
+    "viewOptions": {
+      "all": "全部",
+      "ready": "就绪",
+      "attention": "关注",
+      "revoked": "已撤销"
+    },
+    "active": {
+      "search": "搜索：{query}",
+      "provider": "供应商：{provider}",
+      "view": "视图：{view}"
+    }
+  },
+  "sharedInventory": {
+    "label": "企业共享",
+    "message": "供应商连接按企业共享。接入一次后，同一组织下的其他工作区都可以直接选择，不需要重复添加。",
+    "detail": "{count} 条连接已可从其他工作区直接复用。"
+  },
+  "validation": {
+    "labelRequired": "请填写标签。",
+    "apiKeyRequired": "请填写 API Key。",
+    "baseUrlRequired": "当前模板必须填写 Base URL。"
+  },
+  "bulk": {
+    "selectedPrefix": "已选择",
+    "connectionSingular": "条连接",
+    "connectionPlural": "条连接",
+    "hiddenByFilters": " · {count} 条被当前筛选隐藏。",
+    "retestSelected": "重测所选",
+    "retesting": "重测中…",
+    "retestedWithFailures": "已重测 {count} 条路由，其中 {failureCount} 条需要跟进：{labels}。",
+    "retestedSuccess": "已成功重测 {count} 条所选路由。"
+  },
+  "create": {
+    "eyebrow": "新建连接",
+    "title": "添加供应商",
+    "description": "选择模板、先测试草稿，再直接保存。",
+    "basicMode": "基础模式",
+    "advancedMode": "高级模式",
+    "close": "关闭",
+    "templateTitle": "模板",
+    "templateDescription": "从路由模板开始，让默认通道和 Base URL 要求先收敛到合理范围。",
+    "settingsTitle": "连接设置",
+    "settingsDescription": "为这条路由填写标签、凭证和端点信息。",
+    "routingTitle": "默认路由",
+    "routingDescription": "主通道建议使用默认通道；只有匹配精确模型或前缀时，才保留定向模式。",
+    "routingBehaviorTitle": "路由行为",
+    "routingBehaviorDescription": "默认通道承接常规流量；定向通道只用于精确模型或前缀。",
+    "advancedRoutingTitle": "高级路由",
+    "advancedRoutingDescription": "为定向通道补充可选的模型前缀和精确模型。",
+    "suggested": "建议",
+    "optional": "可选",
+    "testDraft": "测试草稿",
+    "saveConnection": "保存连接",
+    "noticeCreate": "创建",
+    "noticeDraftTest": "草稿测试"
+  },
+  "createWorkbench": {
+    "apiKeyDocs": "点击这里获取密钥",
+    "advancedSettings": "高级设置",
+    "showAdvanced": "展开高级设置",
+    "hideAdvanced": "收起高级设置",
+    "openAdvanced": "打开高级设置",
+    "exitAdvanced": "关闭高级设置",
+    "optional": "可选",
+    "noTemplateResults": "没有匹配的平台。"
+  },
+  "createFlow": {
+    "stepperLabel": "供应商创建步骤",
+    "next": "下一步",
+    "back": "上一步",
+    "viewDocs": "查看文档",
+    "showApiKey": "显示 API 密钥",
+    "hideApiKey": "隐藏 API 密钥",
+    "endpointTitle": "端点要求",
+    "endpointOptionalMessage": "当前模板可直接使用默认端点，也可以在需要时覆盖 Base URL。",
+    "modelPrefixesHint": "为这条连接补充命名前缀，让路由更容易收敛到目标模型族。",
+    "routingScopeTitle": "当前路由范围",
+    "routingScopeMessage": "已选择 {count} 个精确模型。模型前缀会与这些精确模型一起写入当前连接。",
+    "reviewDraftFailedLabel": "草稿测试待复核",
+    "reviewDraftIdleLabel": "建议先测试草稿",
+    "reviewDraftIdleMessage": "当前可以直接保存，但建议先执行一次草稿测试，再确认连接与端点配置。",
+    "schemeGroups": {
+      "publicProvider": {
+        "title": "Public Provider",
+        "description": "面向公共上游的托管接入，适合作为默认路由或快速启动路径。"
+      },
+      "privateModelCluster": {
+        "title": "Private Model Cluster",
+        "description": "面向私有模型池、VPC 推理服务和 OpenAI-compatible 集群的企业接入方案。"
+      },
+      "customerGateway": {
+        "title": "Customer Gateway",
+        "description": "面向客户自有边界网关的接入方案，适合保留客户侧网络和凭证边界。"
+      },
+      "internalEndpoint": {
+        "title": "Internal Endpoint",
+        "description": "面向内部代理、推理 facade 或统一模型网关的接入方案。"
+      }
+    },
+    "steps": {
+      "scheme": {
+        "label": "方案",
+        "title": "选择接入方案",
+        "description": "先确定这条连接属于哪一种接入 lane，再进入凭证和路由配置。"
+      },
+      "connection": {
+        "label": "连接",
+        "title": "连接设置",
+        "description": "填写连接名称、凭证和端点信息，为后续草稿测试和保存做准备。"
+      },
+      "routing": {
+        "label": "路由",
+        "title": "模型配置",
+        "description": "选择推荐模型、读取上游目录，或手动添加指定模型。"
+      },
+      "pricing_review": {
+        "label": "定价与确认",
+        "title": "定价与最终确认",
+        "description": "检查当前连接的关键信息、测试状态和定价配置，再保存到共享 inventory。"
+      }
+    },
+    "review": {
+      "scheme": "接入方案",
+      "template": "模板",
+      "technicalKind": "技术类型",
+      "endpoint": "端点预览",
+      "prefixes": "模型前缀",
+      "models": "精确模型",
+      "noPrefixes": "未设置模型前缀",
+      "noModels": "未选择精确模型",
+      "modelCount": "{count} 个模型"
+    }
+  },
+  "modelManager": {
+    "sectionTitle": "模型配置",
+    "platformSearchPlaceholder": "搜索模型平台…",
+    "apiKeyHint": "如需轮换上游密钥，可使用逗号分隔多个 provider key。",
+    "endpointPreview": "预览：",
+    "defaultSource": "默认模型",
+    "customSource": "指定模型",
+    "defaultTitle": "默认模型",
+    "defaultDescription": "可选择当前模板的推荐模型，也可追加从上游目录读取到的模型。",
+    "customTitle": "指定模型",
+    "customDescription": "为这条连接补充指定模型名称和模型 ID。",
+    "searchPlaceholder": "搜索模型",
+    "recommendedSection": "推荐模型",
+    "recommendedDescription": "基于当前模板整理的推荐模型。",
+    "catalogSection": "已发现目录",
+    "catalogReady": "已从上游 /v1/models 读取模型目录。",
+    "catalogEmpty": "上游当前没有返回任何模型。",
+    "catalogError": "暂时无法读取上游模型目录。",
+    "catalogIdle": "凭证就绪后可主动读取上游目录。",
+    "catalogDisabled": "请先补齐标签、API Key 和必填端点字段，再读取模型目录。",
+    "catalogDisabledApiKeyOnly": "请先填写 API Key，再读取模型目录。",
+    "catalogDisabledBaseUrlOnly": "请先填写 API 地址，再读取模型目录。",
+    "catalogDisabledApiKeyAndBaseUrl": "请先填写 API 地址和 API Key，再读取模型目录。",
+    "catalogBaseUrlRequiredError": "当前接入方式需要 API 地址。请先返回上一步填写 Base URL，再读取模型目录。",
+    "catalogRevoked": "已撤销连接不能刷新模型目录。",
+    "loadCatalog": "读取目录",
+    "presetBadge": "预置",
+    "catalogBadge": "目录",
+    "customBadge": "自定义",
+    "legacyBadge": "旧配置",
+    "noPresetResults": "当前搜索下没有匹配的推荐模型。",
+    "noCatalogResults": "当前搜索下没有匹配的已发现模型。",
+    "customLabelInputLabel": "模型名称",
+    "customLabelInputPlaceholder": "例如 Customer GPT",
+    "customIdInputLabel": "模型 ID",
+    "customIdInputPlaceholder": "例如 customer-gpt",
+    "customIdHint": "模型 ID 是上游接口里实际使用的 model 字段，不是序号。例如 gpt-4.1、claude-sonnet-4、customer-gpt。",
+    "addCustom": "添加指定模型",
+    "noCustomModels": "还没有添加指定模型。",
+    "selectionTitle": "已选模型",
+    "selectionDescription": "这些精确模型会一并写入当前连接的路由 metadata。",
+    "noSelection": "当前还没有选择模型。",
+    "prefixesLabel": "模型前缀（高级）"
+  },
+  "empty": {
+    "noInventoryTitle": "还没有供应商",
+    "noInventoryDescription": "先添加第一条共享供应商连接，当前组织下的工作区都可以直接选择。",
+    "noActiveTitle": "当前没有活跃连接",
+    "noActiveDescription": "当前清单里只剩已撤销连接，可在下方历史区查看。",
+    "clearFilters": "清除筛选",
+    "noMatchTitle": "没有匹配的供应商",
+    "noMatchDescription": "请清除筛选或重新搜索。"
+  },
+  "revokedHistory": {
+    "title": "已撤销历史",
+    "description": "主清单只保留可操作连接，已撤销项收纳在这里。",
+    "meta": "{count} 条记录",
+    "emptyTitle": "当前筛选下没有已撤销项",
+    "emptyDescription": "请调整搜索或供应商筛选条件。"
+  },
+  "table": {
+    "title": "供应商",
+    "meta": "显示 {shown} 条 · 共 {total} 条",
+    "headers": {
+      "select": "选择",
+      "provider": "供应商",
+      "route": "路由",
+      "health": "健康状态",
+      "updated": "更新时间",
+      "actions": "操作"
+    },
+    "managedLane": "托管通道",
+    "conflicts": "{count} 个冲突",
+    "createdLabel": "创建于",
+    "actions": {
+      "clear": "清空",
+      "retest": "重测",
+      "revoke": "撤销",
+      "details": "详情",
+      "hide": "收起",
+      "testing": "测试中…",
+      "saving": "保存中…",
+      "save": "保存",
+      "revoking": "撤销中…"
+    }
+  },
+  "details": {
+    "overlaps": "{count} 个重叠项",
+    "endpoint": "端点",
+    "lastTested": "上次测试",
+    "latency": "延迟",
+    "usage": "用量",
+    "audit": "审计",
+    "keys": "密钥",
+    "settingsTitle": "连接设置",
+    "anthropicVersion": "Anthropic 版本",
+    "rotateApiKey": "轮换 API Key",
+    "keepCurrentKey": "留空则保留当前密钥",
+    "managedRoutingHint": "当前供应商类型会托管路由设置。如需不同的默认路由或凭证，请新建一条连接。",
+    "hideEditor": "收起编辑器",
+    "editSettings": "编辑设置"
+  },
+  "advancedTools": {
+    "title": "高级工具",
+    "description": "用于批量重测、清理重叠路由，以及复核默认通道。",
+    "noSuggestions": "当前没有可应用的路由建议。",
+    "appliedSuggestions": "已应用 {count} 项路由更新。",
+    "summary": {
+      "noActiveRoutes": "没有活跃路由",
+      "routingReviewNeeded": "需要复核路由",
+      "defaultsIncomplete": "默认通道未补齐",
+      "defaultsClear": "路由已清晰"
+    }
+  },
+  "routeSummary": {
+    "globalDefaultLabel": "全局默认",
+    "globalDefaultDetail": "作为通用流量的默认路由。",
+    "providerDefaultLabel": "默认",
+    "providerDefaultDetail": "{provider} 的直接接入目标。",
+    "modelRoutedLabel": "模型定向",
+    "exactModels": "{count} 个精确模型",
+    "fallbackOnlyLabel": "通用目标",
+    "fallbackOnlyDetail": "当前未配置模型匹配规则。",
+    "revokedLabel": "已撤销",
+    "revokedDetail": "仅为历史保留。"
+  },
+  "health": {
+    "revokedLabel": "已撤销",
+    "revokedDetail": "已于 {date} 撤销",
+    "revokedDetailFallback": "已撤销路由",
+    "routingConflictLabel": "路由冲突",
+    "routingConflictDetail": "{count} 个重叠项需要清理。",
+    "testFailedLabel": "测试失败",
+    "testFailedFallback": "最近一次连接测试失败。",
+    "notTestedLabel": "未测试",
+    "notTestedDetail": "先运行首次连接测试。",
+    "staleCheckLabel": "测试陈旧",
+    "staleCheckDetail": "上次测试距今 {count} 天。",
+    "healthyLabel": "健康",
+    "healthyDetail": "{latency} · {date}",
+    "noLatency": "无延迟",
+    "unknownLabel": "未知"
+  },
+  "advancedDiagnostics": {
+    "title": "路由诊断",
+    "reviewNeeded": "需要复核",
+    "clear": "清晰",
+    "description": "查看模型匹配重叠和连接可用性。",
+    "applying": "应用中…",
+    "applySuggestions": "应用建议",
+    "headers": {
+      "protocol": "协议",
+      "state": "状态",
+      "recommended": "推荐项",
+      "action": "操作"
+    },
+    "candidateCount": "{count} 个候选",
+    "state": {
+      "multipleDefaults": "{count} 个默认项",
+      "overlaps": "{count} 个重叠",
+      "noDefault": "缺少默认项",
+      "clear": "清晰",
+      "noRoute": "无路由"
+    },
+    "detail": {
+      "multipleDefaults": "当前存在多个默认项。",
+      "overlaps": "模型匹配存在重叠，需要清理。",
+      "noDefault": "当前还需要指定默认路由。",
+      "clear": "当前无需额外复核。",
+      "noRoute": "当前没有可用的活跃路由。"
+    },
+    "reasons": {
+      "keepRecommended": "建议保留这条默认路由并清理冲突。",
+      "defaultRecommended": "建议将这条连接设置为默认路由。"
+    },
+    "noRecommendation": "暂无建议",
+    "keepAction": "保留 {label}",
+    "setDefaultAction": "将 {label} 设为默认",
+    "none": "无",
+    "conflictSamples": "冲突样例",
+    "reviewLane": "复核该通道",
+    "moreOverlaps": "+{count} 个更多重叠项",
+    "conflicts": {
+      "exactModel": "精确模型 {token} 被多个活跃连接同时声明。",
+      "exactVsPrefix": "精确模型 {token} 同时被这些前缀命中：{prefixes}。",
+      "prefixOverlap": "模型前缀在 {token} 周围发生重叠。"
+    }
+  }
+}

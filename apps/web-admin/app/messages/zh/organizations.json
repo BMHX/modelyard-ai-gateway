@@ -1,0 +1,63 @@
+{
+  "Organizations": "组织",
+  "Current scope": "当前范围",
+  "organization": "组织",
+  "Search": "搜索",
+  "Name or slug": "名称或标识",
+  "View": "视图",
+  "all": "全部",
+  "multi-workspace": "多工作区",
+  "single-workspace": "单工作区",
+  "empty": "空组织",
+  "Apply filters": "应用筛选",
+  "Reset": "重置",
+  "Open workspaces": "打开工作区",
+  "Create workspace": "创建工作区",
+  "Edit settings": "编辑设置",
+  "Name and slug": "名称与标识",
+  "Saving changes": {
+    "": {
+      "": {
+        "": "保存中..."
+      }
+    }
+  },
+  "Save changes": "保存更改",
+  "This permanently removes the organization from the control plane": {
+    "": "这会将该组织永久移出控制平面。"
+  },
+  "Delete organization": "删除组织",
+  "Deleting": {
+    "": {
+      "": {
+        "": "删除中..."
+      }
+    }
+  },
+  "No matching organization": "没有匹配的组织",
+  "No organizations": "还没有组织",
+  "No organization matches the current filters": {
+    "": "当前筛选条件下没有匹配的组织。"
+  },
+  "Add the first organization entry": {
+    "": "添加第一条组织记录。"
+  },
+  "New organization": "新建组织",
+  "Add index entry": "添加索引项",
+  "Create the first entry": "创建第一条记录",
+  "Create organization": "创建组织",
+  "Acme China": "Acme China",
+  "acme-china (optional)": "acme-china（可选）",
+  "setup": "待配置",
+  "launch": "启动中",
+  "scaled": "已扩展",
+  "No workspace attached": "未绑定工作区",
+  "1 workspace attached": "已绑定 1 个工作区",
+  "{count} workspaces attached": "已绑定 {count} 个工作区",
+  "Created": "已创建",
+  "Updated": "已更新",
+  "Deleted": "已删除",
+  "Error": "错误",
+  "Organization data unavailable": "组织数据暂不可用",
+  "No organizations configured": "还没有配置组织"
+}

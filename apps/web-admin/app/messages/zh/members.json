@@ -1,0 +1,430 @@
+{
+  "Members": "成员",
+  "Status Distribution": "状态分布",
+  "Total Members": "成员总数",
+  "Active Operator Trend": "活跃操作趋势",
+  "Demonstration of control-plane activity over time": "展示控制面活动随时间变化的趋势。",
+  "Governance State": "治理状态",
+  "Review Queue Pending": "复核队列待处理",
+  "Governance Healthy": "治理状态健康",
+  "reviewItemsNeedAttention": "{count} 项复核内容需要关注。",
+  "Scoped": "已限定",
+  "Setup": "待配置",
+  "Select a workspace": "选择工作区",
+  "Apply filters": "应用筛选",
+  "Reset": "重置",
+  "Current queue": "当前队列",
+  "Invites": "邀请",
+  "Access reviews": "访问复核",
+  "Offboarding": "离岗收口",
+  "Invite queue": "邀请队列",
+  "Review queue": "复核队列",
+  "Offboarding queue": "离岗队列",
+  "No matching member": "没有匹配的成员",
+  "No members yet": "还没有成员",
+  "No matching invite": "没有匹配的邀请",
+  "No invites yet": "还没有邀请",
+  "No matching review item": "没有匹配的复核项",
+  "Projects": "项目",
+  "Review projects": "查看项目",
+  "Bulk disable selected": "批量停用所选成员",
+  "Search people, email, role": "搜索姓名、邮箱、角色",
+  "Invite the first member to start reviewing access, role scope, and handoff risk": {
+    "": "邀请第一位成员，开始管理访问、角色范围与交接风险。"
+  },
+  "Try another queue or clear filters": {
+    " Nothing in {focus} needs attention right now": {
+      "": "尝试其他队列或清空筛选。当前“{focus}”没有需要处理的项。"
+    },
+    " Nothing in {focus} is visible now": {
+      "": "尝试其他队列或清空筛选。当前看不到“{focus}”相关项。"
+    }
+  },
+  "Role scope": "角色范围",
+  "Project scope": "项目范围",
+  "Review priority": "复核优先级",
+  "Initial project scope": "初始项目范围",
+  "Open workspaces": "打开工作区",
+  "Open organizations": "打开组织",
+  "Showing {members} members in view · {queues} queue items need review": {
+    "": "当前显示 {members} 位成员 · {queues} 项待复核。"
+  },
+  "Showing {members} members · {queue} queue items need review": {
+    "": "共 {members} 位成员 · {queue} 项待复核。"
+  },
+  "View audit": "查看审计",
+  "Roles": "角色",
+  "Member": "成员",
+  "Access": "访问",
+  "Activity": "活动",
+  "Review": "复核",
+  "Actions": "操作",
+  "Pending invites": "待接受邀请",
+  "View alerts": "查看告警",
+  "Review expired grants": "检查已过期授权",
+  "Review broad roles": "检查宽权限角色",
+  "Fix project scope": "修复项目范围",
+  "Open invite queue": "打开邀请队列",
+  "Review temporary grants": "检查临时授权",
+  "Resolve expired temporary access": "处理已过期临时访问",
+  "Review dormant broad access": "检查休眠宽权限",
+  "Close scoped role gaps": "补齐范围角色缺口",
+  "Clean up pending invites": "清理待处理邀请",
+  "Created": "已创建",
+  "Updated": "已更新",
+  "Deleted": "已删除",
+  "Error": "错误",
+  "Not observed": "未观察到",
+  "persistent": "长期",
+  "expired": "已过期",
+  "expiring soon": "即将过期",
+  "temporary": "临时",
+  "disabled": "已停用",
+  "pending invite": "待接受邀请",
+  "empty scope": "范围为空",
+  "scoped access": "范围访问",
+  "workspace-wide": "工作区级",
+  "no permission": "无权限",
+  "offboarding": "离岗处理中",
+  "stale invite": "陈旧邀请",
+  "awaiting activation": "等待激活",
+  "expired access": "已过期访问",
+  "scope gap": "范围缺口",
+  "Workspace-wide role": {
+    "": "工作区级角色。"
+  },
+  "No role assigned": "未分配角色",
+  "No permission assigned.": "当前未分配任何权限。",
+  "Project-scoped role with no assignments": {
+    "": "项目级角色，但尚未分配项目。"
+  },
+  "{count} scoped projects": {
+    "": "{count} 个范围项目。"
+  },
+  "Workspace-wide permissions": "工作区级权限",
+  "message": {
+    "invited": "已邀请成员。",
+    "createdActive": "已添加并激活成员。",
+    "updated": "成员已更新。",
+    "removed": "成员已移除。",
+    "assignmentWarning": "无法完全同步项目权限。",
+    "bulkDisable": {
+      "noSelection": "请先选择至少一位成员。",
+      "success": "已停用所选成员。",
+      "partial": "部分成员已停用，有些成员停用失败。",
+      "allFailed": "无法停用所选成员。"
+    }
+  },
+  "activity": {
+    "unknownAge": "时间未知",
+    "today": "今天",
+    "oneDayAgo": "1 天前",
+    "daysAgo": "{days} 天前",
+    "noActivity": {
+      "label": "无活动",
+      "summary": "尚未观察到控制平面会话。"
+    },
+    "recent": {
+      "label": "近期活跃",
+      "summary": "7 天内有活动。"
+    },
+    "aging": {
+      "label": "活跃度下降",
+      "summary": "上次活动已超过一周。"
+    },
+    "dormant": {
+      "label": "休眠",
+      "summary": "超过 30 天无活动。"
+    }
+  },
+  "temporaryAccess": {
+    "scheduledExpiry": "计划到期",
+    "persistent": {
+      "label": "长期",
+      "summary": "未设置临时到期时间。"
+    },
+    "expired": {
+      "label": "已过期",
+      "summary": "已于 {age} 过期。"
+    },
+    "expiringSoon": {
+      "label": "即将过期",
+      "summary": "将在 {days} 天后过期。"
+    },
+    "temporary": {
+      "label": "临时",
+      "summary": "有效期至 {time}。"
+    }
+  },
+  "effectiveAccess": {
+    "noPermission": {
+      "label": "无权限",
+      "summary": "该成员未分配任何角色，因此没有控制台访问权限。"
+    },
+    "disabled": {
+      "label": "已停用",
+      "summary": "已在整个工作区停用。"
+    },
+    "pendingInvite": {
+      "label": "待接受邀请",
+      "summary": "等待接受邀请。"
+    },
+    "expiredTemporary": {
+      "label": "临时访问已过期",
+      "summary": "临时访问已失效，请停用或续期。"
+    },
+    "workspaceWide": {
+      "label": "工作区级",
+      "summary": "在整个工作区内生效。"
+    },
+    "emptyScope": {
+      "label": "范围为空",
+      "summary": "尚未分配任何项目。"
+    },
+    "scoped": {
+      "label": "{count} 个范围项目",
+      "summary": "仅限 {count} 个已分配项目。"
+    }
+  },
+  "memberMeta": {
+    "created": "创建于 {age}",
+    "updated": "更新于 {age}"
+  },
+  "Directory": "目录",
+  "Roster": "成员名册",
+  "Member directory": "成员名册",
+  "Search members": "搜索成员",
+  "Name, email, role, project": "姓名、邮箱、角色、项目",
+  "Status": "状态",
+  "Role": "角色",
+  "Apply": "应用",
+  "Views": "视图",
+  "all": "全部",
+  "active": "活跃",
+  "all roles": "所有角色",
+  "review now": "立即复核",
+  "{pending} pending · {stale} stale": "{pending} 个待处理 · {stale} 个陈旧",
+  "{pending} pending": "{pending} 个待处理",
+  "{count} need review": "{count} 项待复核",
+  "{count} selectable memberships": "{count} 个可选成员关系",
+  "{count} visible": "{count} 个可见",
+  "This will disable every selected active membership in one step": {
+    "": "这会一步停用所有已选择的活跃成员关系。"
+  },
+  "Disable selected members": "停用所选成员",
+  "Disable {count} selected members?": "确定停用 {count} 位已选成员？",
+  "Disabling": {
+    "": {
+      "": {
+        "": "停用中..."
+      }
+    }
+  },
+  "Open roster": "打开成员名册",
+  "Queue is clear": "队列已清空",
+  "Try a broader filter set": {
+    " No member currently matches the offboarding view": {
+      "": "请放宽筛选条件。当前没有成员匹配离岗视图。"
+    },
+    " No member currently matches the roster filters": {
+      "": "请放宽筛选条件。当前没有成员匹配名册筛选。"
+    }
+  },
+  "Edit member": "编辑成员",
+  "Access and assignments": "访问与分配",
+  "Name": "名称",
+  "Login": "最近登录",
+  "Lifecycle": "生命周期",
+  "Last login": "最近登录",
+  "Last active": "最近活跃",
+  "Access boundary": "访问边界",
+  "Assigned projects": "已分配项目",
+  "Ignored for workspace-wide roles": "工作区级角色会忽略此项",
+  "Project scope isn't used for this role": "此角色不使用项目范围",
+  "This workspace-wide role doesn't use project assignments.": "当前角色为工作区级角色，无需配置项目分配。",
+  "No projects available": {
+    "": "暂无可用项目。"
+  },
+  "Permissions": "权限",
+  "Save changes": "保存更改",
+  "Saving changes...": {
+    "": {
+      "": {
+        "": "保存中..."
+      }
+    }
+  },
+  "This will remove the member from the workspace and end access through this console": {
+    "": "这会把该成员从工作区移除，并终止其通过此控制台的访问。"
+  },
+  "Remove member": "移除成员",
+  "Remove {name}?": "确定移除 {name} 吗？",
+  "Removing": {
+    "": {
+      "": {
+        "": "移除中..."
+      }
+    }
+  },
+  "Next review": "下一项复核",
+  "Open invite form": "打开邀请表单",
+  "Add member manually": "手动添加成员",
+  "Email": "邮箱",
+  "Temporary access ends": "临时访问结束时间",
+  "Directly create an active workspace member": {
+    "": "直接创建一个已激活的工作区成员。"
+  },
+  "Create active member": "创建并激活成员",
+  "Creating member": {
+    "": {
+      "": {
+        "": "创建成员中..."
+      }
+    }
+  },
+  "Sending invite": {
+    "": {
+      "": {
+        "": "发送邀请中..."
+      }
+    }
+  },
+  "Send invite": "发送邀请",
+  "Try another filter set": {
+    " No invite currently matches this queue": {
+      "": "请尝试其他筛选条件。当前没有邀请匹配此队列。"
+    }
+  },
+  "Try another review queue or clear filters": {
+    " Nothing currently matches this review view": {
+      "": "请尝试其他复核队列或清空筛选。当前没有条目匹配此复核视图。"
+    }
+  },
+  "Send the first invite to start provisioning operator access": {
+    "": "发送第一条邀请，开始为操作人员开通访问。"
+  },
+  "Invite the first member to start reviewing access and role fit": {
+    "": "邀请第一位成员，开始复核访问与角色匹配。"
+  },
+  "No workspace selected": "未选择工作区",
+  "stale invites": "陈旧邀请",
+  "scope gaps": "范围缺口",
+  "expired temporary access": "已过期临时访问",
+  "expiring temporary access": "即将到期的临时访问",
+  "dormant broad access": "休眠的宽权限访问",
+  "broad access": "宽权限访问",
+  "disabled cleanup": "禁用清理",
+  "{count} active memberships already passed the temporary access window and should be renewed or disabled before the next shift change": {
+    "": "{count} 个活跃成员关系已超过临时访问窗口，应在下一次交接前续期或停用。"
+  },
+  "{count} workspace-wide memberships still grant broad control-plane access without recent activity": {
+    "": "{count} 个工作区级成员关系在近期无活动的情况下，仍保留广泛控制台访问权限。"
+  },
+  "Open offboarding review": "打开离岗复核",
+  "{count} active scoped memberships have no assigned projects, so the access model is configured but not actually usable": {
+    "": "{count} 个活跃的范围成员关系尚未分配项目，因此访问模型虽已配置但实际上不可用。"
+  },
+  "{count} invites have been sitting for at least a week and should be confirmed, re-sent, or disabled": {
+    "": "{count} 条邀请已搁置至少一周，应确认、重发或停用。"
+  },
+  "Renew temporary access before it lapses": "在失效前续期临时访问",
+  "{count} temporary grants will expire soon enough to queue action now instead of waiting for an interruption": {
+    "": "{count} 条临时授权即将到期，应该现在排入处理，而不是等到中断发生。"
+  },
+  "Run a broad access review": "发起宽权限复核",
+  "{count} active memberships still operate with workspace-wide permissions": {
+    "": "{count} 个活跃成员关系仍在使用工作区级权限。"
+  },
+  "renew soon": "尽快续期",
+  "healthy": "健康",
+  "Temporary access already elapsed, but the membership is still marked active": {
+    "": "临时访问已过期，但该成员关系仍被标记为活跃。"
+  },
+  "nextStepDisableExpiredAccess": {
+    "": "请立即停用该成员，或在下一次操作员交接前续期临时访问窗口。"
+  },
+  "Workspace-wide access is still active even though no recent control-plane activity has been seen": {
+    "": "尽管近期没有控制台活动，工作区级访问仍处于活跃状态。"
+  },
+  "nextStepReduceBroadAccess": {
+    "": "请确认归属、收缩角色范围，或在不再需要该访问路径时停用该成员。"
+  },
+  "The invite has been waiting for at least a week and should not stay unattended": {
+    "": "该邀请已等待至少一周，不应继续无人处理。"
+  },
+  "nextStepResendInvite": {
+    "": "请重新发送邀请，确认申请角色仍然需要，或在权限漂移前停用该成员关系。"
+  },
+  "Temporary access is still valid, but the expiry window is now close enough to queue follow-up work": {
+    "": "临时访问仍然有效，但已接近到期，应尽快排入后续处理。"
+  },
+  "nextStepRenewAccessWindow": {
+    "": "请续期访问窗口，或在授权于活跃工作期间悄然失效前安排停用日期。"
+  },
+  "summaryWorkspaceWideRole": "该角色保留工作区级权限，随着工作区扩展，应定期复核。",
+  "nextStepReviewWorkspaceWideRole": "请确认该成员是否仍需保留工作区级访问，或改为项目级范围。",
+  "The access path is already disabled and only needs cleanup or retention review": {
+    "": "该访问路径已被停用，当前只需要清理或保留复核。"
+  },
+  "nextStepKeepMembershipForAudit": {
+    "": "为保持审计连续性可暂时保留该成员关系，或在离岗清单完成后将其移除。"
+  },
+  "summaryInvitePending": {
+    "": "该邀请仍在等待中，但尚未进入需要跟进的队列。"
+  },
+  "nextStepLeaveInviteInFlight": {
+    "": "可以继续等待邀请处理，或在用户接受前预先准备最终的项目范围。"
+  },
+  "This membership looks operationally healthy for the current role, scope, and activity profile": {
+    "": "基于当前角色、范围与活跃情况，该成员关系看起来运行健康。"
+  },
+  "nextStepNoImmediateAction": {
+    "": "除常规的角色与活动复核外，当前无需立即处理。"
+  },
+  "Members needing project assignment": "待分配项目的成员",
+  "{count} scoped memberships still need at least one assigned project before the workspace setup is complete": {
+    "": "还有 {count} 个受限成员至少需要分配一个项目，工作区配置才算完成。"
+  },
+  "Open assignment queue": "打开分配队列",
+  "Back to setup": "返回设置",
+  "Assign {project} access to {member}": "为 {member} 分配 {project} 访问权限",
+  "Assign projects to {member}": "为 {member} 分配项目",
+  "Assign members to {project}": "为 {project} 分配成员",
+  "Assign projects": "分配项目",
+  "Select project access for this member before continuing.": "先为该成员选择可访问项目，再继续完成设置。",
+  "Choose the projects this scoped member can access, then continue setup": {
+    "": "选择该受限成员可访问的项目，然后继续设置。"
+  },
+  "No role is assigned to this member, so control-plane access is fully blocked.": "该成员当前未分配任何角色，因此控制台访问已被完全阻断。",
+  "Assign at least one role before expecting this member to sign in or receive access.": "如需该成员登录或获得访问权限，请至少分配一个角色。",
+  "Choose a scoped member to grant access to this project": {
+    "": "选择一个受限成员并授予其此项目访问权限。"
+  },
+  "Choose a scoped member and finish the remaining project assignments": {
+    "": "选择一个受限成员，完成剩余的项目分配。"
+  },
+  "{count} assigned": "已分配 {count} 个",
+  "recommended": "推荐",
+  "Create a project first so scoped members can be assigned": {
+    "": "请先创建项目，才能给受限成员分配项目。"
+  },
+  "Saving project access": {
+    "": {
+      "": {
+        "": "正在保存项目访问权限..."
+      }
+    }
+  },
+  "Save project access": "保存项目访问权限",
+  "Cancel": "取消",
+  "Invite or activate a scoped member before assigning this project": {
+    "": "请先邀请或激活一个受限成员，再为此项目分配权限。"
+  },
+  "All scoped members already have project assignments": {
+    "": "所有受限成员都已经分配了项目。"
+  },
+  "No eligible members": "暂无可分配成员",
+  "Assignment queue is clear": "分配队列已清空",
+  "Assign now": "立即分配",
+  "Edit access": "编辑访问权限"
+}

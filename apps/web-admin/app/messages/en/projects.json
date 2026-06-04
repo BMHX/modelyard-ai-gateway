@@ -1,0 +1,191 @@
+{
+  "Projects": "Projects",
+  "Projects & Environments": "Projects & Environments",
+  "projects": {
+    "title": "Projects",
+    "scope": {
+      "scoped": "Scoped",
+      "setup": "Setup",
+      "eyebrow": "Workspace scope",
+      "selectWorkspace": "Select a workspace"
+    },
+    "status": {
+      "all": "All project statuses",
+      "active": "Active",
+      "archived": "Archived"
+    },
+    "environmentStatus": {
+      "all": "All environment statuses",
+      "active": "Active environments",
+      "archived": "Archived environments"
+    },
+    "notice": {
+      "header": "Project changes",
+      "created": "Created",
+      "updated": "Updated",
+      "archived": "Archived",
+      "reactivated": "Reactivated",
+      "error": "Error"
+    }
+  },
+  "Workspace": "Workspace",
+  "Filters": "Filters",
+  "Search": "Search",
+  "Project, env, slug, runtime": "Project, env, slug, runtime",
+  "Projects Status": "Projects Status",
+  "Total Projects": "Total Projects",
+  "Total Envs": "Total Envs",
+  "Project Structure": "Project Structure",
+  "Scope Gaps Detected": "Scope Gaps Detected",
+  "Assignments Complete": "Assignments Complete",
+  "Project status": "Project status",
+  "Project Status": "Project Status",
+  "Environment status": "Environment status",
+  "Environment Status": "Environment Status",
+  "Apply filters": "Apply filters",
+  "Reset": "Reset",
+  "Created": "Created",
+  "Updated": "Updated",
+  "Archived": "Archived",
+  "Reactivated": "Reactivated",
+  "Error": "Error",
+  "Save": "Save",
+  "Saving...": "Saving...",
+  "Archive": "Archive",
+  "Reactivate": "Reactivate",
+  "Archiving...": "Archiving...",
+  "Reactivating...": "Reactivating...",
+  "all": "All",
+  "Project created.": "Project created.",
+  "Project updated.": "Project updated.",
+  "Project archived.": "Project archived.",
+  "Project reactivated.": "Project reactivated.",
+  "Environment created.": "Environment created.",
+  "Environment updated.": "Environment updated.",
+  "Environment archived.": "Environment archived.",
+  "Environment reactivated.": "Environment reactivated.",
+  "Archive {name}?": "Archive {name}?",
+  "Showing {projects} projects and {environments} environments in the current scope": {
+    "": "Showing {projects} projects and {environments} environments in the current scope."
+  },
+  "Showing {visible} of {total} projects": {
+    "": "Showing {visible} of {total} projects."
+  },
+  "Showing {visible} of {total} environments": {
+    "": "Showing {visible} of {total} environments."
+  },
+  "all statuses": "all statuses",
+  "active environments": "active environments",
+  "Project basics": "Project basics",
+  "Name": "Name",
+  "Slug": "Slug",
+  "Status": "Status",
+  "View usage": "View usage",
+  "View alerts": "View alerts",
+  "Saving project": {
+    "": {
+      "": {
+        "": "Saving project..."
+      }
+    }
+  },
+  "Save project": "Save project",
+  "Reactivating": {
+    "": {
+      "": {
+        "": "Reactivating..."
+      }
+    }
+  },
+  "Reactivate project": "Reactivate project",
+  "This will remove the project from the active creation path while keeping linked environments visible for review": {
+    "": "This will remove the project from the active creation path while keeping linked environments visible for review."
+  },
+  "Archive project": "Archive project",
+  "Archiving": {
+    "": {
+      "": {
+        "": "Archiving..."
+      }
+    }
+  },
+  "No matching project": "No matching project",
+  "No projects yet": "No projects yet",
+  "No project matches the current filters": {
+    "": "No project matches the current filters."
+  },
+  "Create the first project to define structure": {
+    "": "Create the first project to define structure."
+  },
+  "Environments": "Environments",
+  "Environment basics": "Environment basics",
+  "Project": "Project",
+  "Runtime": "Runtime",
+  "Saving environment": {
+    "": {
+      "": {
+        "": "Saving environment..."
+      }
+    }
+  },
+  "Save environment": "Save environment",
+  "Reactivate environment": "Reactivate environment",
+  "This will keep the environment visible for review but remove it from active routing until reactivated": {
+    "": "This will keep the environment visible for review but remove it from active routing until reactivated."
+  },
+  "Archive environment": "Archive environment",
+  "No matching environment": "No matching environment",
+  "No environments yet": "No environments yet",
+  "No environment matches the current filters": {
+    "": "No environment matches the current filters."
+  },
+  "Add the first environment once the structure is ready": {
+    "": "Add the first environment once the structure is ready."
+  },
+  "Create": "Create",
+  "Secondary create surfaces for new structure work": {
+    "": "Secondary create surfaces for new structure work."
+  },
+  "collapsed": "collapsed",
+  "Create project": "Create project",
+  "Project name": "Project name",
+  "Optional override": "Optional override",
+  "Creating project": {
+    "": {
+      "": {
+        "": "Creating project..."
+      }
+    }
+  },
+  "Create environment": "Create environment",
+  "Environment name": "Environment name",
+  "Creating environment": {
+    "": {
+      "": {
+        "": "Creating environment..."
+      }
+    }
+  },
+  "Create a project first so environments have a valid parent": {
+    "": "Create a project first so environments have a valid parent."
+  },
+  "Reactivate an existing project or create a new one before adding environments": {
+    "": "Reactivate an existing project or create a new one before adding environments."
+  },
+  "Open workspaces": "Open workspaces",
+  "Open organizations": "Open organizations",
+  "Select an organization and workspace before structuring projects and environments": {
+    "": "Select an organization and workspace before structuring projects and environments."
+  },
+  "No workspace selected": "No workspace selected",
+  "Unknown project": "Unknown project",
+  "Invite member": "Invite member",
+  "Open members": "Open members",
+  "Assign existing member": "Assign existing member",
+  "Project assignment follow-up": "Project assignment follow-up",
+  "{count} scoped members still need at least one project before the access model is usable": {
+    "": "{count} scoped members still need at least one project before the access model is usable."
+  },
+  "Open assignment queue": "Open assignment queue",
+  "Assign members": "Assign members"
+}

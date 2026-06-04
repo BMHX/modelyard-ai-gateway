@@ -1,0 +1,229 @@
+{
+  "Governance Event Trend": "Governance Event Trend",
+  "Total audit entries recorded over time": "Total audit entries recorded over time",
+  "Subject Distribution": "Subject Distribution",
+  "Total": "Total",
+  "Quick Stats": "Quick Stats",
+  "Actors": "Actors",
+  "Export Log": "Export Log",
+  "No payload": "No payload",
+  "Masked key fragment": "Masked key fragment",
+  "rows": "rows",
+  "Payload fields": "Payload fields",
+  "Current scope": "Current scope",
+  "{count} visible entries across the selected workspace, scope, and time window": "{count} visible entries across the selected workspace, scope, and time window",
+  "Service actors": "Service actors",
+  "{count} service-originated events on this page": "{count} service-originated events on this page",
+  "Workspace subjects": "Workspace subjects",
+  "{count} workspace-level changes on this page": "{count} workspace-level changes on this page",
+  "Environment subjects": "Environment subjects",
+  "{count} environment-specific changes on this page": "{count} environment-specific changes on this page",
+  "Workspace": "Workspace",
+  "Project": "Project",
+  "Environment": "Environment",
+  "Actor type": "Actor type",
+  "Actor ID": "Actor ID",
+  "Action": "Action",
+  "Subject type": "Subject type",
+  "Subject ID": "Subject ID",
+  "From": "From",
+  "To": "To",
+  "Opened {time}": "Opened {time}",
+  "Updated {time}": "Updated {time}",
+  "{activity} · {count} stored filters": "{activity} · {count} stored filters",
+  "Opened {openedAt} · updated {updatedAt}": "Opened {openedAt} · updated {updatedAt}",
+  "Created {createdAt} · update this shared lane after refining the current filters": {
+    "": "Created {createdAt} · update this shared lane after refining the current filters."
+  },
+  "Default views": "Default views",
+  "Start from the built-in governance queues for service activity, workspace changes, and environment drift": {
+    "": "Start from the built-in governance queues for service activity, workspace changes, and environment drift."
+  },
+  "Default audit views are unavailable right now": {
+    "": "Default audit views are unavailable right now."
+  },
+  "Recent views": "Recent views",
+  "Reopen the most recently opened audit paths without rebuilding the same governance query again": {
+    "": "Reopen the most recently opened audit paths without rebuilding the same governance query again."
+  },
+  "Save an audit lane once and it will appear here for repeat review": {
+    "": "Save an audit lane once and it will appear here for repeat review."
+  },
+  "Team shared views": "Team shared views",
+  "Workspace-saved audit views stay available for handoffs, recurring reviews, and compliance follow-up, ordered by the latest shared edits": {
+    "": "Workspace-saved audit views stay available for handoffs, recurring reviews, and compliance follow-up, ordered by the latest shared edits."
+  },
+  "No team-shared audit views exist yet": {
+    "": "No team-shared audit views exist yet."
+  },
+  "All workspaces": "All workspaces",
+  "All projects": "All projects",
+  "All environments": "All environments",
+  "Export": "Export",
+  "Audit scope": "Audit scope",
+  "Select a workspace": "Select a workspace",
+  "Search action": "Search action",
+  "organization": {
+    "created": "Organization created",
+    "updated": "Organization updated",
+    "deleted": "Organization deleted"
+  },
+  "workspace": {
+    "created": "Workspace created",
+    "updated": "Workspace updated",
+    "deleted": "Workspace deleted",
+    "seeded": "Workspace seeded",
+    "onboarding": {
+      "first_provider_tested": "Workspace onboarding: first provider tested",
+      "first_virtual_key_created": "Workspace onboarding: first virtual key created",
+      "first_export_requested": "Workspace onboarding: first export requested",
+      "first_provider_connected": "Workspace onboarding: first provider connected"
+    }
+  },
+  "project": {
+    "created": "Project created",
+    "updated": "Project updated",
+    "archived": "Project archived"
+  },
+  "environment": {
+    "created": "Environment created",
+    "updated": "Environment updated",
+    "archived": "Environment archived"
+  },
+  "Apply filters": "Apply filters",
+  "Reset": "Reset",
+  "More filters": "More filters",
+  "Optional": "Optional",
+  "Saved views": "Saved views",
+  "Saved filters for this view": {
+    "": "Saved filters for this view."
+  },
+  "Saved views are temporarily unavailable": "Saved views are temporarily unavailable",
+  "Audit Logs": "Audit Logs",
+  "Audit events": "Audit events",
+  "Showing {start}-{end} of {total} audit events": "Showing {start}-{end} of {total} audit events",
+  "Saved view active": "Saved view active",
+  "Workspace view": "Workspace view",
+  "{count} service events": "{count} service events",
+  "Human and service events": "Human and service events",
+  "Actors {actors} · Actions {actions} · Subjects {subjects}": "Actors {actors} · Actions {actions} · Subjects {subjects}",
+  "Saved lane": "Saved lane",
+  "Active workspace view": "Active workspace view",
+  "Time": "Time",
+  "Actor": "Actor",
+  "Subject": "Subject",
+  "Scope": "Scope",
+  "Payload": "Payload",
+  "workspace-scope": "workspace-scope",
+  "No environment": "No environment",
+  "global": "global",
+  "No audit events matched the current filters yet": {
+    "": "No audit events matched the current filters yet."
+  },
+  "No matching event": "No matching event",
+  "Page size": "Page size",
+  "Previous page": "Previous",
+  "Next page": "Next",
+  "member": {
+    "project-assignments": {
+      "replaced": "Member project assignments updated"
+    },
+    "updated": "Member updated",
+    "invited": "Member invited",
+    "removed": "Member removed"
+  },
+  "virtual-key": {
+    "created": "Virtual key created",
+    "revoked": "Virtual key revoked",
+    "rotated": "Virtual key rotated",
+    "self-serve-issued": "Virtual key self-serve issued",
+    "self-serve-revoked": "Virtual key self-serve revoked",
+    "self-serve-rotated": "Virtual key self-serve rotated"
+  },
+  "provider-connection": {
+    "tested": "Provider connection tested",
+    "updated": "Provider connection updated",
+    "rotated": "Provider connection key rotated",
+    "draft-tested": "Provider connection draft tested",
+    "created": "Provider connection created",
+    "revoked": "Provider connection revoked"
+  },
+  "budget": {
+    "created": "Budget created",
+    "updated": "Budget updated",
+    "deleted": "Budget deleted"
+  },
+  "export": {
+    "requested": "Export requested",
+    "requeued": "Export requeued",
+    "downloaded": "Export downloaded",
+    "download_blocked": "Export download blocked",
+    "followup_updated": "Export follow-up updated",
+    "governance_updated": "Export governance updated",
+    "workflow_updated": "Export workflow updated",
+    "governance_update_blocked": "Export governance update blocked"
+  },
+  "alert": {
+    "updated": "Alert updated",
+    "collaboration_updated": "Alert collaboration updated",
+    "resolved": "Alert resolved",
+    "reopened": "Alert reopened"
+  },
+  "auth": {
+    "access": {
+      "denied": "Access denied"
+    },
+    "login": {
+      "failed": "Login failed",
+      "started": "Login started",
+      "succeeded": "Login succeeded"
+    },
+    "logout": {
+      "completed": "Logout completed"
+    },
+    "provider-configured": "Auth provider configured",
+    "session": {
+      "expired": "Session expired",
+      "revoked": "Session revoked"
+    }
+  },
+  "prompt_policy": {
+    "updated": "Prompt policy updated"
+  },
+  "prompt_inspection": {
+    "exported": "Prompt inspection exported",
+    "reviewed": "Prompt inspection reviewed",
+    "batch_reviewed": "Prompt inspection batch reviewed"
+  },
+  "saved_view": {
+    "created": "Saved view created",
+    "deleted": "Saved view deleted",
+    "updated": "Saved view updated"
+  },
+  "scheduled_report": {
+    "created": "Scheduled report created",
+    "deleted": "Scheduled report deleted",
+    "updated": "Scheduled report updated",
+    "triggered": "Scheduled report triggered",
+    "trigger_deduplicated": "Scheduled report trigger deduplicated"
+  },
+  "fingerprint": {
+    "issued": "Fingerprint issued",
+    "lookup": "Fingerprint lookup",
+    "revoked": "Fingerprint revoked",
+    "key": {
+      "rotated": "Fingerprint key rotated"
+    }
+  },
+  "lineage": {
+    "issued": "Lineage issued",
+    "lookup": "Lineage lookup",
+    "revoked": "Lineage revoked",
+    "key": {
+      "rotated": "Lineage key rotated"
+    },
+    "build-descriptor": {
+      "downloaded": "Lineage build descriptor downloaded"
+    }
+  }
+}

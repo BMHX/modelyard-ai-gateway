@@ -1,0 +1,191 @@
+{
+  "Projects": "项目",
+  "Projects & Environments": "项目与环境",
+  "projects": {
+    "title": "项目",
+    "scope": {
+      "scoped": "已限定",
+      "setup": "待配置",
+      "eyebrow": "工作区范围",
+      "selectWorkspace": "选择工作区"
+    },
+    "status": {
+      "all": "全部项目状态",
+      "active": "活跃",
+      "archived": "已归档"
+    },
+    "environmentStatus": {
+      "all": "全部环境状态",
+      "active": "活跃环境",
+      "archived": "已归档环境"
+    },
+    "notice": {
+      "header": "项目变更",
+      "created": "已创建",
+      "updated": "已更新",
+      "archived": "已归档",
+      "reactivated": "已重新激活",
+      "error": "错误"
+    }
+  },
+  "Workspace": "工作区",
+  "Filters": "筛选器",
+  "Search": "搜索",
+  "Project, env, slug, runtime": "项目、环境、标识、运行时",
+  "Projects Status": "项目状态",
+  "Total Projects": "项目总数",
+  "Total Envs": "环境总数",
+  "Project Structure": "项目结构",
+  "Scope Gaps Detected": "发现范围缺口",
+  "Assignments Complete": "分配已完成",
+  "Project status": "项目状态",
+  "Project Status": "项目状态",
+  "Environment status": "环境状态",
+  "Environment Status": "环境状态",
+  "Apply filters": "应用筛选",
+  "Reset": "重置",
+  "Created": "已创建",
+  "Updated": "已更新",
+  "Archived": "已归档",
+  "Reactivated": "已重新激活",
+  "Error": "错误",
+  "Save": "保存",
+  "Saving...": "保存中...",
+  "Archive": "归档",
+  "Reactivate": "重新激活",
+  "Archiving...": "归档中...",
+  "Reactivating...": "重新激活中...",
+  "all": "全部",
+  "Project created.": "项目已创建。",
+  "Project updated.": "项目已更新。",
+  "Project archived.": "项目已归档。",
+  "Project reactivated.": "项目已重新激活。",
+  "Environment created.": "环境已创建。",
+  "Environment updated.": "环境已更新。",
+  "Environment archived.": "环境已归档。",
+  "Environment reactivated.": "环境已重新激活。",
+  "Archive {name}?": "归档 {name}？",
+  "Showing {projects} projects and {environments} environments in the current scope": {
+    "": "当前范围内显示 {projects} 个项目、{environments} 个环境。"
+  },
+  "Showing {visible} of {total} projects": {
+    "": "当前显示 {visible}/{total} 个项目。"
+  },
+  "Showing {visible} of {total} environments": {
+    "": "当前显示 {visible}/{total} 个环境。"
+  },
+  "all statuses": "全部状态",
+  "active environments": "活跃环境",
+  "Project basics": "项目基础信息",
+  "Name": "名称",
+  "Slug": "标识",
+  "Status": "状态",
+  "View usage": "查看用量",
+  "View alerts": "查看告警",
+  "Saving project": {
+    "": {
+      "": {
+        "": "保存项目中..."
+      }
+    }
+  },
+  "Save project": "保存项目",
+  "Reactivating": {
+    "": {
+      "": {
+        "": "重新激活中..."
+      }
+    }
+  },
+  "Reactivate project": "重新激活项目",
+  "This will remove the project from the active creation path while keeping linked environments visible for review": {
+    "": "这会将项目移出活跃创建路径，但保留已关联环境供审查。"
+  },
+  "Archive project": "归档项目",
+  "Archiving": {
+    "": {
+      "": {
+        "": "归档中..."
+      }
+    }
+  },
+  "No matching project": "没有匹配的项目",
+  "No projects yet": "还没有项目",
+  "No project matches the current filters": {
+    "": "当前筛选条件下没有匹配的项目。"
+  },
+  "Create the first project to define structure": {
+    "": "创建第一个项目以定义结构。"
+  },
+  "Environments": "环境",
+  "Environment basics": "环境基础信息",
+  "Project": "项目",
+  "Runtime": "运行时",
+  "Saving environment": {
+    "": {
+      "": {
+        "": "保存环境中..."
+      }
+    }
+  },
+  "Save environment": "保存环境",
+  "Reactivate environment": "重新激活环境",
+  "This will keep the environment visible for review but remove it from active routing until reactivated": {
+    "": "这会保留环境用于审查，但在重新激活前将其移出活跃路由。"
+  },
+  "Archive environment": "归档环境",
+  "No matching environment": "没有匹配的环境",
+  "No environments yet": "还没有环境",
+  "No environment matches the current filters": {
+    "": "当前筛选条件下没有匹配的环境。"
+  },
+  "Add the first environment once the structure is ready": {
+    "": "结构准备好后添加第一个环境。"
+  },
+  "Create": "创建",
+  "Secondary create surfaces for new structure work": {
+    "": "新的结构配置入口，默认次级展示。"
+  },
+  "collapsed": "已收起",
+  "Create project": "创建项目",
+  "Project name": "项目名称",
+  "Optional override": "可选覆盖",
+  "Creating project": {
+    "": {
+      "": {
+        "": "创建项目中..."
+      }
+    }
+  },
+  "Create environment": "创建环境",
+  "Environment name": "环境名称",
+  "Creating environment": {
+    "": {
+      "": {
+        "": "创建环境中..."
+      }
+    }
+  },
+  "Create a project first so environments have a valid parent": {
+    "": "请先创建项目，再为环境指定有效父级。"
+  },
+  "Reactivate an existing project or create a new one before adding environments": {
+    "": "请先重新激活现有项目或创建新项目，再添加环境。"
+  },
+  "Open workspaces": "打开工作区",
+  "Open organizations": "打开组织",
+  "Select an organization and workspace before structuring projects and environments": {
+    "": "请先选择组织和工作区，再配置项目与环境。"
+  },
+  "No workspace selected": "未选择工作区",
+  "Unknown project": "未知项目",
+  "Invite member": "邀请成员",
+  "Open members": "打开成员",
+  "Assign existing member": "分配现有成员",
+  "Project assignment follow-up": "项目分配跟进",
+  "{count} scoped members still need at least one project before the access model is usable": {
+    "": "{count} 个受限成员仍需至少分配一个项目后，当前访问模型才可实际使用。"
+  },
+  "Open assignment queue": "打开分配队列",
+  "Assign members": "分配成员"
+}

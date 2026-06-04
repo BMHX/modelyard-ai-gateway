@@ -1,0 +1,9 @@
+{
+  "name": "teamops-detector",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "detect": "node --import tsx ./src/cli.ts",
+    "test": "node --import tsx --test ./src/**/*.test.ts"
+  }
+}

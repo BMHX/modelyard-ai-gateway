@@ -1,0 +1,154 @@
+name: Release Preview Runtime
+
+on:
+  push:
+    tags:
+      - "preview-v*"
+  workflow_dispatch:
+    inputs:
+      release_version:
+        description: "Release tag to publish, for example preview-v0.1.0"
+        required: true
+        type: string
+      publish_latest:
+        description: "Also publish the latest tag"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: release-preview-runtime-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish-preview-runtime:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    env:
+      REGISTRY: ghcr.io
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve release metadata
+        id: release_meta
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${GITHUB_EVENT_NAME}" == "workflow_dispatch" ]]; then
+            release_version="${{ inputs.release_version }}"
+            publish_latest="${{ inputs.publish_latest }}"
+          else
+            release_version="${GITHUB_REF_NAME}"
+            publish_latest="false"
+          fi
+
+          if [[ -z "${release_version}" ]]; then
+            echo "release version is required" >&2
+            exit 1
+          fi
+
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          image_name="${REGISTRY}/${owner}/teamops-preview-runtime"
+
+          echo "release_version=${release_version}" >> "${GITHUB_OUTPUT}"
+          echo "publish_latest=${publish_latest}" >> "${GITHUB_OUTPUT}"
+          echo "image_name=${image_name}" >> "${GITHUB_OUTPUT}"
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare image metadata
+        id: docker_meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ steps.release_meta.outputs.image_name }}
+          tags: |
+            type=raw,value=${{ steps.release_meta.outputs.release_version }}
+            type=sha,prefix=sha-
+            type=raw,value=latest,enable=${{ steps.release_meta.outputs.publish_latest == 'true' }}
+          labels: |
+            org.opencontainers.image.title=teamops-preview-runtime
+            org.opencontainers.image.description=Preview runtime image for the TeamOps control plane stack
+            org.opencontainers.image.version=${{ steps.release_meta.outputs.release_version }}
+            org.opencontainers.image.revision=${{ github.sha }}
+            org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
+
+      - name: Build and push preview runtime image
+        id: build_push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: infra/Dockerfile.runtime
+          push: true
+          tags: ${{ steps.docker_meta.outputs.tags }}
+          labels: ${{ steps.docker_meta.outputs.labels }}
+          cache-from: type=gha,scope=preview-runtime
+          cache-to: type=gha,mode=max,scope=preview-runtime
+          provenance: false
+          sbom: false
+
+      - name: Write release handoff artifact
+        id: handoff
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p .artifacts/preview-runtime
+          digest_ref="${{ steps.release_meta.outputs.image_name }}@${{ steps.build_push.outputs.digest }}"
+
+          {
+            echo "TEAMOPS_RUNTIME_IMAGE=${digest_ref}"
+            echo "TEAMOPS_RUNTIME_RELEASE=${{ steps.release_meta.outputs.release_version }}"
+            echo "TEAMOPS_RUNTIME_TAG=${{ steps.release_meta.outputs.release_version }}"
+            echo "TEAMOPS_RUNTIME_DIGEST=${{ steps.build_push.outputs.digest }}"
+          } > .artifacts/preview-runtime/release.env
+
+          cat > .artifacts/preview-runtime/README.md <<EOF
+          # Preview Runtime Release
+
+          - Release: ${{ steps.release_meta.outputs.release_version }}
+          - Image: ${{ steps.release_meta.outputs.image_name }}
+          - Digest: ${{ steps.build_push.outputs.digest }}
+          - Pinned runtime ref: ${digest_ref}
+
+          Use this exact runtime reference in Self-host Preview:
+
+          TEAMOPS_RUNTIME_IMAGE=${digest_ref}
+          EOF
+
+          echo "digest_ref=${digest_ref}" >> "${GITHUB_OUTPUT}"
+
+      - name: Upload release handoff artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-runtime-${{ steps.release_meta.outputs.release_version }}
+          path: .artifacts/preview-runtime
+          if-no-files-found: error
+
+      - name: Publish release summary
+        shell: bash
+        run: |
+          {
+            echo "## Preview runtime release"
+            echo
+            echo "- Release: \`${{ steps.release_meta.outputs.release_version }}\`"
+            echo "- Image repository: \`${{ steps.release_meta.outputs.image_name }}\`"
+            echo "- Pinned runtime ref: \`${{ steps.handoff.outputs.digest_ref }}\`"
+            echo "- Handoff artifact: \`preview-runtime-${{ steps.release_meta.outputs.release_version }}\`"
+            if [[ "${{ steps.release_meta.outputs.publish_latest }}" == "true" ]]; then
+              echo "- Also published tag: \`latest\`"
+            fi
+          } >> "${GITHUB_STEP_SUMMARY}"

@@ -1,0 +1,283 @@
+{
+  "title": "Home",
+  "serviceStatus": {
+    "label": "Service status",
+    "degradedBadge": "Degraded",
+    "degradedDescription": "Home is temporarily degraded",
+    "syncingBadge": "Syncing",
+    "syncingDescription": "Refreshing workspace access before loading Home.",
+    "syncingMessage": "Syncing workspace access context.",
+    "refresh": "Refresh"
+  },
+  "changeWorkspace": "Change workspace",
+  "contextSummary": {
+    "noOrganization": "Create the organization root first.",
+    "noWorkspace": "Add a workspace to start governed access.",
+    "pickWorkspace": "Select the workspace for this session."
+  },
+  "setup": {
+    "workspaceLabel": "Workspace",
+    "card": {
+      "title": {
+        "organizationRequired": "Organization required",
+        "workspaceRequired": "Workspace required",
+        "chooseWorkspace": "Choose workspace"
+      },
+      "description": {
+        "organizationRequired": "Create the first organization root.",
+        "workspaceRequired": "Create one workspace before opening governed access.",
+        "chooseWorkspace": "Select the workspace for this session."
+      }
+    },
+    "button": {
+      "createOrganization": "Create organization",
+      "createWorkspace": "Create workspace",
+      "useWorkspace": "Use workspace"
+    }
+  },
+  "primaryAction": {
+    "connectProvider": {
+      "title": "Connect the first provider",
+      "description": "Add a provider route before issuing keys.",
+      "cta": "Open providers"
+    },
+    "retestRoutes": {
+      "title": "{count, plural, one {Retest # provider route} other {Retest # provider routes}}",
+      "description": "Review failed or untested routes.",
+      "cta": "Review routes"
+    },
+    "issueFirstKey": {
+      "title": "Issue the first scoped key",
+      "description": "Create a workspace key after provider routing is ready.",
+      "cta": "Open keys"
+    },
+    "reviewExpiringKeys": {
+      "title": "{count, plural, one {Review # expiring key} other {Review # expiring keys}}",
+      "description": "Rotate or replace active keys that expire soon.",
+      "cta": "Open keys"
+    },
+    "reviewDormantKeys": {
+      "title": "{count, plural, one {Review # wide-access key} other {Review # wide-access keys}}",
+      "description": "Tighten unused keys that still have broad access.",
+      "cta": "Open keys"
+    },
+    "reviewBlockedRequests": {
+      "title": "{count, plural, one {Review # blocked request} other {Review # blocked requests}}",
+      "description": "Inspect usage failures before expanding access.",
+      "cta": "Open usage"
+    },
+    "reviewErroredRequests": {
+      "title": "{count, plural, one {Review # errored request} other {Review # errored requests}}",
+      "description": "Inspect usage failures before expanding access.",
+      "cta": "Open usage"
+    },
+    "reviewAuditTrail": {
+      "title": "Review audit trail",
+      "description": "Recent control-plane changes are ready for review.",
+      "cta": "Open audit log"
+    },
+    "footerActionLabel": "Open exports"
+  },
+  "inbox": {
+    "title": "Action items",
+    "description": "Active work items and latest changes.",
+    "primaryItemsTitle": "Next action",
+    "secondaryItemsTitle": "Recent changes",
+    "badge": {
+      "critical": "Critical",
+      "warning": "Watch",
+      "neutral": "Pending",
+      "audit": "Audit"
+    },
+    "open": "Open"
+  },
+  "recent": {
+    "blockedRequest": "Blocked request",
+    "erroredRequest": "Errored request",
+    "usageLabel": "Usage",
+    "unknownModel": "unknown model",
+    "unknownProvider": "unknown provider",
+    "tokens": "tokens"
+  },
+  "overview": {
+    "usage": "Usage",
+    "budgets": "Budgets",
+    "success": "Success",
+    "overview": "Overview",
+    "unavailable": "Unavailable",
+    "summaryUnavailable": "Workspace summary unavailable right now.",
+    "eventsLabel": "events",
+    "blocked": "blocked",
+    "openAlerts": "open alerts",
+    "stable": "Stable",
+    "waitingForTraffic": "Waiting for traffic"
+  },
+  "dashboard": {
+    "trendTitle": "Usage trend",
+    "noTrendData": "No traffic in the selected window.",
+    "totalSpend": "Total spend",
+    "totalRequests": "Total requests",
+    "blocked": "Blocked",
+    "error": "Errored",
+    "mtd": "MTD",
+    "accrued": "Accrued",
+    "platformStatus": "Platform status",
+    "healthy": "Healthy",
+    "successRate": "Success rate",
+    "activeKeys": "Active keys",
+    "security": "Security",
+    "encryption": "Encryption",
+    "auditPipeline": "Audit pipeline",
+    "realTime": "Real-time",
+    "sso": "SSO",
+    "viewRecent": "View recent"
+  },
+  "management": {
+    "kpi": {
+      "monthlySpend": {
+        "label": "Monthly spend",
+        "unavailable": "n/a",
+        "noTrafficHint": "Waiting for traffic"
+      },
+      "forecast": {
+        "label": "Forecast",
+        "unavailable": "n/a",
+        "perDay": "per day",
+        "noTrafficHint": "Waiting for traffic"
+      },
+      "success": {
+        "label": "Success rate",
+        "na": "n/a",
+        "noTrafficHint": "Waiting for traffic"
+      },
+      "providerHealth": {
+        "label": "Provider health",
+        "ready": "ready",
+        "attention": "attention",
+        "revoked": "revoked",
+        "allClear": "All clear"
+      },
+      "keyGovernance": {
+        "label": "Key governance",
+        "active": "active",
+        "expiring": "expiring",
+        "dormant": "dormant",
+        "clear": "No risks"
+      },
+      "resourceFootprint": {
+        "label": "Resource footprint",
+        "projects": "projects",
+        "environments": "envs",
+        "activeBudgets": "active budgets"
+      }
+    },
+    "summary": {
+      "labels": {
+        "budget": "Budget & run rate",
+        "requests": "Request results",
+        "providers": "Provider mix"
+      },
+      "requestMeta": "{count} total",
+      "providerMeta": "{count} tracked",
+      "budgetValue": {
+        "unavailable": "No traffic yet"
+      },
+      "budgetHint": {
+        "activeBudgets": "active budgets",
+        "noBudgets": "No budgets"
+      },
+      "pills": {
+        "burnRate": "{value} burn / day",
+        "forecastBreaches": "{count} forecast breaches",
+        "openAlerts": "{count} open alerts",
+        "blockingAlerts": "{count} blocking alerts"
+      },
+      "status": {
+        "blocked": "Blocked",
+        "error": "Errored",
+        "success": "Success",
+        "other": "Other",
+        "none": "No volume yet"
+      },
+      "provider": {
+        "unknown": "Unknown provider",
+        "none": "No provider mix yet",
+        "others": "Others"
+      }
+    },
+    "trend": {
+      "title": "30-day spend & request trend",
+      "description": "Month-to-date load, spend pace, and exception pressure.",
+      "empty": "No traffic in the selected window.",
+      "legend": {
+        "spend": "Spend",
+        "requests": "Requests",
+        "blocked": "Blocked",
+        "error": "Errored"
+      },
+      "chips": {
+        "window": "Last 30 days",
+        "spend": "{value} month to date",
+        "requests": "{count} requests"
+      }
+    }
+  },
+  "risk": {
+    "budgetRisk": {
+      "title": "Budget risk",
+      "budgetsLabel": "budgets",
+      "blockingAlerts": "blocking alerts",
+      "openAlerts": "open alerts",
+      "forecastBreaches": "{count} forecast breaches",
+      "stable": "Stable",
+      "unavailable": "Unavailable",
+      "empty": "No budgets",
+      "cta": "Open budgets"
+    },
+    "usageExceptions": {
+      "title": "Usage exceptions",
+      "requestsLabel": "requests",
+      "hint": "{blocked} blocked · {errored} errored",
+      "cta": "Open usage"
+    },
+    "providerReadiness": {
+      "title": "Provider readiness",
+      "ready": "ready",
+      "hint": "{attention} attention · {revoked} revoked",
+      "cta": "Review providers"
+    },
+    "keyGovernance": {
+      "title": "Key governance",
+      "active": "active",
+      "expiring": "expiring",
+      "dormant": "dormant",
+      "neverUsed": "never used",
+      "stable": "Stable",
+      "cta": "Open keys"
+    }
+  },
+  "checklist": {
+    "previewRemaining": "{count, plural, one {# item remains in this list.} other {# items remain in this list.}}",
+    "status": {
+      "done": "Done",
+      "next": "Next",
+      "pending": "Queued"
+    }
+  },
+  "actionItems": {
+    "stats": {
+      "riskQueue": {
+        "label": "Risk queue",
+        "hint": "Budget, provider, and key follow-up"
+      },
+      "usageAttention": {
+        "label": "Usage attention",
+        "hint": "{blocked} blocked · {errored} errored"
+      },
+      "recentChanges": {
+        "label": "Recent changes",
+        "hint": "Latest audit and usage events"
+      }
+    }
+  }
+}

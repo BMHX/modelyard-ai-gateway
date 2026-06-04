@@ -1,0 +1,32 @@
+{
+  "title": "供应商",
+  "routeSummary": {
+    "globalDefaultLabel": "全局默认",
+    "globalDefaultDetail": "作为通用流量的默认路由。",
+    "providerDefaultLabel": "默认",
+    "providerDefaultDetail": "{provider} 默认流量。",
+    "modelRoutedLabel": "模型定向",
+    "exactModels": "{count, plural, other {# 个精确模型}}",
+    "fallbackOnlyLabel": "仅回退",
+    "fallbackOnlyDetail": "没有默认或模型规则。",
+    "revokedLabel": "已撤销",
+    "revokedDetail": "仅为历史保留。"
+  },
+  "health": {
+    "revokedLabel": "已撤销",
+    "revokedDetail": "已于 {date} 撤销",
+    "revokedDetailFallback": "已撤销路由",
+    "routingConflictLabel": "路由冲突",
+    "routingConflictDetail": "{count, plural, other {# 个重叠项需要清理。}}",
+    "testFailedLabel": "测试失败",
+    "testFailedFallback": "最近一次连接测试失败。",
+    "notTestedLabel": "未测试",
+    "notTestedDetail": "先运行首次连接测试。",
+    "staleCheckLabel": "测试陈旧",
+    "staleCheckDetail": "上次测试距今 {count, plural, other {# 天。}}",
+    "healthyLabel": "健康",
+    "healthyDetail": "{latency} · {date}",
+    "noLatency": "无延迟",
+    "unknownLabel": "未知"
+  }
+}

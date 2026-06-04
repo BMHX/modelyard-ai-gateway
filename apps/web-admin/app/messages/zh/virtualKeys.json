@@ -1,0 +1,317 @@
+{
+  "Virtual Keys": "虚拟密钥",
+  "Risk Distribution": "风险分布",
+  "Total Keys": "密钥总数",
+  "Key Issuance Trend": "密钥发放趋势",
+  "Demonstration of activity over time": "展示活动随时间变化的趋势。",
+  "Inventory Posture": "库存态势",
+  "Active": "活跃",
+  "Expiring soon": "即将到期",
+  "Workspace-wide": "工作区级",
+  "Choose a workspace to inspect key inventory": {
+    "": "选择工作区以查看密钥库存。"
+  },
+  "Workspace scope": "工作区范围",
+  "Select a workspace": "选择工作区",
+  "Workspace": "工作区",
+  "Apply scope": "应用范围",
+  "Workspace required": "需要工作区",
+  "Open workspaces": "打开工作区",
+  "Provider route required": "需要供应商路由",
+  "Expiry pressure": "到期压力",
+  "Dormant broad access": "休眠宽权限",
+  "Broad access present": "存在宽权限访问",
+  "No active inventory": "暂无活跃库存",
+  "Stable posture": "状态稳定",
+  "Connect one active provider route before issuing or rotating keys": {
+    "": "请先连接至少一个活跃的供应商路由，再发放或轮换密钥。"
+  },
+  "Issue the first scoped key once provider routing is ready": {
+    "": "供应商路由就绪后即可发放第一把范围化密钥。"
+  },
+  "Key inventory is scoped and healthy in the current window": {
+    "": "当前窗口内密钥范围清晰，整体健康。"
+  },
+  "Selection and bulk actions": "选择与批量操作",
+  "Select visible": "选择当前页",
+  "Clear selection": "清空选择",
+  "Clear": "清空",
+  "Bulk rotate": "批量轮换",
+  "Bulk revoke": "批量撤销",
+  "Reset filters": "重置筛选",
+  "Show all keys": "显示全部密钥",
+  "No virtual keys in this scope": "当前范围内暂无虚拟密钥",
+  "No virtual keys match the current filters": {
+    "": "当前筛选条件下没有匹配的虚拟密钥。"
+  },
+  "Issue the first virtual key": "发放第一把虚拟密钥",
+  "Issue virtual key": "发放虚拟密钥",
+  "Secondary action": "次要操作",
+  "Page window: {start}-{end} of {total}": "分页窗口：{start}-{end} / {total}",
+  "Previous page": "上一页",
+  "Next page": "下一页",
+  "Audit trail": "审计轨迹",
+  "Export logs": "导出日志",
+  "Visible {visible} · {active} active · {expiring} expiring soon": "可见 {visible} 项 · 活跃 {active} 项 · 即将到期 {expiring} 项",
+  "Selected {selected} · {rotatable} rotatable · {revocable} revocable": "已选 {selected} 项 · 可轮换 {rotatable} 项 · 可撤销 {revocable} 项",
+  "{loaded} loaded on this page": {
+    "": "当前页已载入 {loaded} 项"
+  },
+  "{selected} selected": "已选 {selected} 项",
+  "{rotatable} rotatable · {revocable} revocable": "可轮换 {rotatable} 项 · 可撤销 {revocable} 项",
+  "Select rows to keep bulk actions close to the table": {
+    "": "先选择条目，再进行批量操作。"
+  },
+  "Workspace default": "工作区默认",
+  "All keys": "全部密钥",
+  "Status": "状态",
+  "All statuses": "全部状态",
+  "Active and usable": "活跃且可用",
+  "Expired": "已过期",
+  "Revoked": "已撤销",
+  "Never used": "从未使用",
+  "Binding": "绑定范围",
+  "Any binding": "任意绑定",
+  "Project scoped": "项目级",
+  "Environment bound": "环境级",
+  "Risk": "风险",
+  "Create virtual key": "发放虚拟密钥",
+  "Issue another": "继续发放",
+  "Creating": {
+    "": {
+      "": {
+        "": "创建中..."
+      }
+    }
+  },
+  "Label, owner, team, service, prefix": "标签、负责人、团队、服务、前缀",
+  "Provider connection": "供应商连接",
+  "Select active provider": "选择活跃供应商",
+  "Owner": "负责人",
+  "Team": "团队",
+  "Service": "服务",
+  "Project": "项目",
+  "Environment": "环境",
+  "Runtime": "运行时",
+  "Recommended presets": "推荐预设",
+  "Selected preset": "当前预设",
+  "Apply preset": "应用预设",
+  "Core fields": "基础信息",
+  "Binding and runtime": "绑定与运行时",
+  "Access policy": "访问策略",
+  "Advanced configuration": "高级配置",
+  "Advanced scopes": "高级范围",
+  "Scopes": "范围",
+  "Expires at": "到期时间",
+  "Cancel": "取消",
+  "Actions": "操作",
+  "Attribution": "归属",
+  "Expires": "到期",
+  "Last used": "上次使用",
+  "Select": "选择",
+  "Token": "令牌",
+  "Prefix": "前缀",
+  "Providers": "供应商",
+  "Audit": "审计",
+  "Usage": "用量",
+  "Rotate": "轮换",
+  "Revoke": "撤销",
+  "Dismiss": "关闭",
+  "Copy token": "复制令牌",
+  "Copy prefix": "复制前缀",
+  "Open provider connections": "打开供应商连接",
+  "Filter virtual keys": "筛选虚拟密钥",
+  "Filter": "筛选",
+  "Search": "搜索",
+  "No expiry": "无到期时间",
+  "No environment binding": "无环境绑定",
+  "Workspace-wide access": "工作区级访问",
+  "Choose the closest issuance path, then adjust only the fields that differ.": "先选最接近的发放路径，再只改有差异的字段。",
+  "Fill the minimum needed to issue a key. Attribution and binding stay available below.": "先填写最少必要字段，归属和绑定信息放在下方继续补充。",
+  "Keep owner and workload tags stable so search, audit, and chargeback stay usable.": "保持负责人和工作负载标签稳定，便于搜索、审计和分摊。",
+  "Bind as narrowly as possible. Environment binding takes priority and locks runtime automatically.": "尽量收窄绑定范围；一旦绑定环境，运行时会自动跟随并锁定。",
+  "Preset defaults are editable. Most issuance flows only need expiry; scopes are for exceptions.": "预设默认值可以调整。大多数发放只需要确认到期时间，范围用于例外场景。",
+  "Runtime follows the selected environment.": "运行时已跟随所选环境自动锁定。",
+  "Choose an environment to lock runtime automatically.": "选择环境后会自动锁定运行时。",
+  "Only active projects and environments are available for new keys": {
+    " Existing archived bindings stay visible in the inventory below": {
+      "": "新建密钥时仅显示活跃项目和环境；已归档的绑定仍会在下方清单中保留可见。"
+    }
+  },
+  "Other scopes are stored as descriptive tags": {
+    "": "其余范围会作为描述标签保留。"
+  },
+  "Unassigned owner": "未分配负责人",
+  "No team or service": "未绑定团队或服务",
+  "Rotating": {
+    "": {
+      "": {
+        "": "轮换中…"
+      }
+    }
+  },
+  "Revoking": {
+    "": {
+      "": {
+        "": "撤销中…"
+      }
+    }
+  },
+  "maskedKeyFragment": "已脱敏密钥片段",
+  "scopeInputPlaceholder": "可选，例如 gateway:models, qa",
+  "scopeRemove": "移除 {scope}",
+  "table": {
+    "scopeCount": "{count} 项范围"
+  },
+  "runtime": {
+    "unset": "未设置",
+    "development": "开发",
+    "staging": "预发",
+    "production": "生产"
+  },
+  "expiry": {
+    "daysLeft": {
+      "one": "剩余 {days} 天",
+      "other": "剩余 {days} 天"
+    }
+  },
+  "status": {
+    "active": "活跃",
+    "revoked": "已撤销"
+  },
+  "binding": {
+    "boundProviderUnavailable": "已绑定供应商不可用",
+    "legacyWorkspaceRouting": "需要补充供应商绑定",
+    "providerBindingRequired": "需要补充供应商绑定",
+    "unbound": "未绑定",
+    "unknownProject": "未知项目",
+    "unknownEnvironment": "未知环境（{runtime}）"
+  },
+  "risk": {
+    "retired": {
+      "label": "已停用",
+      "summary": "已撤销。"
+    },
+    "expired": {
+      "label": "已过期",
+      "summary": "已过期，请轮换或重新发放。"
+    },
+    "expiringSoon": {
+      "label": "即将到期",
+      "summary": "即将到期。"
+    },
+    "providerBindingRequired": {
+      "label": "需要供应商绑定",
+      "summary": "请在 Virtual Keys 或 Access 中重新签发，或补充明确的接入目标。"
+    },
+    "dormantWideAccess": {
+      "label": "休眠宽权限",
+      "summary": "权限较宽且长期未使用。"
+    },
+    "neverUsed": {
+      "label": "从未使用",
+      "summary": "暂无使用记录。"
+    },
+    "workspaceWideActive": {
+      "label": "工作区级活跃",
+      "summary": "当前仍是工作区级访问。"
+    },
+    "healthy": {
+      "label": "健康",
+      "summary": "范围已收敛。"
+    }
+  },
+  "posture": {
+    "lanes": {
+      "missingProvider": {
+        "title": "需要供应商路由",
+        "detail": "发放或轮换前，先连接至少一个可用的供应商路由。"
+      },
+      "expiry": {
+        "title": "到期压力",
+        "detail": "{count} 个活跃密钥会在 14 天内到期。"
+      },
+      "cleanup": {
+        "title": "休眠宽权限",
+        "detail": "{count} 个工作区级密钥长期闲置且权限仍然较宽。"
+      },
+      "scope": {
+        "title": "存在宽权限访问",
+        "detail": "{count} 个活跃密钥仍覆盖整个工作区。"
+      },
+      "issue": {
+        "title": "暂无活跃库存",
+        "detail": "供应商路由准备好后，即可发放第一把范围化密钥。"
+      },
+      "healthy": {
+        "title": "状态稳定",
+        "detail": "当前窗口内的密钥范围清晰，整体状态健康。"
+      }
+    }
+  },
+  "presets": {
+    "humanSession": {
+      "title": "共享工具",
+      "summary": "7 天到期。"
+    },
+    "serviceBot": {
+      "title": "服务机器人",
+      "summary": "30 天到期。"
+    },
+    "productionRuntime": {
+      "title": "生产运行时",
+      "summary": "默认带 gateway:* 范围。"
+    }
+  },
+  "issuance": {
+    "hiddenArchived": "新发放时已隐藏：{projects} 个归档项目，{environments} 个归档环境。",
+    "noProviders": "请先创建可用的供应商连接，再让这把虚拟密钥绑定到具体的上游凭据。",
+    "newTokenFor": "{label} 的新令牌"
+  },
+  "confirm": {
+    "bulkRevoke": {
+      "description": "这会一次性撤销当前已选择且符合条件的所有密钥。",
+      "title": "确认撤销已选 {count} 项？"
+    },
+    "revoke": {
+      "description": "撤销后，这把密钥会立即停止在网关中生效。",
+      "label": "撤销密钥",
+      "title": "确认撤销 {label}？"
+    }
+  },
+  "emptyState": {
+    "issueFirstScoped": "先发放一把范围化密钥，开始建立清单。",
+    "connectProviderFirst": "发放前请先连接至少一个供应商路由。",
+    "issueKey": "发放密钥",
+    "openIssuance": "打开发放面板"
+  },
+  "actions": {
+    "create": {
+      "success": "虚拟密钥已创建。请立即复制令牌，稍后将不再显示。"
+    },
+    "revoke": {
+      "success": "虚拟密钥已撤销。"
+    },
+    "rotate": {
+      "success": "虚拟密钥已轮换。请立即复制新令牌，稍后将不再显示。"
+    },
+    "bulkRevoke": {
+      "noneSelected": "请至少选择一项虚拟密钥后再执行撤销。",
+      "selectEligible": "请至少选择一项未撤销的密钥后再执行撤销。",
+      "noneSucceeded": "所选虚拟密钥都未能撤销。",
+      "success": "已撤销 {count} 项虚拟密钥。",
+      "partial": "已撤销 {count} 项虚拟密钥；{failed} 项失败。"
+    },
+    "bulkRotate": {
+      "noneSelected": "请至少选择一项虚拟密钥后再执行轮换。",
+      "selectEligible": "请至少选择一项活跃且未过期的密钥后再执行轮换。",
+      "noneSucceeded": "所选虚拟密钥都未能轮换。",
+      "success": "已轮换 {count} 项虚拟密钥。请立即复制新令牌，稍后将不再显示。",
+      "partial": "已轮换 {count} 项虚拟密钥；{failed} 项失败。"
+    }
+  },
+  "Label": "标签",
+  "Enforced gateway scopes:": "强制网关范围：",
+  "Dormant wide access": "休眠宽权限",
+  "Workspace-wide active": "工作区级活跃"
+}

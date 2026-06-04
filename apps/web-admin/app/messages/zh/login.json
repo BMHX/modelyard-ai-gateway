@@ -1,0 +1,50 @@
+{
+  "title": "登录",
+  "description": {
+    "development": "本地开发可直接使用测试账号进入；只有在已配置身份提供方时，才需要继续走 OIDC 登录。",
+    "oidc": "使用组织 slug 启动控制平面的 OIDC 登录流程。"
+  },
+  "presets": {
+    "title": "测试账号快捷填入",
+    "description": {
+      "development": "点卡片填入组织 slug，或直接用右侧按钮一键进入测试账号。",
+      "oidc": "点一下即可填入演示组织 slug，再继续走 OIDC 登录。"
+    },
+    "directSignIn": "直接进入",
+    "accountLabel": "测试账号",
+    "directSignInNotice": "测试直登仅在本地或非生产环境启用。"
+  },
+  "fields": {
+    "organizationSlug": "组织 slug"
+  },
+  "actions": {
+    "continueConfiguredOidc": "继续使用已配置 OIDC",
+    "continueOidc": "继续使用 OIDC 登录",
+    "continueOidcPending": "正在跳转到身份提供方…"
+  },
+  "errors": {
+    "startHint": "组织 slug 已提交，但这个组织的 OIDC 登录流程没有成功启动。",
+    "callbackHint": "组织 slug 已通过校验，失败发生在身份提供方回跳之后。",
+    "codeLabel": "错误码",
+    "requestIdLabel": "请求 ID",
+    "correlationIdLabel": "关联 ID"
+  },
+  "presetItems": {
+    "aliceAdmin": {
+      "label": "Alice 管理员",
+      "helper": "试用工作区管理员"
+    },
+    "bobDeveloper": {
+      "label": "Bob 开发者",
+      "helper": "试用开发者权限"
+    },
+    "opsInternal": {
+      "label": "Ops 内部运维",
+      "helper": "试用内部运维租户"
+    },
+    "financeViewer": {
+      "label": "Finance 分析师",
+      "helper": "试用开发者权限"
+    }
+  }
+}

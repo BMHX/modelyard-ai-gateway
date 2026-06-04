@@ -1,0 +1,189 @@
+{
+  "title": "Workspaces",
+  "notice": {
+    "created": "Created",
+    "updated": "Updated",
+    "deleted": "Deleted",
+    "error": "Error"
+  },
+  "summary": {
+    "title": "Workspace Summary",
+    "total": "Total",
+    "visible": "Visible",
+    "fresh": "Fresh",
+    "active": "Active",
+    "dormant": "Dormant",
+    "meta": {
+      "inScope": "{count, plural, one {# workspace in scope} other {# workspaces in scope}}",
+      "updated72h": "Updated 72h",
+      "updated30d": "Updated 30d",
+      "reviewNow": "Review now"
+    }
+  },
+  "queue": {
+    "label": {
+      "over7d": "7d+",
+      "over30d": "30d+",
+      "over90d": "90d+"
+    }
+  },
+  "toolbar": {
+    "name": "Name",
+    "namePlaceholder": "Platform team",
+    "slug": "Slug",
+    "slugPlaceholder": "platform-team",
+    "organization": "Organization",
+    "search": "Search",
+    "searchPlaceholder": "Search workspaces",
+    "browse": "Scope",
+    "browseOptions": {
+      "all": "All workspaces",
+      "recent": "Recent",
+      "established": "Established"
+    },
+    "sort": "Sort",
+    "sortOptions": {
+      "updatedDesc": "Recently updated",
+      "updatedAsc": "Oldest updated",
+      "nameAsc": "Name A-Z",
+      "nameDesc": "Name Z-A",
+      "reviewPriority": "Review priority"
+    },
+    "newWorkspace": "New workspace",
+    "review": "Review",
+    "reviewOptions": {
+      "all": "All reviews",
+      "fresh": "Fresh",
+      "active": "Active",
+      "dormant": "Dormant"
+    },
+    "queue": "Queue",
+    "queueOptions": {
+      "all": "All buckets",
+      "over7d": "Over 7 days",
+      "over30d": "Over 30 days",
+      "over90d": "Over 90 days"
+    },
+    "viewOptions": "View options",
+    "density": "Density",
+    "densityOptions": {
+      "comfortable": "Comfortable",
+      "compact": "Compact"
+    },
+    "columns": "Columns",
+    "columnsOptions": {
+      "standard": "Standard",
+      "audit": "Audit",
+      "minimal": "Minimal"
+    },
+    "reset": "Reset",
+    "dialog": {
+      "title": "New workspace",
+      "description": "Create a workspace",
+      "cancel": "Cancel",
+      "create": "Create"
+    }
+  },
+  "reviewQueue": {
+    "title": "Review queue",
+    "open": "Open queue"
+  },
+  "table": {
+    "meta": "{count, plural, one {# entry} other {# entries}}",
+    "relatedPages": "Related pages",
+    "view": {
+      "title": "View",
+      "density": "Density",
+      "columns": "Columns"
+    },
+    "summary": {
+      "snapshot": "Snapshot",
+      "slug": "Slug",
+      "jump": "Jump"
+    },
+    "selection": {
+      "label": "Selection",
+      "selectAllVisible": "Select all visible workspaces",
+      "selectWorkspace": "Select workspace {name}",
+      "selectedCount": "{count} selected"
+    },
+    "compare": {
+      "title": "Compare selected",
+      "description": "Showing the first {count} selected workspaces.",
+      "hide": "Hide compare"
+    },
+    "columns": {
+      "workspace": "Workspace",
+      "state": "State",
+      "created": "Created",
+      "updated": "Updated",
+      "resources": "Resources",
+      "actions": "Actions"
+    },
+    "actions": {
+      "inspect": "Inspect",
+      "hide": "Hide",
+      "open": "Open",
+      "openSelected": "Open selected",
+      "compare": "Compare",
+      "clear": "Clear",
+      "deleteSelected": "Delete selected",
+      "openActionsFor": "Open actions for {name}"
+    }
+  },
+  "emptyState": {
+    "noOrganization": {
+      "title": "No organization yet",
+      "description": "Create an organization first.",
+      "action": "Open organizations"
+    },
+    "noMatching": {
+      "title": "No matching workspace",
+      "description": "No workspace matches the current view."
+    },
+    "noWorkspace": {
+      "title": "No workspace yet",
+      "description": "Create the first workspace for {organization}.",
+      "descriptionFallback": "Create the first workspace for this organization."
+    }
+  },
+  "actions": {
+    "controlCenter": "Control Center",
+    "providers": "Providers",
+    "members": "Members",
+    "alerts": "Alerts",
+    "keys": "Keys",
+    "budgets": "Budgets",
+    "projects": "Projects",
+    "usage": "Usage"
+  },
+  "lifecycle": {
+    "onboarding": "Launch",
+    "stabilizing": "Stabilizing",
+    "operating": "Operating",
+    "onboardingMeta": "14d",
+    "stabilizingMeta": "15–90 days",
+    "operatingMeta": "90+ days"
+  },
+  "review": {
+    "fresh": "Recent",
+    "active": "Active",
+    "dormant": "Dormant",
+    "freshMeta": "72h",
+    "activeMeta": "30d",
+    "dormantMeta": "Review"
+  },
+  "Activity Trend": "Activity Trend",
+  "Demonstration of workspace activity over time": "Demonstration of workspace activity over time",
+  "Auditor Perspective": "Auditor Perspective",
+  "Attention Required": "Attention Required",
+  "Healthy Posture": "Healthy Posture",
+  "reviewOver30d": "{count} workspaces pending review for over 30 days.",
+  "Continue setup": "Continue setup",
+  "Open workspace": "Open workspace",
+  "Open members": "Open members",
+  "Open providers": "Open providers",
+  "Setup incomplete": "In setup",
+  "Ready for handoff": "Ready",
+  "Ready for daily operations": "Ready for daily operations"
+}

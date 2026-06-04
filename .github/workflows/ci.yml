@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Prepare env
+        run: cp .env.example .env
+
+      - name: Validate env
+        run: npm run env:check
+
+      - name: Repo lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Test
+        run: npm test
+
+      - name: Test Attestation
+        run: npm run test:attestation
+
+      - name: Test Verification
+        run: npm run test:verification
+
+      - name: Build
+        run: npm run build
+
+      - name: Build Preview Runtime Image
+        run: docker build -f infra/Dockerfile.runtime -t teamops-preview-runtime:ci .

@@ -1,0 +1,237 @@
+{
+  "Governance Event Trend": "治理事件趋势",
+  "Total audit entries recorded over time": "审计记录总量随时间变化的趋势",
+  "Subject Distribution": "对象分布",
+  "Total": "总数",
+  "Quick Stats": "快速统计",
+  "Actors": "执行者",
+  "Export Log": "导出日志",
+  "No payload": "无负载",
+  "Masked key fragment": "密钥片段",
+  "rows": "行",
+  "Payload fields": "负载字段",
+  "Current scope": "当前范围",
+  "{count} visible entries across the selected workspace, scope, and time window": "当前工作区、范围和时间窗口内可见 {count} 条记录",
+  "Service actors": "服务执行方",
+  "{count} service-originated events on this page": "当前页有 {count} 条服务触发事件",
+  "Workspace subjects": "工作区对象",
+  "{count} workspace-level changes on this page": "当前页有 {count} 条工作区级变更",
+  "Environment subjects": "环境对象",
+  "{count} environment-specific changes on this page": "当前页有 {count} 条环境级变更",
+  "Workspace": "工作区",
+  "Project": "项目",
+  "Environment": "环境",
+  "Actor type": "执行方类型",
+  "Actor ID": "执行方 ID",
+  "Action": "动作",
+  "Subject type": "对象类型",
+  "Subject ID": "对象 ID",
+  "From": "起始时间",
+  "To": "结束时间",
+  "Opened {time}": "打开于 {time}",
+  "Updated {time}": "更新于 {time}",
+  "{activity} · {count} stored filters": "{activity} · 已存 {count} 个筛选条件",
+  "Opened {openedAt} · updated {updatedAt}": "打开于 {openedAt} · 更新于 {updatedAt}",
+  "Created {createdAt} · update this shared lane after refining the current filters": {
+    "": "创建于 {createdAt} · 调整当前筛选后可更新此共享视图。"
+  },
+  "Default views": "默认视图",
+  "Start from the built-in governance queues for service activity, workspace changes, and environment drift": {
+    "": "从内置治理队列开始查看服务活动、工作区变更与环境漂移。"
+  },
+  "Default audit views are unavailable right now": {
+    "": "默认审计视图暂时不可用。"
+  },
+  "Recent views": "最近视图",
+  "Reopen the most recently opened audit paths without rebuilding the same governance query again": {
+    "": "直接重新打开最近使用的审计视图，无需重复搭建同一套治理筛选。"
+  },
+  "Save an audit lane once and it will appear here for repeat review": {
+    "": "保存一次审计视图后，会出现在这里供重复复查。"
+  },
+  "Team shared views": "团队共享视图",
+  "Workspace-saved audit views stay available for handoffs, recurring reviews, and compliance follow-up, ordered by the latest shared edits": {
+    "": "保存到工作区的审计视图会保留给交接、周期复查和合规跟进使用，并按最近编辑排序。"
+  },
+  "No team-shared audit views exist yet": {
+    "": "尚无团队共享审计视图。"
+  },
+  "All workspaces": "所有工作区",
+  "All projects": "所有项目",
+  "All environments": "所有环境",
+  "Export": "导出",
+  "Audit scope": "审计范围",
+  "Select a workspace": "选择工作区",
+  "Search action": "搜索动作",
+  "organization": "组织",
+  "organization.created": "组织已创建",
+  "organization.updated": "组织已更新",
+  "organization.deleted": "组织已删除",
+  "workspace": "工作区",
+  "workspace.created": "工作区已创建",
+  "workspace.updated": "工作区已更新",
+  "workspace.deleted": "工作区已删除",
+  "workspace.onboarding.first_provider_connected": "工作区初始化：已连接首个供应商",
+  "workspace.onboarding.first_provider_tested": "工作区初始化：已测试首个供应商",
+  "workspace.onboarding.first_virtual_key_created": "工作区初始化：已创建首个虚拟密钥",
+  "workspace.onboarding.first_export_requested": "工作区初始化：已发起首个导出",
+  "workspace_seeded_legacy": "工作区已初始化",
+  "project": "项目",
+  "project.created": "项目已创建",
+  "project.updated": "项目已更新",
+  "project.archived": "项目已归档",
+  "environment": "环境",
+  "environment.created": "环境已创建",
+  "environment.updated": "环境已更新",
+  "environment.archived": "环境已归档",
+  "Apply filters": "应用筛选",
+  "Reset": "重置",
+  "More filters": "更多筛选",
+  "Optional": "可选",
+  "Saved views": "已保存视图",
+  "Saved filters for this view": {
+    "": "当前视图的已保存筛选。"
+  },
+  "Saved views are temporarily unavailable": "已保存视图暂时不可用",
+  "Audit Logs": "审计日志",
+  "Audit events": "审计事件",
+  "Showing {start}-{end} of {total} audit events": "显示第 {start}-{end} 条，共 {total} 条审计事件",
+  "Saved view active": "当前为保存视图",
+  "Workspace view": "工作区视图",
+  "{count} service events": "{count} 条服务事件",
+  "Human and service events": "人工与服务事件",
+  "Actors {actors} · Actions {actions} · Subjects {subjects}": "执行方 {actors} · 动作 {actions} · 对象 {subjects}",
+  "Saved lane": "已保存视图",
+  "Active workspace view": "当前工作区视图",
+  "Time": "时间",
+  "Actor": "执行方",
+  "Subject": "对象",
+  "Scope": "范围",
+  "Payload": "负载",
+  "workspace-scope": "工作区范围",
+  "No environment": "无环境",
+  "global": "全局",
+  "No audit events matched the current filters yet": {
+    "": "当前筛选下还没有匹配的审计事件。"
+  },
+  "No matching event": "没有匹配的事件",
+  "Page size": "每页条数",
+  "Previous page": "上一页",
+  "Next page": "下一页",
+  "member": "成员",
+  "member.invited": "成员已邀请",
+  "member.updated": "成员已更新",
+  "member.removed": "成员已移除",
+  "member.project-assignments.replaced": "成员项目分配已更新",
+  "virtual-key": "虚拟密钥",
+  "virtual-key.created": "虚拟密钥已创建",
+  "virtual-key.revoked": "虚拟密钥已撤销",
+  "virtual-key.rotated": "虚拟密钥已轮换",
+  "virtual-key.self-serve-issued": "虚拟密钥已自助签发",
+  "virtual-key.self-serve-revoked": "虚拟密钥已自助撤销",
+  "virtual-key.self-serve-rotated": "虚拟密钥已自助轮换",
+  "provider-connection": "供应商连接",
+  "provider-connection.created": "供应商连接已创建",
+  "provider-connection.tested": "供应商连接已测试",
+  "provider-connection.updated": "供应商连接已更新",
+  "provider-connection.rotated": "供应商连接密钥已轮换",
+  "provider-connection.draft-tested": "供应商连接草稿已测试",
+  "provider-connection.revoked": "供应商连接已撤销",
+  "provider-connection_created": "供应商连接已创建",
+  "budget": "预算",
+  "budget.created": "预算已创建",
+  "budget.updated": "预算已更新",
+  "budget.deleted": "预算已删除",
+  "export": {
+    "requested": "导出已发起",
+    "requeued": "导出已重新入队",
+    "downloaded": "导出已下载",
+    "download_blocked": "导出下载已阻止",
+    "followup_updated": "导出跟进已更新",
+    "governance_updated": "导出治理流程已更新",
+    "workflow_updated": "导出工作流已更新",
+    "governance_update_blocked": "导出治理更新已阻止"
+  },
+  "alert": {
+    "updated": "告警已更新",
+    "collaboration_updated": "告警协作信息已更新",
+    "resolved": "告警已解决",
+    "reopened": "告警已重新打开"
+  },
+  "workspace_onboarding_first_provider_connected": "工作区初始化：已连接第一个供应商",
+  "auth": {
+    "access": {
+      "denied": "访问已拒绝"
+    },
+    "login": {
+      "failed": "登录失败",
+      "started": "登录已开始",
+      "succeeded": "登录成功"
+    },
+    "logout": {
+      "completed": "已退出登录"
+    },
+    "provider-configured": "认证提供方已配置",
+    "session": {
+      "expired": "会话已过期",
+      "revoked": "会话已撤销"
+    }
+  },
+  "prompt_policy": {
+    "updated": "提示词策略已更新"
+  },
+  "prompt_inspection": {
+    "exported": "提示词检查已导出",
+    "reviewed": "提示词检查已复核",
+    "batch_reviewed": "提示词检查已批量复核"
+  },
+  "saved_view": {
+    "created": "保存视图已创建",
+    "deleted": "保存视图已删除",
+    "updated": "保存视图已更新"
+  },
+  "scheduled_report": {
+    "created": "定时报表已创建",
+    "deleted": "定时报表已删除",
+    "updated": "定时报表已更新",
+    "triggered": "定时报表已触发",
+    "trigger_deduplicated": "定时报表触发已去重"
+  },
+  "fingerprint": {
+    "issued": "指纹已签发",
+    "lookup": "指纹已查询",
+    "revoked": "指纹已撤销",
+    "key": {
+      "rotated": "指纹密钥已轮换"
+    }
+  },
+  "lineage": {
+    "issued": "链路已签发",
+    "lookup": "链路已查询",
+    "revoked": "链路已撤销",
+    "key": {
+      "rotated": "链路密钥已轮换"
+    },
+    "build-descriptor": {
+      "downloaded": "链路描述文件已下载"
+    }
+  },
+  "service": "服务",
+  "user": "用户",
+  "provider-connection-draft": "供应商连接草稿",
+  "saved-view": "保存视图",
+  "scheduled-report": "定时报表",
+  "export-job": "导出任务",
+  "operator": "操作员",
+  "system": "系统",
+  "projectIds": "项目 ID",
+  "actorContext": "执行方上下文",
+  "requestContext": "请求上下文",
+  "status": "状态",
+  "email": "邮箱",
+  "role": "角色",
+  "id": "ID",
+  "name": "名称",
+  "slug": "标识",
+  "workspace_seeded": "工作区已初始化"
+}

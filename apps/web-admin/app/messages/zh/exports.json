@@ -1,0 +1,388 @@
+{
+  "page": {
+    "title": "导出"
+  },
+  "workspace": {
+    "current": "当前工作区",
+    "noSelection": "未选择工作区",
+    "contextUnavailable": "导出工作区上下文不可用",
+    "partialData": "导出数据部分不可用"
+  },
+  "toolbar": {
+    "switchWorkspace": "切换工作区",
+    "useHeaderSwitcher": "请使用页头中的工作区切换器更改导出范围。"
+  },
+  "reportSpec": {
+    "title": "当前导出规格",
+    "ledgerOnly": "仅限账本结构。",
+    "sharedScope": "共享范围与格式。",
+    "sourceScope": "来源范围",
+    "focus": "聚焦",
+    "storedFilters": "已存筛选",
+    "recurringSupport": "周期支持",
+    "nextCadence": "下次周期频率",
+    "noScopedSource": "尚无范围来源",
+    "adHocOnly": "仅一次性",
+    "activeFilters": "当前筛选",
+    "clearFilters": "逐个清理筛选。"
+  },
+  "actions": {
+    "openWorkspaces": "打开工作区",
+    "openOrganizations": "打开组织",
+    "openSource": "打开来源",
+    "applyExport": "应用导出",
+    "reviewRecurring": "查看周期任务",
+    "openFollowUp": "打开跟进",
+    "prepareExport": "准备导出",
+    "manageRecurring": "管理周期任务",
+    "createRecurring": "创建周期导出",
+    "refineLedger": "细化账本切片",
+    "refineSpec": "细化来源",
+    "queueExport": "加入导出队列",
+    "returnToSource": "回到来源",
+    "checkHandoff": "检查交接",
+    "clear": "清除"
+  },
+  "status": {
+    "noWorkspace": "请选择工作区以查看导出。",
+    "refresh": "控制数据可用后再刷新。",
+    "dataUnavailable": "导出数据不可用",
+    "loadExportsError": "无法加载导出任务。",
+    "loadProjectsError": "无法加载项目。",
+    "loadEnvironmentsError": "无法加载环境。"
+  },
+  "notice": {
+    "created": "已创建",
+    "error": "错误",
+    "unavailable": "不可用"
+  },
+  "shared": {
+    "pending": "等待中",
+    "none": "无",
+    "name": "名称",
+    "custom": "自定义",
+    "items": "项"
+  },
+  "labels": {
+    "outcome": {
+      "attention": "需要关注"
+    },
+    "jobStatus": {
+      "pending": "等待中",
+      "running": "运行中",
+      "failed": "失败",
+      "completed": "已完成"
+    },
+    "cadence": {
+      "adhoc": "一次性",
+      "adhocFirst": "先一次性",
+      "daily": "每日",
+      "weekly": "每周",
+      "monthly": "每月"
+    },
+    "kind": {
+      "usage-events": "使用事件",
+      "usage-ledger": "使用账本",
+      "audit-logs": "审计日志"
+    }
+  },
+  "followup": {
+    "slaBreached": "SLA 已超时 · {value}",
+    "slaDue": "SLA 到期 · {value}",
+    "approval": "待审批",
+    "title": "跟进",
+    "description": "当前导出的负责人、审批和后续动作。"
+  },
+  "scope": {
+    "workspaceWideLedger": "工作区级账本",
+    "workspaceWideUsage": "工作区级使用",
+    "workspaceWideAudit": "工作区级审计",
+    "budgetLinked": "已关联预算"
+  },
+  "focus": {
+    "allLedgerRows": "全部账本行",
+    "allUsageRows": "全部使用行",
+    "allAuditEvents": "全部审计事件"
+  },
+  "queue": {
+    "title": "导出队列",
+    "searchPlaceholder": "搜索任务",
+    "empty": "还没有导出任务",
+    "noMatch": "没有匹配的导出任务",
+    "noMatchDescription": "当前筛选下没有匹配任务。",
+    "summary": "显示 {visible} / {total} 个任务",
+    "summaryDetailed": "显示 {visible} 个，共 {total} 个任务",
+    "workspacePrefix": "工作区",
+    "allJobTypes": "所有任务类型",
+    "allStatuses": "所有状态",
+    "applyFilters": "应用队列筛选",
+    "clearFilters": "清除队列筛选",
+    "allExportKinds": "所有导出类型",
+    "allJobStatuses": "所有作业状态",
+    "noQueueSearch": "无队列搜索",
+    "reviewQueue": "复查队列",
+    "attempts": "尝试 {count} 次",
+    "processing": "处理中",
+    "format": "格式",
+    "download": "下载",
+    "approvalPendingBeforeDownload": "需审批后才可下载",
+    "workerProcessing": "导出任务正在处理中",
+    "waitingForWorker": "等待导出任务被工作器接手",
+    "trackedObject": "已关联跟踪对象",
+    "ownerPrefix": "负责人",
+    "deliveryTargetsConfigured": "已配置 {count} 个投递目标",
+    "recurringReportPrefix": "周期报告",
+    "oneOffExport": "一次性导出",
+    "retryExport": "重试导出",
+    "exportFailed": "导出失败",
+    "ledgerEmpty": "还没有账本任务",
+    "ledgerSummary": "排入第一条导出任务。",
+    "health": {
+      "needsIntervention": "需要介入",
+      "activePipeline": "流水线活跃",
+      "stable": "稳定"
+    },
+    "stage": {
+      "backlog": "待处理",
+      "backlogHint": "已排队和待开始任务。",
+      "backlogEmpty": "没有排队任务。",
+      "inProgress": "进行中",
+      "inProgressHint": "运行中的任务。",
+      "inProgressEmpty": "没有运行中任务。",
+      "needsReview": "待复查",
+      "needsReviewHint": "失败任务或待跟进项。",
+      "needsReviewEmpty": "没有待复查任务。",
+      "ready": "已就绪",
+      "readyHint": "已完成且可下载任务。",
+      "readyEmpty": "还没有完成任务。"
+    },
+    "quickViews": {
+      "allJobs": "全部任务",
+      "allJobsHint": "共 {count} 个任务",
+      "runningHint": "{count} 个运行中任务",
+      "failedHint": "{count} 个失败任务",
+      "completedHint": "{count} 个已完成任务"
+    },
+    "filters": {
+      "kind": "任务类型",
+      "status": "任务状态",
+      "search": "搜索"
+    },
+    "columns": {
+      "kind": "任务类型",
+      "status": "状态",
+      "file": "文件",
+      "rows": "行数",
+      "timeline": "时间线",
+      "delivery": "投递"
+    },
+    "timeline": {
+      "queuedPrefix": "已排队",
+      "startedPrefix": "已开始",
+      "completedPrefix": "已完成",
+      "durationPrefix": "耗时"
+    }
+  },
+  "workbench": {
+    "reportSpecSummary": "当前导出规格的共享范围、格式与来源跳转。",
+    "storedFiltersSummary": "已存筛选可复用或继续细化。",
+    "outputSummary": "选择一次性输出或升级成周期投递。",
+    "metrics": {
+      "followUp": "跟进",
+      "approvalPending": "待审批",
+      "recurring": "周期任务",
+      "nextRun": "下次运行"
+    },
+    "steps": {
+      "step1": "步骤 1",
+      "step2": "步骤 2",
+      "step3": "步骤 3"
+    },
+    "lanes": {
+      "refineLedgerTitle": "细化账本切片",
+      "returnToSourceTitle": "回到来源",
+      "defineSourceTitle": "定义来源",
+      "refineLedgerDescription": "在导出账本前收紧负责人、标准模型和时间范围。",
+      "returnToSourceDescription": "先回到来源使用或审计页面继续细化。",
+      "defineSourceDescription": "先设定项目、环境与输出。",
+      "followUpQueueTitle": "跟进队列",
+      "queueOneOffTitle": "加入一次性导出",
+      "followUpQueueDescription": "在交接前处理负责人、服务时限和审批问题。",
+      "queueOneOffDescription": "将当前规格执行一次。",
+      "recurringLaneTitle": "周期通道",
+      "createRecurringTitle": "创建周期导出",
+      "recurringLaneDescription": "保持计划与投递健康。",
+      "createRecurringDescription": "把当前规格变成周期任务。"
+    },
+    "cta": {
+      "refineLedgerSlice": "细化账本切片",
+      "refineSource": "细化来源"
+    },
+    "shortcuts": {
+      "refineLedgerTitle": "细化账本切片",
+      "returnToSourceTitle": "回到来源",
+      "tightenSourceTitle": "收紧来源",
+      "refineLedgerDescription": "导出前先细化账本输出。",
+      "returnToSourceDescription": "重新打开来源使用或审计页面。",
+      "tightenSourceDescription": "进一步收紧当前来源筛选。",
+      "clearFollowUpTitle": "清理跟进",
+      "queueNextExportTitle": "加入下一条导出",
+      "clearFollowUpDescription": "解决当前跟进阻塞项。",
+      "queueNextExportDescription": "排入下一次一次性导出。",
+      "keepRecurringHealthyTitle": "保持周期健康",
+      "turnIntoRecurringTitle": "转为周期任务",
+      "keepRecurringHealthyDescription": "查看周期计划和失败项。",
+      "turnIntoRecurringDescription": "将当前规格升级为周期报告。"
+    },
+    "badge": {
+      "ledgerScope": "账本范围",
+      "sourceLane": "来源通道",
+      "refineSource": "细化来源",
+      "approvalRisk": "审批风险",
+      "followUp": "跟进",
+      "oneOff": "一次性",
+      "recurring": "周期任务",
+      "automationGap": "自动化缺口",
+      "openSource": "打开来源",
+      "refineScope": "细化范围",
+      "ownerGap": "负责人缺口",
+      "handoff": "交接"
+    },
+    "session": {
+      "startHere": "从这里开始",
+      "reopenSourceTitle": "重新打开来源",
+      "tightenScopeTitle": "收紧范围",
+      "reopenSourceDescription": "打开此导出规格背后的来源页面。",
+      "tightenScopeDescription": "交接前收紧当前筛选。",
+      "watchNext": "接下来关注",
+      "createFirstRecurringTitle": "创建首个周期任务",
+      "followUpNeedsAttentionDescription": "当前跟进需要关注。",
+      "keepRecurringHealthyDescription": "保持周期健康可见。",
+      "createFirstRecurringDescription": "为当前范围创建第一个周期导出。",
+      "beforeHandoff": "交接前",
+      "leaveLaneTrustableTitle": "让这条通道值得信任",
+      "ownerGapDescription": "负责人或审批缺口仍需复查。",
+      "handoffDescription": "确保导出与跟进已经准备好交给下一位处理者。"
+    }
+  },
+  "oneOff": {
+    "title": "一次性导出",
+    "description": "基于当前规格执行一次导出。",
+    "usageLedger": "使用账本",
+    "usageExport": "使用导出",
+    "auditExport": "审计导出"
+  },
+  "secondary": {
+    "title": "次要操作",
+    "description": "周期任务与跟进路径保持在附近。"
+  },
+  "operationalFollowUp": {
+    "emptyTitle": "暂无跟进项",
+    "emptyDescription": "当前没有待处理的跟进事项。"
+  },
+  "templates": {
+    "sectionTitle": "通用模板",
+    "sectionDescription": "可复用的导出起点。",
+    "finance-weekly": {
+      "title": "财务周报包",
+      "description": "用于财务复查的花费和使用包。",
+      "focus": "每周财务复查"
+    },
+    "ops-attention": {
+      "title": "运维关注包",
+      "description": "用于跟进的运维告警与审计证据。",
+      "focus": "运维关注"
+    },
+    "leadership-overview": {
+      "title": "管理层概览",
+      "description": "高层账本与趋势快照。",
+      "focus": "管理摘要"
+    }
+  },
+  "scheduled": {
+    "title": "周期报告",
+    "adhocLedgerOnly": "仅支持一次性账本。",
+    "description": "管理周期导出和投递目标。",
+    "unavailable": "当前无法使用周期报告。",
+    "createDescription": "从当前规格创建周期投递。",
+    "noDeliveryTargets": "没有投递目标",
+    "deliveryTargetsSummary": "{count} 个投递目标 · {channels}",
+    "cadenceOnly": "仅按周期运行",
+    "eventTriggerSummary": "{events} · {scope} · {minutes} 分钟冷却",
+    "scopeWorkspace": "工作区",
+    "scopeReport": "报告范围",
+    "noGovernanceGate": "没有治理门禁",
+    "governanceApprovalStatus": "审批 {status}",
+    "governanceApprovalNone": "无需审批",
+    "governanceWatermark": "水印 {value}",
+    "governanceRetention": "保留 {days} 天",
+    "governanceSignedSnapshot": "已签名快照",
+    "deliveryChannelsTitle": "投递渠道",
+    "emailRecipients": "邮件收件人",
+    "slackWebhooks": "Slack 回调地址",
+    "feishuWebhooks": "飞书回调地址",
+    "webhookTargets": "回调目标",
+    "governanceTitle": "治理",
+    "deliveryPayload": "投递负载",
+    "signedSnapshotInDelivery": "投递包含签名快照",
+    "eventTriggerScope": "事件触发范围",
+    "triggerCooldown": "触发冷却",
+    "eventDrivenRuns": "事件驱动运行",
+    "budgetAlertOpened": "预算告警已打开",
+    "exportJobFailed": "导出任务失败",
+    "watermarkLabel": "水印标签",
+    "retentionDays": "保留天数",
+    "signedSnapshot": "签名快照",
+    "firstRunNotice": "首次运行提示",
+    "latestFailure": "最近失败",
+    "editTitle": "编辑周期报告",
+    "editDescription": "更新周期、投递和治理。"
+  },
+  "forms": {
+    "usageLedger": {
+      "description": "从当前范围加入一条使用账本导出。",
+      "schema": "账本结构",
+      "bestForLabel": "适合财务就绪行",
+      "grainLabel": "按日粒度",
+      "submit": "加入使用账本导出"
+    },
+    "allProjects": "所有项目",
+    "allEnvironments": "所有环境",
+    "allProviders": "所有供应商",
+    "allOutcomes": "所有结果",
+    "sortBy": "排序方式",
+    "sort": {
+      "newest": "最新优先",
+      "oldest": "最早优先",
+      "costDesc": "成本最高优先",
+      "tokensDesc": "令牌最多优先",
+      "latencyDesc": "最慢优先"
+    },
+    "virtualKeyId": "虚拟密钥 ID",
+    "budgetPolicyId": "预算策略 ID",
+    "fileName": "文件名",
+    "gatewayRequestId": "网关请求 ID",
+    "usage": {
+      "description": "从当前范围加入一条使用事件导出。",
+      "advancedDescription": "更深层请求筛选保持可选。",
+      "submit": "加入使用导出"
+    },
+    "allCallTypes": "所有调用类型",
+    "callType": {
+      "metadata": "元数据查询",
+      "streamed": "流式响应",
+      "interrupted": "中断流响应"
+    },
+    "advancedFilters": "高级筛选",
+    "minLatency": "最小延迟",
+    "audit": {
+      "description": "从当前范围加入一条审计日志导出。",
+      "actorType": "执行方类型",
+      "actorId": "执行方 ID",
+      "advancedDescription": "主题和执行方筛选保持可选。",
+      "subjectType": "对象类型",
+      "subjectId": "对象 ID",
+      "submit": "加入审计导出"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+name: teamops-preview
+
+x-runtime-image: &runtime-image
+  image: teamops-preview-runtime:latest
+
+services:
+  runtime-image:
+    <<: *runtime-image
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.runtime
+      args:
+        TEAMOPS_LINEAGE_PROFILE: ${TEAMOPS_LINEAGE_PROFILE:-}
+        TEAMOPS_LINEAGE_CUSTOMER: ${TEAMOPS_LINEAGE_CUSTOMER:-}
+        TEAMOPS_LINEAGE_DEPLOYMENT: ${TEAMOPS_LINEAGE_DEPLOYMENT:-}
+        TEAMOPS_LINEAGE_RELEASE: ${TEAMOPS_LINEAGE_RELEASE:-}
+        TEAMOPS_LINEAGE_SECRET: ${TEAMOPS_LINEAGE_SECRET:-}
+        TEAMOPS_LINEAGE_CHANNEL: ${TEAMOPS_LINEAGE_CHANNEL:-self-host}
+        TEAMOPS_LINEAGE_REQUIRED: ${TEAMOPS_LINEAGE_REQUIRED:-0}
+    command: ["sh", "-lc", "echo preview runtime image ready"]
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: teamops
+      POSTGRES_USER: teamops
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-teamops}
+    volumes:
+      - preview-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teamops -d teamops"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  valkey:
+    image: valkey/valkey:8-alpine
+    restart: unless-stopped
+    command: ["valkey-server", "--appendonly", "yes"]
+    volumes:
+      - preview-valkey-data:/data
+    healthcheck:
+      test: ["CMD", "valkey-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  migrate:
+    <<: *runtime-image
+    restart: "no"
+    command: ["npm", "run", "db:migrate"]
+    environment:
+      TEAMOPS_ENV: production
+      NODE_ENV: production
+      DATABASE_URL: postgres://teamops:${POSTGRES_PASSWORD:-teamops}@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64}
+    depends_on:
+      runtime-image:
+        condition: service_completed_successfully
+      postgres:
+        condition: service_healthy
+
+  control-api:
+    <<: *runtime-image
+    restart: unless-stopped
+    command: ["npm", "run", "start:prod:control-api"]
+    ports:
+      - "${CONTROL_API_PUBLIC_PORT:-4001}:4001"
+    volumes:
+      - preview-export-data:/var/lib/teamops/exports
+    environment:
+      TEAMOPS_ENV: production
+      NODE_ENV: production
+      CONTROL_API_HOST: 0.0.0.0
+      CONTROL_API_PORT: 4001
+      CONTROL_API_ADMIN_TOKEN: ${CONTROL_API_ADMIN_TOKEN}
+      WEB_ADMIN_BASE_URL: ${WEB_ADMIN_BASE_URL:-http://localhost:${WEB_ADMIN_PUBLIC_PORT:-3001}}
+      DATABASE_URL: postgres://teamops:${POSTGRES_PASSWORD:-teamops}@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64}
+      FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64: ${FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64:-}
+      PRIVATE_RESPONSE_ATTESTATION_SECRET: ${PRIVATE_RESPONSE_ATTESTATION_SECRET:-}
+      PRIVATE_RESPONSE_ATTESTATION_KEY_ID: ${PRIVATE_RESPONSE_ATTESTATION_KEY_ID:-}
+      PRIVATE_RESPONSE_ATTESTATION_INSTANCE_ID: ${PRIVATE_RESPONSE_ATTESTATION_INSTANCE_ID:-control-api-preview}
+      EXPORT_JOBS_DIR: /var/lib/teamops/exports
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:4001/healthz').then((response)=>response.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  export-worker:
+    <<: *runtime-image
+    restart: unless-stopped
+    command: ["npm", "run", "start:prod:export-worker"]
+    volumes:
+      - preview-export-data:/var/lib/teamops/exports
+    environment:
+      TEAMOPS_ENV: production
+      NODE_ENV: production
+      DATABASE_URL: postgres://teamops:${POSTGRES_PASSWORD:-teamops}@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64}
+      FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64: ${FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64:-}
+      EXPORT_JOBS_DIR: /var/lib/teamops/exports
+      EXPORT_WORKER_HEALTH_HOST: 0.0.0.0
+      EXPORT_WORKER_HEALTH_PORT: 4010
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:4010/healthz').then((response)=>response.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  gateway:
+    <<: *runtime-image
+    restart: unless-stopped
+    command: ["npm", "run", "start:prod:gateway"]
+    ports:
+      - "${GATEWAY_PUBLIC_PORT:-4002}:4002"
+    environment:
+      TEAMOPS_ENV: production
+      NODE_ENV: production
+      GATEWAY_HOST: 0.0.0.0
+      GATEWAY_PORT: 4002
+      GATEWAY_PUBLIC_BASE_URL: ${GATEWAY_PUBLIC_BASE_URL:-http://localhost:4002}
+      DEMO_MODE: ${DEMO_MODE:-0}
+      DATABASE_URL: postgres://teamops:${POSTGRES_PASSWORD:-teamops}@postgres:5432/teamops
+      VALKEY_URL: redis://valkey:6379
+      ENCRYPTION_KEY_BASE64: ${ENCRYPTION_KEY_BASE64}
+      FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64: ${FINGERPRINT_KEY_ENCRYPTION_KEY_BASE64:-}
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      valkey:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch('http://127.0.0.1:4002/healthz').then((response)=>response.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  web-admin:
+    <<: *runtime-image
+    restart: unless-stopped
+    command: ["npm", "run", "start:prod:web-admin"]
+    ports:
+      - "${WEB_ADMIN_PUBLIC_PORT:-3001}:${WEB_ADMIN_PORT:-3001}"
+    environment:
+      TEAMOPS_ENV: production
+      NODE_ENV: production
+      WEB_ADMIN_PORT: ${WEB_ADMIN_PORT:-3001}
+      CONTROL_API_BASE_URL: http://control-api:4001
+      NEXT_PUBLIC_CONTROL_API_BASE_URL: ${NEXT_PUBLIC_CONTROL_API_BASE_URL:-http://localhost:4001}
+      WEB_ADMIN_BASE_URL: ${WEB_ADMIN_BASE_URL:-http://localhost:${WEB_ADMIN_PUBLIC_PORT:-3001}}
+      CONTROL_API_ADMIN_TOKEN: ${CONTROL_API_ADMIN_TOKEN}
+      PRIVATE_RESPONSE_ATTESTATION_SECRET: ${PRIVATE_RESPONSE_ATTESTATION_SECRET:-}
+      PRIVATE_RESPONSE_ATTESTATION_KEY_ID: ${PRIVATE_RESPONSE_ATTESTATION_KEY_ID:-}
+      PRIVATE_RESPONSE_ATTESTATION_INSTANCE_ID: ${PRIVATE_RESPONSE_ATTESTATION_INSTANCE_ID:-web-admin-preview}
+    depends_on:
+      control-api:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "fetch(`http://127.0.0.1:${process.env.WEB_ADMIN_PORT || 3001}/api/healthz`).then((response)=>response.ok?process.exit(0):process.exit(1)).catch(()=>process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  preview-postgres-data:
+  preview-valkey-data:
+  preview-export-data:

@@ -1,0 +1,453 @@
+{
+  "title": "Providers",
+  "Providers": "Providers",
+  "Health Distribution": "Health Distribution",
+  "Total": "Total",
+  "Request Trend": "Request Trend",
+  "Demonstration of activity over time": "Demonstration of activity over time",
+  "Quick Stats": "Quick Stats",
+  "Label": "Connection label",
+  "API key": "API key",
+  "Base URL": "Base URL",
+  "providerKinds": {
+    "anthropic": "Anthropic",
+    "openai": "OpenAI",
+    "openaiCompatible": "OpenAI-compatible",
+    "bedrock": "Bedrock",
+    "vertex": "Vertex"
+  },
+  "providerStatus": {
+    "active": "Active",
+    "revoked": "Revoked"
+  },
+  "viewFilters": {
+    "all": "All",
+    "ready": "Ready",
+    "attention": "Attention",
+    "revoked": "Revoked"
+  },
+  "templateTitles": {
+    "privateCluster": "Private cluster",
+    "internalEndpoint": "Internal endpoint",
+    "customerGateway": "Customer gateway",
+    "newApiGateway": "New API / Relay platform"
+  },
+  "templates": {
+    "anthropicPublic": {
+      "summary": "Public Anthropic route for Claude traffic.",
+      "helper": "Use the public Anthropic API with an optional custom base URL.",
+      "labelSuggestion": "Anthropic public route"
+    },
+    "openaiPublic": {
+      "summary": "Public OpenAI route for GPT traffic.",
+      "helper": "Use the default OpenAI API or override the base URL for a managed edge.",
+      "labelSuggestion": "OpenAI public route"
+    },
+    "privateCluster": {
+      "summary": "Self-hosted or private OpenAI-compatible cluster.",
+      "helper": "Requires a base URL and works well for routed internal inventory.",
+      "labelSuggestion": "Private model cluster"
+    },
+    "qwenCluster": {
+      "summary": "Qwen-focused OpenAI-compatible route.",
+      "helper": "Starts with Qwen prefixes and keeps defaults aligned to Qwen traffic.",
+      "labelSuggestion": "Qwen cluster"
+    },
+    "deepseekCluster": {
+      "summary": "DeepSeek-focused OpenAI-compatible route.",
+      "helper": "Starts with DeepSeek prefixes and keeps defaults aligned to DeepSeek traffic.",
+      "labelSuggestion": "DeepSeek cluster"
+    },
+    "internalEndpoint": {
+      "summary": "Internal gateway or proxy endpoint.",
+      "helper": "Use a targeted lane when this route is only for specific traffic.",
+      "labelSuggestion": "Internal endpoint"
+    },
+    "customerGateway": {
+      "summary": "Customer-owned OpenAI edge with a managed label.",
+      "helper": "Requires a base URL and keeps the connection visible in shared inventory.",
+      "labelSuggestion": "Customer gateway"
+    },
+    "newApiGateway": {
+      "summary": "For New API and similar OpenAI-compatible relay platforms.",
+      "helper": "After filling the relay base URL and API key, the console can auto-scan the model catalog for direct selection.",
+      "labelSuggestion": "New API relay platform"
+    }
+  },
+  "templateMeta": {
+    "baseUrlRequired": "Base URL required",
+    "baseUrlOptional": "Base URL optional",
+    "defaultLane": "Default lane",
+    "targetedLane": "Targeted lane"
+  },
+  "endpoint": {
+    "baseUrlRequired": "Base URL required"
+  },
+  "date": {
+    "notYet": "Not yet"
+  },
+  "common": {
+    "na": "n/a"
+  },
+  "actions": {
+    "endpointCopied": "Endpoint copied",
+    "copyEndpoint": "Copy endpoint",
+    "copied": "Copied",
+    "retry": "Retry",
+    "copy": "Copy"
+  },
+  "summary": {
+    "shownLabel": "Shown",
+    "totalMeta": "{count} total",
+    "readyLabel": "Ready",
+    "passedChecks": "Passed checks",
+    "attentionLabel": "Attention",
+    "needsReview": "Needs review",
+    "revokedLabel": "Revoked"
+  },
+  "primaryState": {
+    "openWorkspaces": "Open workspaces",
+    "retryInventory": "Retry inventory",
+    "workspaceUnavailableTitle": "Workspace unavailable",
+    "workspaceUnavailableMessage": "Select another workspace to view provider inventory.",
+    "inventoryUnavailableTitle": "Provider inventory is temporarily unavailable",
+    "inventoryUnavailableMessage": "Retry this workspace inventory or switch to another workspace.",
+    "workspaceRequiredTitle": "Workspace required",
+    "workspaceRequiredMessage": "Select a workspace before reviewing provider inventory."
+  },
+  "filters": {
+    "title": "Connections",
+    "addProvider": "Add provider",
+    "closeAddFlow": "Close add flow",
+    "moreTools": "More tools",
+    "hideTools": "Hide tools",
+    "searchLabel": "Search",
+    "searchPlaceholder": "Search label, provider, endpoint, or model…",
+    "searchDescription": "Search by connection label, provider type, endpoint, model prefix, or exact model.",
+    "providerLabel": "Provider",
+    "allProviders": "All providers",
+    "viewLabel": "View",
+    "reset": "Reset",
+    "activeCount": "{count} filters active",
+    "viewOptions": {
+      "all": "All",
+      "ready": "Ready",
+      "attention": "Attention",
+      "revoked": "Revoked"
+    },
+    "active": {
+      "search": "Search: {query}",
+      "provider": "Provider: {provider}",
+      "view": "View: {view}"
+    }
+  },
+  "sharedInventory": {
+    "label": "Shared inventory",
+    "message": "Provider connections are shared across the organization. Add a connection once and every workspace in the same organization can select it.",
+    "detail": "{count, plural, =0 {No shared connections are currently coming from another workspace.} one {# connection is already available from another workspace.} other {# connections are already available from other workspaces.}}"
+  },
+  "validation": {
+    "labelRequired": "Label is required.",
+    "apiKeyRequired": "API key is required.",
+    "baseUrlRequired": "Base URL is required for this template."
+  },
+  "bulk": {
+    "selectedPrefix": "Selected",
+    "connectionSingular": "connection",
+    "connectionPlural": "connections",
+    "hiddenByFilters": " · {count} hidden by filters.",
+    "retestSelected": "Retest selected",
+    "retesting": "Retesting…",
+    "retestedWithFailures": "Retested {count} routes. {failureCount} need follow-up: {labels}.",
+    "retestedSuccess": "Retested {count} selected routes successfully."
+  },
+  "create": {
+    "eyebrow": "New connection",
+    "title": "Add provider",
+    "description": "Choose a template, test the draft, then save the connection from inventory.",
+    "basicMode": "Basic mode",
+    "advancedMode": "Advanced mode",
+    "close": "Close",
+    "templateTitle": "Template",
+    "templateDescription": "Start with a route profile so defaults and base URL requirements are already scoped.",
+    "settingsTitle": "Connection settings",
+    "settingsDescription": "Add label, credentials, and endpoint details for this route.",
+    "routingTitle": "Default routing",
+    "routingDescription": "Use a default lane for normal traffic. Keep targeted mode for exact models or prefixes only.",
+    "routingBehaviorTitle": "Routing behavior",
+    "routingBehaviorDescription": "Default lanes serve normal traffic. Targeted lanes are only for exact models or prefixes.",
+    "advancedRoutingTitle": "Advanced routing",
+    "advancedRoutingDescription": "Optional prefixes and exact models for targeted lanes.",
+    "suggested": "Suggested",
+    "optional": "Optional",
+    "testDraft": "Test draft",
+    "saveConnection": "Save connection",
+    "noticeCreate": "Create",
+    "noticeDraftTest": "Draft test"
+  },
+  "createWorkbench": {
+    "apiKeyDocs": "Open credential docs",
+    "advancedSettings": "Advanced settings",
+    "showAdvanced": "Show advanced settings",
+    "hideAdvanced": "Hide advanced settings",
+    "openAdvanced": "Open advanced settings",
+    "exitAdvanced": "Close advanced settings",
+    "optional": "Optional",
+    "noTemplateResults": "No matching platforms."
+  },
+  "createFlow": {
+    "stepperLabel": "Provider creation steps",
+    "next": "Next",
+    "back": "Back",
+    "viewDocs": "View docs",
+    "showApiKey": "Show API key",
+    "hideApiKey": "Hide API key",
+    "endpointTitle": "Endpoint guidance",
+    "endpointOptionalMessage": "This template can use the default endpoint, or you can override the base URL when needed.",
+    "modelPrefixesHint": "Add naming prefixes for this connection so routing stays scoped to the intended model family.",
+    "routingScopeTitle": "Current routing scope",
+    "routingScopeMessage": "{count} exact models selected. Model prefixes will be written alongside those exact models for this connection.",
+    "reviewDraftFailedLabel": "Draft test needs review",
+    "reviewDraftIdleLabel": "Draft test recommended",
+    "reviewDraftIdleMessage": "You can save now, but running a draft test first is recommended so the connection and endpoint can be verified.",
+    "schemeGroups": {
+      "publicProvider": {
+        "title": "Public Provider",
+        "description": "Managed access to public upstream providers, suited for default lanes and fast onboarding."
+      },
+      "privateModelCluster": {
+        "title": "Private Model Cluster",
+        "description": "Enterprise access patterns for private model pools, VPC inference services, and OpenAI-compatible clusters."
+      },
+      "customerGateway": {
+        "title": "Customer Gateway",
+        "description": "Customer-owned edge routing for deployments that must preserve network and credential boundaries."
+      },
+      "internalEndpoint": {
+        "title": "Internal Endpoint",
+        "description": "Internal proxy, inference facade, or unified model gateway connections."
+      }
+    },
+    "steps": {
+      "scheme": {
+        "label": "Scheme",
+        "title": "Choose an access scheme",
+        "description": "Start by choosing the lane this connection belongs to, then move into credentials and routing."
+      },
+      "connection": {
+        "label": "Connection",
+        "title": "Connection settings",
+        "description": "Add the connection label, credentials, and endpoint details before testing and saving."
+      },
+      "routing": {
+        "label": "Routing",
+        "title": "Model configuration",
+        "description": "Choose recommended models, load the upstream catalog, or add specific models manually."
+      },
+      "pricing_review": {
+        "label": "Pricing & review",
+        "title": "Pricing and final review",
+        "description": "Review the connection, draft test state, and pricing before saving it into shared inventory."
+      }
+    },
+    "review": {
+      "scheme": "Access scheme",
+      "template": "Template",
+      "technicalKind": "Technical kind",
+      "endpoint": "Endpoint preview",
+      "prefixes": "Model prefixes",
+      "models": "Exact models",
+      "noPrefixes": "No model prefixes configured",
+      "noModels": "No exact models selected",
+      "modelCount": "{count} models"
+    }
+  },
+  "modelManager": {
+    "sectionTitle": "Model configuration",
+    "platformSearchPlaceholder": "Search model platform…",
+    "apiKeyHint": "Use commas to separate multiple provider keys when upstream rotation is needed.",
+    "endpointPreview": "Preview:",
+    "defaultSource": "Default models",
+    "customSource": "Specific models",
+    "defaultTitle": "Default models",
+    "defaultDescription": "Choose preset models or add models discovered from the upstream catalog.",
+    "customTitle": "Specific models",
+    "customDescription": "Add a model name and model ID that should route to this connection.",
+    "searchPlaceholder": "Search models",
+    "recommendedSection": "Recommended",
+    "recommendedDescription": "Preset models for this template.",
+    "catalogSection": "Discovered catalog",
+    "catalogReady": "Loaded from the upstream /v1/models endpoint.",
+    "catalogEmpty": "The upstream provider returned no models.",
+    "catalogError": "Unable to read the upstream model catalog right now.",
+    "catalogIdle": "Load the upstream catalog when credentials are ready.",
+    "catalogDisabled": "Complete label, API key, and required endpoint fields before loading the catalog.",
+    "catalogDisabledApiKeyOnly": "Add the API key before loading the model catalog.",
+    "catalogDisabledBaseUrlOnly": "Add the API base URL before loading the model catalog.",
+    "catalogDisabledApiKeyAndBaseUrl": "Add the API base URL and API key before loading the model catalog.",
+    "catalogBaseUrlRequiredError": "This connection type requires an API base URL. Go back and fill the Base URL before loading the model catalog.",
+    "catalogRevoked": "Revoked connections cannot refresh a model catalog.",
+    "loadCatalog": "Load catalog",
+    "presetBadge": "Preset",
+    "catalogBadge": "Catalog",
+    "customBadge": "Custom",
+    "legacyBadge": "Legacy",
+    "noPresetResults": "No preset models match the current search.",
+    "noCatalogResults": "No discovered models match the current search.",
+    "customLabelInputLabel": "Model name",
+    "customLabelInputPlaceholder": "For example, Customer GPT",
+    "customIdInputLabel": "Model ID",
+    "customIdInputPlaceholder": "For example, customer-gpt",
+    "customIdHint": "Model ID is the real upstream model field used by the API, not a sequence number. For example: gpt-4.1, claude-sonnet-4, or customer-gpt.",
+    "addCustom": "Add specific model",
+    "noCustomModels": "No specific models added.",
+    "selectionTitle": "Selected models",
+    "selectionDescription": "These exact models will be written to routing metadata.",
+    "noSelection": "No models selected yet.",
+    "prefixesLabel": "Model prefixes (advanced)"
+  },
+  "empty": {
+    "noInventoryTitle": "No provider inventory yet",
+    "noInventoryDescription": "Add the first shared provider connection and every workspace in this organization can select it.",
+    "noActiveTitle": "No active connections",
+    "noActiveDescription": "Only revoked connections remain in this inventory. Review them in history below.",
+    "clearFilters": "Clear filters",
+    "noMatchTitle": "No matching providers",
+    "noMatchDescription": "Clear filters or search again."
+  },
+  "revokedHistory": {
+    "title": "Revoked history",
+    "description": "The main inventory stays focused on operable connections. Revoked items live here.",
+    "meta": "{count} records",
+    "emptyTitle": "No revoked connections for this filter",
+    "emptyDescription": "Adjust search or provider filters to review revoked history."
+  },
+  "table": {
+    "title": "Provider inventory",
+    "meta": "{shown} shown · {total} total",
+    "headers": {
+      "select": "Select",
+      "provider": "Provider",
+      "route": "Route",
+      "health": "Health",
+      "updated": "Updated",
+      "actions": "Actions"
+    },
+    "managedLane": "Managed lane",
+    "conflicts": "{count, plural, one {# conflict} other {# conflicts}}",
+    "createdLabel": "Created",
+    "actions": {
+      "clear": "Clear",
+      "retest": "Retest",
+      "revoke": "Revoke",
+      "details": "Details",
+      "hide": "Hide",
+      "testing": "Testing…",
+      "saving": "Saving…",
+      "save": "Save",
+      "revoking": "Revoking…"
+    }
+  },
+  "details": {
+    "overlaps": "{count, plural, one {# overlap} other {# overlaps}}",
+    "endpoint": "Endpoint",
+    "lastTested": "Last tested",
+    "latency": "Latency",
+    "usage": "Usage",
+    "audit": "Audit",
+    "keys": "Keys",
+    "settingsTitle": "Connection settings",
+    "anthropicVersion": "Anthropic version",
+    "rotateApiKey": "Rotate API key",
+    "keepCurrentKey": "Leave blank to keep the current key",
+    "managedRoutingHint": "Routing is managed by this provider type. Create a new connection if this lane should use different defaults or credentials.",
+    "hideEditor": "Hide editor",
+    "editSettings": "Edit settings"
+  },
+  "advancedTools": {
+    "title": "Advanced tools",
+    "description": "Bulk retest, overlap cleanup, and default review.",
+    "noSuggestions": "No routing suggestions.",
+    "appliedSuggestions": "Applied {count, plural, one {# routing update} other {# routing updates}}.",
+    "summary": {
+      "noActiveRoutes": "No active routes",
+      "routingReviewNeeded": "Routing review needed",
+      "defaultsIncomplete": "Defaults incomplete",
+      "defaultsClear": "Routing clear"
+    }
+  },
+  "routeSummary": {
+    "globalDefaultLabel": "Global default",
+    "globalDefaultDetail": "Default for generic traffic.",
+    "providerDefaultLabel": "Default",
+    "providerDefaultDetail": "Direct target for {provider} traffic.",
+    "modelRoutedLabel": "Model routed",
+    "exactModels": "{count, plural, one {# exact model} other {# exact models}}",
+    "fallbackOnlyLabel": "General target",
+    "fallbackOnlyDetail": "No model matching rules are configured.",
+    "revokedLabel": "Revoked",
+    "revokedDetail": "Shown for history."
+  },
+  "health": {
+    "revokedLabel": "Revoked",
+    "revokedDetail": "Revoked {date}",
+    "revokedDetailFallback": "Revoked route",
+    "routingConflictLabel": "Routing conflict",
+    "routingConflictDetail": "{count, plural, one {# overlap needs cleanup.} other {# overlaps need cleanup.}}",
+    "testFailedLabel": "Test failed",
+    "testFailedFallback": "Last connection test failed.",
+    "notTestedLabel": "Not tested",
+    "notTestedDetail": "Run the first connection test.",
+    "staleCheckLabel": "Stale check",
+    "staleCheckDetail": "Last tested {count, plural, one {# day ago.} other {# days ago.}}",
+    "healthyLabel": "Healthy",
+    "healthyDetail": "{latency} · {date}",
+    "noLatency": "No latency",
+    "unknownLabel": "Unknown"
+  },
+  "advancedDiagnostics": {
+    "title": "Routing diagnostics",
+    "reviewNeeded": "Review needed",
+    "clear": "Clear",
+    "description": "Review model matching overlaps and connection readiness.",
+    "applying": "Applying…",
+    "applySuggestions": "Apply suggestions",
+    "headers": {
+      "protocol": "Protocol",
+      "state": "State",
+      "recommended": "Recommended",
+      "action": "Action"
+    },
+    "candidateCount": "{count, plural, one {# candidate} other {# candidates}}",
+    "state": {
+      "multipleDefaults": "{count, plural, one {# default} other {# defaults}}",
+      "overlaps": "{count, plural, one {# overlap} other {# overlaps}}",
+      "noDefault": "No default",
+      "clear": "Clear",
+      "noRoute": "No route"
+    },
+    "detail": {
+      "multipleDefaults": "Multiple defaults are active.",
+      "overlaps": "Model matching overlaps need cleanup.",
+      "noDefault": "A default route still needs to be assigned.",
+      "clear": "No routing review required.",
+      "noRoute": "No active route is available."
+    },
+    "reasons": {
+      "keepRecommended": "Recommended default to keep after conflict cleanup.",
+      "defaultRecommended": "Recommended candidate to assign as the default route."
+    },
+    "noRecommendation": "No recommendation",
+    "keepAction": "Keep {label}",
+    "setDefaultAction": "Set {label} as default",
+    "none": "None",
+    "conflictSamples": "Conflict samples",
+    "reviewLane": "Review this lane",
+    "moreOverlaps": " +{count, plural, one {# more overlap} other {# more overlaps}}",
+    "conflicts": {
+      "exactModel": "Exact model {token} is claimed by multiple active connections.",
+      "exactVsPrefix": "Exact model {token} is also matched by prefixes ({prefixes}).",
+      "prefixOverlap": "Model prefixes overlap around {token}."
+    }
+  }
+}
